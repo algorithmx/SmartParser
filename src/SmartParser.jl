@@ -21,7 +21,7 @@ include("MFS.jl")
 
 export restructure_children
 export loop_find_block_until_stable, find_block
-export correct_1_1
+export correct_1_1, loop_correct_1_1_until_stable
 export build_block_init
 export typical_blocks
 include("find_block.jl")

@@ -174,22 +174,24 @@ correct_1_1(b0::Singleline) = b0
 
 function correct_1_1(b0::Multiline)
     maxd = max_depth(b0)
-    if length(children(b0))==0 || maxd<2
+    if b0.n>1  ||  maxd<3  ||  length(children(b0))==0  || all([(c isa Singleline) for c ∈ children(b0)])
         return b0
     elseif b0.n==1
-        if maxd >= 2
-            b   = deepcopy(b0)
-            C   = vcat([((c isa Multiline) && (c.n==1) ? children(c) : [c,]) for c ∈ children(b)]...) .|> correct_1_1
-            #@show [c.x for c in C]
-            b.C = merge_conseq_iden_blocks(C)
-            return correct_x_n(b0,b)
+        if maxd >= 3
+            condx(xx) = ((xx isa Multiline) && (xx.n==1) && sum(typeof.(children(xx)).==Multiline)>10)
+            C   = vcat([(condx(c) ? correct_1_1.(children(c)) : [correct_1_1(c),]) for c ∈ children(b0)]...)
+            return correct_x_n(b0, Multiline(C))
         else
             return b0
         end
     else
+        @warn "b0.n=0 !!!"
         return b0
     end
 end
+
+
+loop_correct_1_1_until_stable(M::Multiline) = loop_until_stable__(M, correct_1_1)
 
 
 #: ----------- init blocks -----------
