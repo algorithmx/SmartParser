@@ -9,7 +9,7 @@ include("tokenize.jl")
 
 export Block, Singleline, MultiDict, tree_print
 export hash, copy
-export children, label, num_nodes
+export children, label, num_nodes, max_depth
 export DFS
 include("Tree.jl")
 

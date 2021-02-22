@@ -173,19 +173,14 @@ correct_1_1(b0::Singleline) = b0
 
 
 function correct_1_1(b0::Multiline)
-    @inline grandsons(x) = children(children(x)[1])
     maxd = max_depth(b0)
     if length(children(b0))==0 || maxd<2
         return b0
     elseif b0.n==1
-        if length(children(b0))==1  # cse 1_1
-            @assert b0.x == children(b0)[1].x
+        if maxd >= 2
             b   = deepcopy(b0)
-            b.C = copy.(correct_1_1.(grandsons(b0)))  #: recursive !
-            return b
-        elseif maxd > 3
-            b   = deepcopy(b0)
-            C   = vcat([(c.n>1 ? children(c) : c) for c ∈ children(b)]...) .|> correct_1_1
+            C   = vcat([((c isa Multiline) && (c.n==1) ? children(c) : [c,]) for c ∈ children(b)]...) .|> correct_1_1
+            #@show [c.x for c in C]
             b.C = merge_conseq_iden_blocks(C)
             return correct_x_n(b0,b)
         else
