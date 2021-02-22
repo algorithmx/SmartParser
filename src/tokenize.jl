@@ -41,7 +41,7 @@ end
 function tokenize(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
     lines = split(S0,"\n") ;
     unique_words = unique(vcat(split.(lines,r"[^\S\n\r]",keepempty=false)...)) ;
-    code = Dict(w=>i for (i,w) ∈ enumerate(unique_words))
+    code = Dict{String,Int}(w=>i for (i,w) ∈ enumerate(unique_words))
     code["£"] = 0  # reserved token 0 for number
     patts = tokenize(lines, code)
     return patts, code
