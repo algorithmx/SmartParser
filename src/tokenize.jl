@@ -49,11 +49,11 @@ end
 
 
 
-function load_file(fn)
+function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
     if isfile(fn)
         S0 = read(fn,String)
         patts, code = tokenize(mask(S0))
-        lines = split(S0,"\n") ;
+        lines = split(S0,"\n")
         lines_masked = split(mask(S0),"\n")
         return lines, lines_masked, patts, code
     else
