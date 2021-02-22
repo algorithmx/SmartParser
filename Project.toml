@@ -1,0 +1,11 @@
+name = "SmartParser"
+uuid = "286a8d42-4b94-434a-8a6f-23eaeb4e0727"
+authors = ["Yunlong Lian <algorithm.lian@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+
+[compat]
+DataStructures = "0.18,0.20"
+julia = "1"
