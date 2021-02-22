@@ -166,6 +166,37 @@ loop_find_block_until_stable(M::Singleline) = M
 loop_find_block_until_stable(M::Multiline) = loop_until_stable__(M, find_block)
 
 
+#: ---------- correct 1_1 ------------
+
+
+correct_1_1(b0::Singleline) = b0
+
+
+function correct_1_1(b0::Multiline)
+    @inline grandsons(x) = children(children(x)[1])
+    maxd = max_depth(b0)
+    if length(children(b0))==0 || maxd<2
+        return b0
+    elseif b0.n==1
+        if length(children(b0))==1  # cse 1_1
+            @assert b0.x == children(b0)[1].x
+            b   = deepcopy(b0)
+            b.C = copy.(correct_1_1.(grandsons(b0)))  #: recursive !
+            return b
+        elseif maxd > 3
+            b   = deepcopy(b0)
+            C   = vcat([(c.n>1 ? children(c) : c) for c ∈ children(b)]...) .|> correct_1_1
+            b.C = merge_conseq_iden_blocks(C)
+            return correct_x_n(b0,b)
+        else
+            return b0
+        end
+    else
+        return b0
+    end
+end
+
+
 #: ----------- init blocks -----------
 
 
@@ -226,3 +257,5 @@ function typical_blocks(
     DFS(t, f, identity)
     return sort(nl,by=x->-getfield(x,:n))
 end
+
+

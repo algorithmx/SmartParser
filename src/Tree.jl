@@ -24,16 +24,18 @@ end
 
 
 #: my favourite
-function DFS(t::T, f::Function, g::Function) where {T <: AbstractTree}
+function DFS(t::T, f::Function, g::Function, h::Function) where {T <: AbstractTree}
     f(t)
-    for c ∈ children(t)
-        DFS(c, f, g)
-    end
+    V = [DFS(c, f, g, h) for c ∈ children(t)]
     g(t)
-    return
+    return h(V)
 end
 
-@inline DFS(t::T, f::Function) where {T <: AbstractTree} = DFS(t, f, identity)
+
+@inline DFS(t::T, f::Function, g::Function) where {T <: AbstractTree} = DFS(t, f, g, identity)
+
+
+@inline DFS(t::T, f::Function) where {T <: AbstractTree} = DFS(t, f, identity, identity)
 
 
 function num_nodes(t::T) where {T <: AbstractTree} 
@@ -41,6 +43,11 @@ function num_nodes(t::T) where {T <: AbstractTree}
     DFS(t, x->(tot+=1; 0))
     return tot
     #return 1 + sum(Int[num_nodes(i) for i in children(t)])
+end
+
+
+function max_depth(t::T) where {T <: AbstractTree}
+    return DFS(t, x->nothing, x->nothing, x->(length(x)==0 ? 0 : maximum(x)+1))
 end
 
 
