@@ -178,7 +178,7 @@ function correct_1_1(b0::Multiline)
         return b0
     elseif b0.n==1
         if maxd >= 3
-            condx(xx) = ((xx isa Multiline) && (xx.n==1) && sum(typeof.(children(xx)).==Multiline)>10)
+            condx(xx) = ((xx isa Multiline) && (xx.n==1) && sum(typeof.(children(xx)).==Multiline)>20)
             C   = vcat([(condx(c) ? correct_1_1.(children(c)) : [correct_1_1(c),]) for c ∈ children(b0)]...)
             return correct_x_n(b0, Multiline(C))
         else
@@ -252,7 +252,7 @@ function typical_blocks(
     nl = []
     f(x) = ((x isa Multiline) && x.n>M ? (push!(nl,x); 0) : 0)
     DFS(t, f, identity)
-    return sort(nl,by=x->-getfield(x,:n))
+    return sort(unique(nl),by=x->-getfield(x,:n))
 end
 
 

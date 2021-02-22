@@ -8,9 +8,11 @@ export mask, tokenize, load_file, encode_line
 include("tokenize.jl")
 
 export Block, Singleline, MultiDict, tree_print
-export hash, copy
-export children, label, num_nodes, max_depth
+export hash, copy, isequal
 export DFS
+export children, label, num_nodes, max_depth
+export collect_action_dfs, collect_action_bfs
+export Multiline, Singleline, Block
 include("Tree.jl")
 
 export nonoverlapping
