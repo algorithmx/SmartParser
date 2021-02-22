@@ -28,7 +28,7 @@ function DFS(t::T, f::Function, g::Function, h::Function) where {T <: AbstractTr
     f(t)
     V = [DFS(c, f, g, h) for c ∈ children(t)]
     g(t)
-    return h(V)
+    return h((V,t))
 end
 
 
@@ -47,9 +47,16 @@ end
 
 
 function max_depth(t::T) where {T <: AbstractTree}
-    return DFS(t, x->nothing, x->nothing, x->(length(x)==0 ? 0 : maximum(x)+1))
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? 0 : maximum(x[1])+1))
 end
 
+function collect_action_dfs(t::T, action::Function) where {T <: AbstractTree}
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? [action(x[2]),] : vcat(x[1]...,[action(x[2]),])))
+end
+
+function collect_action_bfs(t::T, action::Function) where {T <: AbstractTree}
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? [action(x[2]),] : vcat([action(x[2]),], x[1]...)))
+end
 
 function tree_print(
     t::T; 
@@ -79,6 +86,7 @@ end
 ##: ------------------------------------------------
 
 import Base.copy
+import Base.isequal
 
 #: ------------  Block  -------------
 abstract type Block <: AbstractTree end
@@ -96,6 +104,9 @@ Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt))
 Singleline() = Singleline(0, 0:0, Int[], 0x0)
 
 copy(s::Singleline) = Singleline(s.n, s.x, s.p, s.R)
+
+isequal(s1::Singleline,s2::Singleline) = s1.n==s2.n && s1.R==s2.R
+
 
 #: ----------- Multiline -----------
 mutable struct Multiline <: Block
@@ -117,6 +128,10 @@ function Multiline(C::Vector)
 end
 
 copy(s::Multiline) = Multiline(s.n, s.x, s.R, copy.(s.C))
+
+isequal(s1::Singleline,c2::Multiline) = false
+isequal(c1::Multiline,s2::Singleline) = false
+isequal(c1::Multiline,c2::Multiline) = c1.n==c2.n && c1.R==c2.R
 
 #: ----------- hash -----------
 import Base.hash
