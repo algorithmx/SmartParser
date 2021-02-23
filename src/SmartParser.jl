@@ -4,7 +4,10 @@ module SmartParser
 
 using DataStructures
 
-export mask, tokenize, load_file, encode_line
+export MASK_RULES, MASK_RULES_DIC_INV
+include("rules.jl")
+
+export mask, tokenize, load_file, encode_line, revert
 include("tokenize.jl")
 
 export Block, Singleline, MultiDict, tree_print
@@ -30,6 +33,9 @@ include("find_block.jl")
 
 export block_print, treep
 include("block_print.jl")
+
+export findfirst_spec, parse_file
+include("parse_file.jl")
 
 
 end # module

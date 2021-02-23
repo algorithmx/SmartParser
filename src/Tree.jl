@@ -98,14 +98,15 @@ mutable struct Singleline <: Block
     x::UnitRange{Int}  # 
     p::Vector{Int}     # pattern
     R::UInt64          # pattern hash
+    DATA
 end
-Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, patt, hash(patt))
-Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt))
-Singleline() = Singleline(0, 0:0, Int[], 0x0)
+Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, patt, hash(patt), nothing)
+Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt), nothing)
+Singleline() = Singleline(0, 0:0, Int[], 0x0, nothing)
 
-copy(s::Singleline) = Singleline(s.n, s.x, s.p, s.R)
+copy(s::Singleline) = Singleline(s.n, s.x, s.p, s.R, s.DATA)
 
-isequal(s1::Singleline,s2::Singleline) = s1.n==s2.n && s1.R==s2.R
+isequal(s1::Singleline,s2::Singleline) = (s1.n==s2.n && s1.R==s2.R)
 
 
 #: ----------- Multiline -----------
@@ -119,9 +120,10 @@ Multiline() = Multiline(0,0:0,0x0,[])
 function Multiline(C::Vector)
     @assert all([c isa Block for c in C])
     if length(C)==1  return C[1]  end
-    rr = [t.x for t ∈ C]
-    rconcat = concat(rr...)
-    @assert sum(length.(rr)) == length(rconcat)
+    #rr = [t.x for t ∈ C]
+    #rconcat = concat0(rr[1],rr[end])
+    #@assert sum(length.(rr)) == length(rconcat)
+    rconcat = concat0(C[1].x, C[end].x)
     T = Multiline(1, rconcat, 0x0, C)
     T.R = hash(T)
     return T
@@ -131,7 +133,7 @@ copy(s::Multiline) = Multiline(s.n, s.x, s.R, copy.(s.C))
 
 isequal(s1::Singleline,c2::Multiline) = false
 isequal(c1::Multiline,s2::Singleline) = false
-isequal(c1::Multiline,c2::Multiline) = c1.n==c2.n && c1.R==c2.R
+isequal(c1::Multiline,c2::Multiline) = (c1.n==c2.n && c1.R==c2.R)
 
 #: ----------- hash -----------
 import Base.hash

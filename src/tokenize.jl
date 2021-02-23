@@ -1,27 +1,33 @@
+#: ==========================================================
+
+function preprocess_raw_input(raw::String)
+    s = "$raw"
+    for r ∈ __preproc__
+        s = replace(s, r)
+    end
+    return s
+end
+
+#: ==========================================================
+
+
 
 function mask(s0::String)::String
-    _rules = [  
-        r"(/[^/\s]*)+/([^/\s\.]*\.)+[A-Za-z0-9]*"=>" __FULLPATH__ ", 
-        r"[^0-9/\s\.\(\)]{3,20}\.([^/\s\.\(\)]+\.)*[A-Za-z]+"=>" __ABSPATH__ ", 
-        r"([+-]?\d+(\.\d*)?|[+-]?\d*\.\d+)((e|E)[+-]?\d+)?"=>"£",
-        "(£"=>"( £",
-        "£)"=>"£ )",
-        r"(?<![0-9A-Za-z])(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt)(?=[^0-9A-Za-z])"=>" __CHEMELEM__ ",
-        r"[^\-\_\\\/\%\s]+((\-|\_)[^\-\_\\\/\%\s]+)+"=>" __SYMBOL__ "
-    ]
     s = "$s0"
-    for r ∈ _rules
+    for r ∈ MASK_RULES
         s = replace(s, r)
     end
     return s
 end
 
 
-encode_line(l,dic) = Int[dic[w] for w ∈ split(l,r"[^\S\n\r]",keepempty=false)]
-
+#: ==========================================================
 
 
 TPattern = Vector{Int}
+
+
+encode_line(l,dic) = Int[dic[w] for w ∈ split(l,r"[^\S\n\r]",keepempty=false)]
 
 
 function tokenize(lines::Vector{S}, code::Dict{String,Int}) where {S<:AbstractString}
@@ -43,15 +49,29 @@ function tokenize(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
     unique_words = unique(vcat(split.(lines,r"[^\S\n\r]",keepempty=false)...)) ;
     code = Dict{String,Int}(w=>i for (i,w) ∈ enumerate(unique_words))
     code["£"] = 0  # reserved token 0 for number
+    conflict_kw = [k for (k,v) ∈ code if "£"!=k && occursin("£",k)]
+    if length(conflict_kw)>0
+        @warn "conflict_kw = $(conflict_kw)"
+    end
     patts = tokenize(lines, code)
     return patts, code
 end
 
 
+#: ==========================================================
+
+function revert(code::Dict{String,Int})
+    dic = Dict{Int,String}(i=>k for (k,i) ∈ code)
+    dic[999999999] = "£++++++++++++++++"
+    return dic
+end
+
+#: ==========================================================
+
 
 function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
     if isfile(fn)
-        S0 = read(fn,String)
+        S0 = read(fn,String) |> preprocess_raw_input
         patts, code = tokenize(mask(S0))
         lines = split(S0,"\n")
         lines_masked = split(mask(S0),"\n")
@@ -60,3 +80,4 @@ function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dic
         return String[], String[], TPattern[], Dict{String,Int}()
     end
 end
+

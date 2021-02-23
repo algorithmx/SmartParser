@@ -1,10 +1,7 @@
 
 #: ----------- concat -----------
-concat(a::UnitRange{Int}) = a
-concat(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
-concat(a::UnitRange{Int},b::UnitRange{Int},c...) = concat(concat(a,b),c...)
-
-
+concat0(a::UnitRange{Int}) = a
+concat0(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
 
 ##: ----------- helpers -----------
 
@@ -41,8 +38,8 @@ function merge_conseq_iden_blocks(C::Vector)
         else # if h == T.R
             #: merge / accumulate
             T.n += Cp.n
-            @assert last(T.x)+1==first(Cp.x)
-            T.x = concat(T.x, Cp.x)
+            #@assert last(T.x)+1==first(Cp.x)
+            T.x = concat0(T.x, Cp.x)
             pos += 1
             continue
         end
