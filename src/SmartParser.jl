@@ -37,5 +37,8 @@ include("block_print.jl")
 export findfirst_spec, parse_file
 include("parse_file.jl")
 
+export similarity
+include("block_similarity.jl")
+
 
 end # module
