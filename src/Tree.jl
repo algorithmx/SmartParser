@@ -118,7 +118,6 @@ mutable struct Multiline <: Block
 end
 Multiline() = Multiline(0,0:0,0x0,[])
 function Multiline(C::Vector)
-    @assert all([c isa Block for c in C])
     if length(C)==1  return C[1]  end
     #rr = [t.x for t ∈ C]
     #rconcat = concat0(rr[1],rr[end])

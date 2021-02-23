@@ -15,8 +15,9 @@ concat0(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
 end
 
 
-@inline is_valid_C(C::Vector) = all([(c isa Block) for c ∈ C]) && all([last(C[i].x)+1==first(C[i+1].x) for i=1:length(C)-1])
-
+#@inline is_valid_C_oldver(C::Vector) = all([(c isa Block) for c ∈ C]) && all([last(C[i].x)+1==first(C[i+1].x) for i=1:length(C)-1])
+#@inline is_valid_C(C::Vector) = sum(Int[length(c.x) for c in C])==concat0(C[1].x,C[end].x)
+@inline is_valid_C(C::Vector) = mapreduce(c->length(getfield(c,:x)), +, C)==length(concat0(C[1].x,C[end].x))
 
 # 
 function merge_conseq_iden_blocks(C::Vector)
@@ -60,11 +61,9 @@ function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
 
     if length(blocks)==0  return C  end
 
-    @assert is_valid_C(C)
-
+    #:  @assert is_valid_C(C)
     B  = Set(vcat(collect.(blocks)...))
     @assert length(B)==sum(length.(blocks)) "blocks=$(blocks) overlapping !!!" #!! FIXME 
-
     NC = length(C)
     C1 = []
 
@@ -84,7 +83,6 @@ function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
     end
 
     correct_hash!(C1)
-
     return merge_conseq_iden_blocks(C1)
 end
 

@@ -67,37 +67,36 @@ function build_structure_tree(fn)
     return lines, lines1, B, code
 end
 
-fns=["./test/test4.pw.x.out" ,
-     "./test/test3.pwdry.x.out" ,
-     "./test/test1.pw.x.out" ,
-     "./test/test2.ph.x.out" ]
+
+fns000=[
+    "./test/test4.pw.x.out" ,
+    "./test/test3.pwdry.x.out" ,
+    "./test/test1.pw.x.out" ,
+    "./test/test2.ph.x.out"
+]
 
 
-RT = "/data/ReO3_phonon_configs"
-fns=vcat([[ "$RT/$fd/$ff/$fout" for ff in readdir("$RT/$fd") if isdir("$RT/$fd/$ff") 
-                                    for fout in readdir("$RT/$fd/$ff") if endswith(fout,".out") ]
-                                        for fd ∈ readdir(RT) if isdir("$RT/$fd") ]...)
-
-#
-
-DATA = []
-
-fns1 = ["/data/ReO3_phonon_configs/ps_MT_PBE_kp_12,12,12,1,1,1/ReO3_pwdry/ReO3.pwdry.x.out"]
-skip = [""]
-
-for fn in fns
-    if fn ∉ skip
-        @info fn
-        lines, lines1, B, code = build_structure_tree(fn) ;
-        codeinv = revert(code) ;
-        BD = parse_file(B, lines, lines1, codeinv) ;
-        push!(DATA, (BD, B, code, codeinv, lines, lines1))
-        NL = block_print(B, lines1, offset=0, mute=true) ;
-        open("$(fn).replaced.txt","w") do f
-            write(f,join(NL,"\n"))
+for RT ∈ ["/data/ReO3_phonon_configs","/data/ScF3_phonon_configs",]
+    fns=vcat([[ "$RT/$fd/$ff/$fout" for ff in readdir("$RT/$fd") if isdir("$RT/$fd/$ff") 
+                                        for fout in readdir("$RT/$fd/$ff") if endswith(fout,".out") ]
+                                            for fd ∈ readdir(RT) if isdir("$RT/$fd") ]...)
+    DATA = []
+    skip = [""]
+    for fn in fns
+        if fn ∉ skip
+            @info fn
+            lines, lines1, B, code = build_structure_tree(fn) ;
+            codeinv = revert(code) ;
+            BD = parse_file(B, lines, lines1, codeinv) ;
+            push!(DATA, (BD, B, code, codeinv, lines, lines1))
+            NL = block_print(B, lines1, offset=0, mute=true) ;
+            open("$(fn).replaced.txt","w") do f
+                write(f,join(NL,"\n"))
+            end
         end
     end
 end
+
 
 ##
 
