@@ -29,9 +29,12 @@ fns = [
     "/home/dabajabaza/jianguoyun/Workspace/SmartParser/test/lammps.log" ,
 ]
 
+##
+
+
 Profile.init(n = 10^9, delay = 0.001)
 Profile.clear()
-@profview  lines, lines1, B, code = build_structure_tree(fns[3]) ;
+@profview  lines, lines1, B, code = build_structure_tree("/data/ReO3_phonon_configs/ps_GBRV_PBE_kp_8,8,8,1,1,1_kBar_0.5_dg_0.02/ReO3_ph/ReO3.ph.x.out") ;
 
 
 ##

@@ -29,13 +29,15 @@ TPattern = Vector{Int}
 
 encode_line(l,dic) = Int[dic[w] for w ∈ split(l,r"[^\S\n\r]",keepempty=false)]
 
+# reserved token 999999999 for all number line
+global const __patt__all_number_line__ = [999999999]
 
 function tokenize(lines::Vector{S}, code::Dict{String,Int}) where {S<:AbstractString}
     enc(l) = encode_line(l,code)
-    # reserved token 999999999 for all number line
     patts = Vector{Int}[]
     try 
-        patts = Vector{Int}[((unique(p)==[0,]) ? [999999999,] : p) for p ∈ enc.(lines)]
+        #: line *1
+        patts = Vector{Int}[((unique(p)==[0,]) ? __patt__all_number_line__ : p) for p ∈ enc.(lines)]
     catch _e_
         @warn "tokenize failed."
         return Vector{Int}[]
@@ -62,7 +64,7 @@ end
 
 function revert(code::Dict{String,Int})
     dic = Dict{Int,String}(i=>k for (k,i) ∈ code)
-    dic[999999999] = "£++++++++++++++++"
+    dic[__patt__all_number_line__[1]] = "£++++++++++++++++"
     return dic
 end
 
@@ -72,7 +74,7 @@ end
 function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
     if isfile(fn)
         S0 = read(fn,String) |> preprocess_raw_input
-        @time MS0 = mask(S0)
+        MS0 = mask(S0)
         patts, code = tokenize(MS0)
         lines = split(S0,"\n")
         lines_masked = split(MS0,"\n")

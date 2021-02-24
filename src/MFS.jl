@@ -11,25 +11,35 @@ function increaseindex!(h::Dict{K,Int}, key::K) where K
     return 
 end
 
+#//@inline processelemif(p,c,L) = ([(p(el); nothing) for el ∈ L if c(el)] ; nothing)
+#//@inline len1p(L) = L[length.(L).>1]
+# findall the elements l in L satisfying c(l)==true and have unique value of u(l), then map f() to them
+@inline processelemif(p,c,L) = for el ∈ L if c(el) p(el); end end
+
+non_empty_non_999999999_1(s) = (s!=[])&&(s!=__patt__all_number_line__)
+non_empty_non_999999999(s) = (length(s)>1 || !(isempty(s) || s==__patt__all_number_line__))
 
 #+ shorter ! faster !
 function MFS(str::Vector{UInt64}; Lmin=2, Lmax=80)::Vector{UnitRange{Int}}
     if allunique(str)  return []  end
-    # findall the elements l in L satisfying c(l)==true and have unique value of u(l), then map f() to them
-    @inline processelemif(p,c,L) = for el ∈ L if c(el) p(el) end end
-    #//@inline processelemif(p,c,L) = ([(p(el); nothing) for el ∈ L if c(el)] ; nothing)
-    #//@inline len1p(L) = L[length.(L).>1]
 
     N = length(str)
     # most apperance >> longest range >> latest appearance
     sortf(x) = 100000*length(x) + length(x[1]) + 0.8*x[1][1]/N  
     RES = Vector{UnitRange{Int}}[]
+    B = nothing
     for l=Lmin:min(Lmax,N÷2)
+        minL = min(2,l-1)
         U = Dict{Vector{UInt64},Int}()
         # updU(i) = ((str[i:i+l-1] ∈ keys(U)) ? U[str[i:i+l-1]]+=1 : U[str[i:i+l-1]]=1)  
         updU(i) = increaseindex!(U, str[i:i+l-1])  #: dict for num of repetitions  #: improved 2x faster
-        processelemif(updU, i->length(unique(str[i:i+l-1]))>min(2,l-1), 1:N-l+1) ;  #: record the unique substrings by num of reps
-        all_blk_l = []
+        #: record the unique substrings by num of reps
+        #: see line *1 in tokenize.jl
+        crit_i(i) = any(non_empty_non_999999999, str[i:i+l-1])
+        #! optimized, 3x faster
+        #processelemif(updU, i->length(unique(str[i:i+l-1]))>minL, 1:N-l+1) ;  #: non-optimal version
+        processelemif(updU, crit_i, 1:N-l+1) ;  
+        all_blk_l = Vector{UnitRange{Int}}[]
         for (s,m) ∈ U
             if m>1
                 B = nonoverlapping(s,str)
@@ -37,7 +47,8 @@ function MFS(str::Vector{UInt64}; Lmin=2, Lmax=80)::Vector{UnitRange{Int}}
             end
         end
         if length(all_blk_l)>0
-            push!(RES, last(sort(all_blk_l, by=sortf)))  #: only record the best for each l
+            #: only record the best for each l
+            push!(RES, last(sort(all_blk_l, by=sortf)))
         end
     end
     return length(RES)==0 ? [] : last(sort(RES, by=sortf))
