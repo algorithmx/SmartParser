@@ -16,8 +16,8 @@ global const QE_KEYWORDS = [
     r"(calbec|fft(s|w|\_scatt\_xy|\_scatt\_yz)?|davcio|write\_rec)\s*\:" => " __QEgenROUTINES__ ",
 
     # really stupid but they are NOT chemical formulae
-    [Regex("(?<![0-9A-Za-z_\\-])$i(?=[^0-9A-Za-z_\\-\\n])")  =>  " __QE$(replace(i,r"(\\\.|\d)"=>""))__ " 
-            for i ∈ ["PW","PWSCF","PH","SCF","CPU","PBC","FHI98PP", "pw\\.x", "fhi2upf\\.x", "ld1\\.x"] ] ...
+    [Regex("(?<![0-9A-Za-z_\\-])$i(?=[^0-9A-Za-z_\\-\\n])")  =>  " __KW$(replace(i,r"(\\\.|\d)"=>""))__ " 
+            for i ∈ ["PW","PWSCF","PH","SCF","CPU","PBC","INF","FHI98PP", "pw\\.x", "fhi2upf\\.x", "ld1\\.x"] ] ...
 ]
 
 
@@ -38,8 +38,22 @@ global const __NUM_TO_STERLING__ = [
     #: aftermath of the number substitution
     "(£"   =>  "( £",
     "£)"   =>  "£ )",
-    "£:"   =>  "£ :",
+    "£|"   =>  "£ |",
+    "|£"   =>  "| £",
     "£,"   =>  "£ ,",
+    ",£"   =>  ", £",
+
+    "£-£"  =>  "£ - £",
+    "£+£"  =>  "£ + £",
+    
+    "£-"   =>  "£ - ",
+    "-£"   =>  " - £",
+    "£/"   =>  "£ / ",
+    "/£"   =>  " / £",
+    "£*"   =>  "£ * ",
+    "*£"   =>  " * £",
+    "£:"   =>  " : £",
+    ":£"   =>  "£ : ",
 ]
 
 global const __SINGLE_ELEM__str__ = "(A[cglmrstu]|B[aehikr]?|C[adeflmnorsu]?|D[bsy]|E[rsu]|F[elmr]?|G[ade]|H[efgos]?|I[nr]?|Kr?|L[airuv]|M[dgnot]|N[abdeiop]?|Os?|P[abdmortu]?|R[abefghnu]|S[bcegimnr]?|T[abcehilm]|U(u[opst])?|V|W|Xe|Yb?|Z[nr])"
@@ -68,27 +82,27 @@ global const  MASK_RULES = [
     r"(?<![A-Za-z_\-])Ry"                                   => " __Ry__ ",
     
     r"http\:\/(\/[^\^\/\s]+)+(\/)?"                         => " __URL__ ",       
-    r"(?<![0-9A-Za-z])((\/[^\^\/\s]+)+(\/)?|([^\^\/\s]+\/)+)(?=[^0-9A-Za-z]|$)"   => " __FULLPATH__ ",
+    r"(?<![0-9A-Za-z\*])((\/[A-Za-z][^\^\/\s\$]*)+(\/)?|([A-Za-z][^\^\/\s\$]*\/)+)(?=[^0-9A-Za-z\()]|$)"   => " __FULLPATH__ ",
 
     r"\(a\.u\.\)\^3"                                        => " __UNITVOLa__ ",
     r"a\.u\.\^3"                                            => " __UNITVOLb__ ",
     r"a\.u\."                                               => " __au__ ",
 
-    r"v(\.\d+){2,3}"                                        => " __QEVERSIONa__ ",
-    r"((\d+h\s*)?\d+m\s*)?\d+\.\d+s"                        => " __QEDURATION__ ",
+    r"v(\.\d+){2,3}"                                        => " __VERSIONa__ ",
+    r"((\d+h\s*)?\d+m\s*)?\d+\.\d+s"                        => " __DURATION__ ",
 
     #r"[^0-9\^\/\s\.\(\)][^\^\/\s\.\(\)]{1,20}\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z0-9]+"  => " __ABSPATH__ ", 
-    r"[^\^\/\s\.\(\)]{1,20}\w\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z0-9]+"  => " __ABSPATH__ ", 
+    r"[^\^\/\s\.\(\)]{1,20}\w\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z][A-Za-z0-9]*"  => " __ABSPATH__ ", 
 
     r"Ang\^3"                                               => " __UNITVOLc__ ",
     r"kbar"                                                 => " __UNITkbar__ ",
     r"\[cm-1\]"                                             => " __UNITCMINV__ ",
-    
+
     r"([01]?\d|2[0-3]):([0-5 ]?\d):([0-5 ]?\d)"             => " __HHMMSS__ ",
     r"[1-3 ]\d[A-Za-z]{2,9}(19|20)\d\d"                     => " __DATEa__ ",
-    
+
     r" P\s*\= "                                             => " __PRESSUREEQS__ ",
-    
+
     r"\[\s*\-?\d+\s*,\s*\-?\d+\s*,\s*\-?\d+\s*\]"           => " __MILLER__ ",
     r"\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)"                    => " __THREETUPLES__ ",
 
@@ -101,7 +115,7 @@ global const  MASK_RULES = [
 
     __NUM_TO_STERLING__...,
 
-    r"[^\_\\\/\%\s]+(\_[^\_\\\/\%\s]+)+"                    => " __SYMBOLtypeA__ ",
+    r"[A-Za-z][^\_\\\/\%\s]*(\_[A-Za-z][^\_\\\/\%\s]*)+"                => " __SYMBOLtypeA__ ",
     r"[A-Za-z]+\d+[A-Za-z]*"                                => " __SYMBOLtypeB__ ",  #: this is rather unfortunate
     r"[A-Za-z]*\d+[A-Za-z]+"                                => " __SYMBOLtypeC__ ",  #: this is rather unfortunate
 ]

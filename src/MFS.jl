@@ -24,8 +24,8 @@ function MFS(str::Vector{UInt64}; Lmin=2, Lmax=80)::Vector{UnitRange{Int}}
     if allunique(str)  return []  end
 
     N = length(str)
-    # most apperance >> longest range >> latest appearance
-    sortf(x) = 100000*length(x) + length(x[1]) + 0.8*x[1][1]/N  
+    # most apperance >> longest range >> earliest appearance
+    sortf(x) = 100000*length(x) + length(x[1]) + (0.8*x[1][1]/N)
     RES = Vector{UnitRange{Int}}[]
     B = nothing
     for l=Lmin:min(Lmax,N÷2)

@@ -24,10 +24,11 @@ function nonoverlapping(substr::Vector{UInt64}, fullstr::Vector{UInt64}, posL_st
     q = seek_pos_R(substr, fullstr, posL_str)
     if q > 0
         Nsub = length(substr)
-        return [nonoverlapping(substr, fullstr, q-Nsub); [q:q+Nsub-1,]]
+        return [nonoverlapping(substr, fullstr, q-Nsub)..., q:q+Nsub-1]
     else
         return UnitRange{Int}[]
     end
 end
+
 
 @inline nonoverlapping(substr::Vector{UInt64}, fullstr::Vector{UInt64}) = nonoverlapping(substr, fullstr, length(fullstr)-length(substr)+1)

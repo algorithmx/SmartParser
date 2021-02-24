@@ -71,7 +71,41 @@ end
 #: ==========================================================
 
 
-function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
+function add_newline(lines)
+    @inline headspace(l) = ((length(l)>0 && startswith(l," ")) 
+                                ? (findfirst(x->x!=' ',l)!==nothing ? findfirst(x->x!=' ',l)-1 
+                                : findlast(x->x==' ',l)) : 0)
+    hstack = Stack{Int}()
+    lines1 = []
+    for l ∈ lines
+        h = headspace(l)
+        if length(hstack)>0
+            if h > top(hstack)
+                push!(lines1,"")
+            elseif h == top(hstack)
+                nothing
+            else
+                ht = top(hstack)
+                push!(lines1,"")
+                while length(hstack)>0 && top(hstack)>h
+                    x = pop!(hstack)
+                    if x != ht
+                        ht = x
+                        push!(lines1,"")
+                    end
+                end
+            end
+        end
+        push!(lines1, l)
+        push!(hstack, h)
+    end
+    return lines1
+end
+
+
+function load_file(
+    fn
+    )::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
     if isfile(fn)
         S0 = read(fn,String) |> preprocess_raw_input
         MS0 = mask(S0)

@@ -1,0 +1,351 @@
+Overhead ╎ [+additional indent] Count File:Line; Function
+=========================================================
+    ╎19158 @Base/client.jl:506; _start()
+    ╎ 19158 @Base/client.jl:296; exec_options(::Base.JLOptions)
+    ╎  19158 @Base/Base.jl:368; include(::Module, ::String)
+ 786╎   19158 @Base/Base.jl:380; include(::Function, ::Module, ::String)
+    ╎    1065  @Base/compiler/typeinfer.jl:601; typeinf_ext(::Core.MethodInstance, ::UInt64)
+    ╎     1065  @Base/compiler/typeinfer.jl:570; typeinf_ext(::Core.MethodInstance, ::Core.Compiler.Params)
+    ╎    ╎ 1065  @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎  1065  @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎   852   @Base/compiler/abstractinterpretation.jl:1255; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    852   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎     852   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎ 852   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎  852   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎   851   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    851   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎     851   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎ 833   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎  833   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎   220   @Base/compiler/abstractinterpretation.jl:1255; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    220   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎     220   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎ 220   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎  220   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎   220   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    220   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎     220   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎ 218   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎  218   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎   217   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    217   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎     217   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 217   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  217   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   217   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    217   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎     217   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 214   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  214   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎   613   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    613   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎     613   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎ 613   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎  611   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎   608   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    608   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎     608   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎ 598   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎  598   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎   549   @Base/compiler/abstractinterpretation.jl:1255; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    549   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎     549   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 549   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  543   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   542   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    542   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎     542   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 533   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  533   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   437   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    437   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     437   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 437   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  437   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   434   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    434   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     432   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 428   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  428   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   428   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    428   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     428   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 427   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  419   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   418   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    418   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     414   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 407   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  407   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   220   @Base/compiler/abstractinterpretation.jl:1255; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    220   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     220   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 220   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  220   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   220   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    220   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     220   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 213   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  213   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   213   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    213   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     213   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 213   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  213   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   207   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    207   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     204   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 200   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  200   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   200   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    200   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎     200   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 200   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  200   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎   213   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    213   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎     213   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎ 213   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎  213   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎   213   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    213   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎     213   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎ 211   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎  211   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎   208   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    208   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎     208   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎ 208   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎  208   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎   206   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    206   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎     206   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    204   @SmartParser/test/optimize.jl:10; build_structure_tree(::String)
+    ╎    708   @SmartParser/test/optimize.jl:14; build_structure_tree(::String)
+    ╎     278   @SmartParser/src/find_block.jl:213; build_block_init(::Array{Array{Int64,1},1})
+  36╎    ╎ 278   @Base/deprecated.jl:47; top(::DataStructures.Stack{Tuple{Int64,Block}})
+    ╎    ╎  242   @Base/compiler/typeinfer.jl:601; typeinf_ext(::Core.MethodInstance, ::UInt64)
+    ╎    ╎   242   @Base/compiler/typeinfer.jl:570; typeinf_ext(::Core.MethodInstance, ::Core.Compiler.Params)
+    ╎    ╎    241   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎     241   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎ 241   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎  241   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎   241   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    241   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎     241   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎ 241   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎  241   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎   241   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    239   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎     239   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎ 232   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎  232   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎   232   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    232   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎     232   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎ 232   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎  232   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎   231   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    227   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎     227   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 214   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  214   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   214   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    214   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎     214   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 214   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎  214   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    ╎   213   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+   1╎     213   @SmartParser/src/find_block.jl:237; build_block_init(::Array{Array{Int64,1},1})
+    ╎    14347 @SmartParser/test/optimize.jl:15; build_structure_tree(::String)
+    ╎     321   @SmartParser/src/find_block.jl:143; find_block(::Multiline)
+  29╎    ╎ 280   @SmartParser/src/find_block.jl:136; restructure_children(::Multiline)
+   9╎     751   @SmartParser/src/find_block.jl:146; find_block(::Multiline)
+    ╎    ╎ 742   @SmartParser/src/find_block.jl:160; loop_find_block_until_stable(::Multiline)
+    ╎    ╎  663   @SmartParser/src/find_block.jl:91; loop_until_stable__(::Multiline, ::typeof(find_block))
+    ╎    ╎   571   @SmartParser/src/find_block.jl:153; find_block(::Multiline)
+    ╎    ╎    278   @SmartParser/src/find_block.jl:91; loop_until_stable__(::Multiline, ::SmartParser.var"#L#74")
+  18╎    ╎     278   @SmartParser/src/find_block.jl:152; (::SmartParser.var"#L#74")(::Multiline)
+ 153╎    ╎    ╎ 236   @SmartParser/src/find_block.jl:116; fold_block(::Multiline, ::Array{UnitRange{Int64},1})
+    ╎    ╎    291   @SmartParser/src/find_block.jl:94; loop_until_stable__(::Multiline, ::SmartParser.var"#L#74")
+  10╎    ╎     291   @SmartParser/src/find_block.jl:152; (::SmartParser.var"#L#74")(::Multiline)
+  71╎    ╎    ╎ 231   @SmartParser/src/find_block.jl:116; fold_block(::Multiline, ::Array{UnitRange{Int64},1})
+    ╎     13275 @SmartParser/src/find_block.jl:153; find_block(::Multiline)
+    ╎    ╎ 591   @SmartParser/src/find_block.jl:91; loop_until_stable__(::Multiline, ::SmartParser.var"#L#74")
+    ╎    ╎  591   @SmartParser/src/find_block.jl:152; (::SmartParser.var"#L#74")(::Multiline)
+    ╎    ╎   581   @SmartParser/src/MFS.jl:4; MFS
+    ╎    ╎    494   @SmartParser/src/MFS.jl:16; MFS(::Array{UInt64,1}; Lmin::Int64, Lmax::Int64)
+    ╎    ╎     494   @SmartParser/src/MFS.jl:6; processelemif
+    ╎    ╎    ╎ 494   @Base/array.jl:684; collect
+    ╎    ╎    ╎  494   @Base/array.jl:751; grow_to!(::Array{Nothing,1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#53#61"{Array{UInt64,1},Int64},UnitRange{Int64}},SmartParser.var"#52#57"{SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}}}})
+    ╎    ╎    ╎   492   @Base/array.jl:778; grow_to!(::Array{Nothing,1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#53#61"{Array{UInt64,1},Int64},UnitRange{Int64}},SmartParser.var"#52#57"{SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}}}}, ::Int64)
+    ╎    ╎    ╎    304   @Base/generator.jl:47; iterate
+    ╎    ╎    ╎     304   @Base/iterators.jl:0; #52
+   1╎    ╎    ╎    ╎ 304   @SmartParser/src/MFS.jl:15; (::SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}})(::Int64)
+    ╎    ╎ 12682 @SmartParser/src/find_block.jl:94; loop_until_stable__(::Multiline, ::SmartParser.var"#L#74")
+    ╎    ╎  12682 @SmartParser/src/find_block.jl:152; (::SmartParser.var"#L#74")(::Multiline)
+    ╎    ╎   12336 @SmartParser/src/MFS.jl:4; MFS
+    ╎    ╎    11349 @SmartParser/src/MFS.jl:16; MFS(::Array{UInt64,1}; Lmin::Int64, Lmax::Int64)
+    ╎    ╎     11349 @SmartParser/src/MFS.jl:6; processelemif
+    ╎    ╎    ╎ 11349 @Base/array.jl:684; collect
+   1╎    ╎    ╎  11335 @Base/array.jl:751; grow_to!(::Array{Nothing,1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#53#61"{Array{UInt64,1},Int64},UnitRange{Int64}},SmartParser.var"#52#57"{SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}}}})
+    ╎    ╎    ╎   11298 @Base/array.jl:778; grow_to!(::Array{Nothing,1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#53#61"{Array{UInt64,1},Int64},UnitRange{Int64}},SmartParser.var"#52#57"{SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}}}}, ::Int64)
+    ╎    ╎    ╎    5549  @Base/generator.jl:44; iterate
+   2╎    ╎    ╎     5549  @Base/iterators.jl:431; iterate
+   7╎    ╎    ╎    ╎ 5546  @SmartParser/src/MFS.jl:16; (::SmartParser.var"#53#61"{Array{UInt64,1},Int64})(::Int64)
+    ╎    ╎    ╎    ╎  296   @Base/array.jl:817; getindex
+    ╎    ╎    ╎    ╎   296   @Base/array.jl:379; similar
+ 296╎    ╎    ╎    ╎    296   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎  5109  @Base/multidimensional.jl:1472; unique
+    ╎    ╎    ╎    ╎   5109  @Base/multidimensional.jl:1472; #unique#450
+  92╎    ╎    ╎    ╎    5109  @Base/multidimensional.jl:1474; _unique_dims
+    ╎    ╎    ╎    ╎     213   @Base/set.jl:124; unique(::Array{UInt64,1})
+    ╎    ╎    ╎    ╎    ╎ 213   @Base/boot.jl:425; Array
+ 213╎    ╎    ╎    ╎    ╎  213   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎     676   @Base/set.jl:125; unique(::Array{UInt64,1})
+   5╎    ╎    ╎    ╎    ╎ 676   @Base/set.jl:6; Set
+  83╎    ╎    ╎    ╎    ╎  668   @Base/dict.jl:90; Dict{UInt64,Nothing}()
+    ╎    ╎    ╎    ╎    ╎   214   @Base/array.jl:521; zeros
+    ╎    ╎    ╎    ╎    ╎    209   @Base/array.jl:525; zeros
+    ╎    ╎    ╎    ╎    ╎     209   @Base/boot.jl:415; Array
+ 209╎    ╎    ╎    ╎    ╎    ╎ 209   @Base/boot.jl:406; Array
+ 371╎    ╎    ╎    ╎    ╎   371   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎     3804  @Base/set.jl:135; unique(::Array{UInt64,1})
+  33╎    ╎    ╎    ╎    ╎ 1150  @Base/set.jl:155; unique_from
+    ╎    ╎    ╎    ╎    ╎  1117  @Base/set.jl:56; in
+  52╎    ╎    ╎    ╎    ╎   1117  @Base/dict.jl:535; haskey
+    ╎    ╎    ╎    ╎    ╎    520   @Base/dict.jl:282; ht_keyindex(::Dict{UInt64,Nothing}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎     520   @Base/dict.jl:168; hashindex
+    ╎    ╎    ╎    ╎    ╎    ╎ 504   @Base/hashing.jl:18; hash
+    ╎    ╎    ╎    ╎    ╎    ╎  504   @Base/float.jl:571; hash
+    ╎    ╎    ╎    ╎    ╎    ╎   452   @Base/float.jl:568; hx
+    ╎    ╎    ╎    ╎    ╎    ╎    350   @Base/hashing.jl:62; hash_uint64
+ 183╎    ╎    ╎    ╎    ╎    228   @Base/dict.jl:286; ht_keyindex(::Dict{UInt64,Nothing}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎ 1887  @Base/set.jl:156; unique_from
+  23╎    ╎    ╎    ╎    ╎  1887  @Base/set.jl:57; push!
+  15╎    ╎    ╎    ╎    ╎   479   @Base/dict.jl:381; setindex!(::Dict{UInt64,Nothing}, ::Nothing, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎    233   @Base/dict.jl:308; ht_keyindex2!(::Dict{UInt64,Nothing}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎     233   @Base/dict.jl:168; hashindex
+    ╎    ╎    ╎    ╎    ╎    ╎ 228   @Base/hashing.jl:18; hash
+    ╎    ╎    ╎    ╎    ╎    ╎  228   @Base/float.jl:571; hash
+    ╎    ╎    ╎    ╎    ╎    ╎   207   @Base/float.jl:568; hx
+    ╎    ╎    ╎    ╎    ╎   1364  @Base/dict.jl:388; setindex!(::Dict{UInt64,Nothing}, ::Nothing, ::UInt64)
+   2╎    ╎    ╎    ╎    ╎    1227  @Base/dict.jl:367; _setindex!
+    ╎    ╎    ╎    ╎    ╎     345   @Base/dict.jl:192; rehash!(::Dict{UInt64,Nothing}, ::Int64)
+ 345╎    ╎    ╎    ╎    ╎    ╎ 345   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎    ╎     308   @Base/dict.jl:193; rehash!(::Dict{UInt64,Nothing}, ::Int64)
+ 308╎    ╎    ╎    ╎    ╎    ╎ 308   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎    ╎ 685   @Base/set.jl:157; unique_from
+    ╎    ╎    ╎    ╎    ╎  612   @Base/array.jl:935; push!
+ 612╎    ╎    ╎    ╎    ╎   612   @Base/array.jl:892; _growend!
+    ╎    ╎    ╎    5747  @Base/generator.jl:47; iterate
+   6╎    ╎    ╎     5747  @Base/iterators.jl:0; #52
+  16╎    ╎    ╎    ╎ 5737  @SmartParser/src/MFS.jl:15; (::SmartParser.var"#updU#60"{Array{UInt64,1},Int64,Dict{Array{UInt64,1},Int64}})(::Int64)
+    ╎    ╎    ╎    ╎  533   @Base/array.jl:817; getindex
+    ╎    ╎    ╎    ╎   533   @Base/array.jl:379; similar
+ 533╎    ╎    ╎    ╎    533   @Base/boot.jl:406; Array
+    ╎    ╎    ╎    ╎  276   @Base/array.jl:819; getindex
+ 271╎    ╎    ╎    ╎   273   @Base/array.jl:293; unsafe_copyto!
+    ╎    ╎    ╎    ╎  370   @Base/dict.jl:466; getindex
+    ╎    ╎    ╎    ╎   338   @Base/dict.jl:282; ht_keyindex(::Dict{Array{UInt64,1},Int64}, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎    338   @Base/dict.jl:168; hashindex
+   2╎    ╎    ╎    ╎     337   @Base/hashing.jl:18; hash
+    ╎    ╎    ╎    ╎  1712  @Base/dict.jl:536; in
+    ╎    ╎    ╎    ╎   1592  @Base/dict.jl:282; ht_keyindex(::Dict{Array{UInt64,1},Int64}, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎    1592  @Base/dict.jl:168; hashindex
+   5╎    ╎    ╎    ╎     1592  @Base/hashing.jl:18; hash
+    ╎    ╎    ╎    ╎    ╎ 256   @Base/abstractarray.jl:2260; hash(::Array{UInt64,1}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎  256   @Base/hashing.jl:23; hash
+ 248╎    ╎    ╎    ╎    ╎   248   @Base/reflection.jl:312; objectid
+  54╎    ╎    ╎    ╎    ╎ 944   @Base/abstractarray.jl:2298; hash(::Array{UInt64,1}, ::UInt64)
+  25╎    ╎    ╎    ╎    ╎  875   @Base/pair.jl:52; hash(::Pair{Int64,UInt64}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎   613   @Base/float.jl:571; hash
+    ╎    ╎    ╎    ╎    ╎    543   @Base/float.jl:568; hx
+    ╎    ╎    ╎    ╎    ╎     433   @Base/hashing.jl:62; hash_uint64
+    ╎    ╎    ╎    ╎    ╎   237   @Base/float.jl:572; hash
+   1╎    ╎    ╎    ╎  2290  @Base/dict.jl:381; setindex!(::Dict{Array{UInt64,1},Int64}, ::Int64, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎   1595  @Base/dict.jl:308; ht_keyindex2!(::Dict{Array{UInt64,1},Int64}, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎    1595  @Base/dict.jl:168; hashindex
+  12╎    ╎    ╎    ╎     1594  @Base/hashing.jl:18; hash
+    ╎    ╎    ╎    ╎    ╎ 241   @Base/abstractarray.jl:2260; hash(::Array{UInt64,1}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎  241   @Base/hashing.jl:23; hash
+ 224╎    ╎    ╎    ╎    ╎   224   @Base/reflection.jl:312; objectid
+  57╎    ╎    ╎    ╎    ╎ 940   @Base/abstractarray.jl:2298; hash(::Array{UInt64,1}, ::UInt64)
+  17╎    ╎    ╎    ╎    ╎  863   @Base/pair.jl:52; hash(::Pair{Int64,UInt64}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎   617   @Base/float.jl:571; hash
+    ╎    ╎    ╎    ╎    ╎    544   @Base/float.jl:568; hx
+    ╎    ╎    ╎    ╎    ╎     460   @Base/hashing.jl:62; hash_uint64
+    ╎    ╎    ╎    ╎    ╎   229   @Base/float.jl:572; hash
+    ╎    ╎    ╎    ╎   612   @Base/dict.jl:348; ht_keyindex2!(::Dict{Array{UInt64,1},Int64}, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎    592   @Base/dict.jl:202; rehash!(::Dict{Array{UInt64,1},Int64}, ::Int64)
+    ╎    ╎    ╎    ╎     592   @Base/dict.jl:168; hashindex
+    ╎    ╎    ╎    ╎    ╎ 592   @Base/hashing.jl:18; hash
+  30╎    ╎    ╎    ╎    ╎  366   @Base/abstractarray.jl:2298; hash(::Array{UInt64,1}, ::UInt64)
+   3╎    ╎    ╎    ╎    ╎   320   @Base/pair.jl:52; hash(::Pair{Int64,UInt64}, ::UInt64)
+    ╎    ╎    ╎    ╎    ╎    233   @Base/float.jl:571; hash
+    ╎    ╎    ╎    ╎    ╎     202   @Base/float.jl:568; hx
+    ╎    ╎    ╎    ╎  497   @Base/dict.jl:388; setindex!(::Dict{Array{UInt64,1},Int64}, ::Int64, ::Array{UInt64,1})
+    ╎    ╎    ╎    ╎   482   @Base/dict.jl:367; _setindex!
+    ╎    ╎    ╎    ╎    446   @Base/dict.jl:202; rehash!(::Dict{Array{UInt64,1},Int64}, ::Int64)
+    ╎    ╎    ╎    ╎     446   @Base/dict.jl:168; hashindex
+    ╎    ╎    ╎    ╎    ╎ 446   @Base/hashing.jl:18; hash
+  16╎    ╎    ╎    ╎    ╎  271   @Base/abstractarray.jl:2298; hash(::Array{UInt64,1}, ::UInt64)
+   5╎    ╎    ╎    ╎    ╎   250   @Base/pair.jl:52; hash(::Pair{Int64,UInt64}, ::UInt64)
+    ╎    ╎    914   @SmartParser/src/MFS.jl:17; MFS(::Array{UInt64,1}; Lmin::Int64, Lmax::Int64)
+    ╎    ╎     907   @Base/array.jl:684; collect
+    ╎    ╎    ╎ 902   @Base/array.jl:751; grow_to!(::Array{Array{UnitRange{Int64},1},1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#55#63",Dict{Array{UInt64,1},Int64}},SmartParser.var"#54#62"{Array{UInt64,1}}})
+    ╎    ╎    ╎  884   @Base/array.jl:778; grow_to!(::Array{Array{UnitRange{Int64},1},1}, ::Base.Generator{Base.Iterators.Filter{SmartParser.var"#55#63",Dict{Array{UInt64,1},Int64}},SmartParser.var"#54#62"{Array{UInt64,1}}}, ::Int64)
+    ╎    ╎    ╎   836   @Base/generator.jl:47; iterate
+    ╎    ╎    ╎    836   none:0; #54
+   1╎    ╎    ╎     836   @SmartParser/src/substring.jl:33; nonoverlapping
+   2╎    ╎    ╎    ╎ 690   @SmartParser/src/substring.jl:27; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
+    ╎    ╎    ╎    ╎  326   @SmartParser/src/substring.jl:24; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
+  60╎    ╎    ╎    ╎   323   @SmartParser/src/substring.jl:17; seek_pos_R(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
+   1╎    ╎    ╎    ╎  263   @SmartParser/src/substring.jl:27; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
+    ╎    ╎   344   @SmartParser/src/find_block.jl:116; fold_block(::Multiline, ::Array{UnitRange{Int64},1})
+    ╎    2048  @SmartParser/test/optimize.jl:16; build_structure_tree(::String)
+    ╎     2048  @SmartParser/src/find_block.jl:188; loop_correct_1_1_until_stable
+    ╎    ╎ 1943  @SmartParser/src/find_block.jl:91; loop_until_stable__(::Multiline, ::typeof(correct_1_1))
+    ╎    ╎  210   @SmartParser/src/find_block.jl:170; correct_1_1(::Multiline)
+    ╎    ╎   210   @SmartParser/src/Tree.jl:50; max_depth
+  11╎    ╎    210   @SmartParser/src/Tree.jl:29; DFS(::Multiline, ::SmartParser.var"#20#23", ::SmartParser.var"#21#24", ::SmartParser.var"#22#25")
+  16╎    ╎  1708  @SmartParser/src/find_block.jl:176; correct_1_1(::Multiline)
+  16╎    ╎   1531  @Base/array.jl:691; collect(::Base.Generator{Array{Block,1},SmartParser.var"#76#79"{SmartParser.var"#condx#78"}})
+    ╎    ╎    1506  @Base/array.jl:710; collect_to_with_first!(::Array{Array{Singleline,1},1}, ::Array{Singleline,1}, ::Base.Generator{Array{Block,1},SmartParser.var"#76#79"{SmartParser.var"#condx#78"}}, ::Int64)
+  13╎    ╎     1298  @Base/array.jl:740; collect_to!(::Array{Array{Singleline,1},1}, ::Base.Generator{Array{Block,1},SmartParser.var"#76#79"{SmartParser.var"#condx#78"}}, ::Int64, ::Int64)
+    ╎    ╎    ╎ 1279  @Base/array.jl:732; collect_to!(::Array{Array{T,1} where T,1}, ::Base.Generator{Array{Block,1},SmartParser.var"#76#79"{SmartParser.var"#condx#78"}}, ::Int64, ::Int64)
+    ╎    ╎    ╎  1279  @Base/generator.jl:47; iterate
+  11╎    ╎    ╎   1279  none:0; (::SmartParser.var"#76#79"{SmartParser.var"#condx#78"})(::Multiline)
+    ╎    ╎    ╎    519   @Base/broadcast.jl:837; materialize(::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Nothing,typeof(correct_1_1),Tuple{Array{Block,1}}})
+  69╎    ╎    ╎     517   @Base/broadcast.jl:880; copy
+  18╎    ╎    ╎    ╎ 440   @Base/broadcast.jl:1033; copyto_nonleaf!(::Array{Multiline,1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(correct_1_1),Tuple{Base.Broadcast.Extruded{Array{Block,1},Tuple{Bool},Tuple{Int64}}}}, ::Base.OneTo{Int64}, ::Int64, ::Int64)
+    ╎    ╎    ╎    ╎  421   @Base/broadcast.jl:1017; restart_copyto_nonleaf!(::Array{Block,1}, ::Array{Multiline,1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(correct_1_1),Tuple{Base.Broadcast.Extruded{Array{Block,1},Tuple{Bool},Tuple{Int64}}}}, ::Singleline, ::Int64, ::Base.OneTo{Int64}, ::Int64, ::Int64)
+    ╎    ╎    ╎    ╎   421   @Base/broadcast.jl:1026; copyto_nonleaf!(::Array{Block,1}, ::Base.Broadcast.Broadcasted{Base.Broadcast.DefaultArrayStyle{1},Tuple{Base.OneTo{Int64}},typeof(correct_1_1),Tuple{Base.Broadcast.Extruded{Array{Block,1},Tuple{Bool},Tuple{Int64}}}}, ::Base.OneTo{Int64}, ::Int64, ::Int64)
+    ╎    ╎    ╎    ╎    421   @Base/broadcast.jl:575; getindex
+    ╎    ╎    ╎    ╎     421   @Base/broadcast.jl:621; _broadcast_getindex
+    ╎    ╎    ╎    ╎    ╎ 421   @Base/broadcast.jl:648; _broadcast_getindex_evalf
+  21╎    ╎    ╎    ╎    ╎  392   @SmartParser/src/find_block.jl:176; correct_1_1(::Multiline)
+  30╎    ╎    ╎    612   @SmartParser/src/find_block.jl:176; correct_1_1(::Multiline)
+  10╎    ╎    ╎     475   /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/SparseArrays/src/sparsevector.jl:1070; vcat(::Array{Singleline,1}, ::Array{Multiline,1}, ::Array{Singleline,1}, ::Vararg{Array{T,1} where T,N} where N)
+ 163╎    ╎    ╎    ╎ 208   @Base/abstractarray.jl:1453; typed_vcat(::Type{Block}, ::Array{Singleline,1}, ::Array{Multiline,1}, ::Array{Singleline,1}, ::Vararg{Union{AbstractArray{T,1}, AbstractArray{T,2}} where T,N} where N)
+    ╎    ╎    ╎    ╎ 249   @Base/compiler/typeinfer.jl:601; typeinf_ext(::Core.MethodInstance, ::UInt64)
+    ╎    ╎    ╎    ╎  249   @Base/compiler/typeinfer.jl:570; typeinf_ext(::Core.MethodInstance, ::Core.Compiler.Params)
+    ╎    ╎    ╎    ╎   249   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    249   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎     249   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎ 249   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎  249   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎   249   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    249   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎     248   @Base/compiler/abstractinterpretation.jl:111; abstract_call_gf_by_type(::Any, ::Array{Any,1}, ::Any, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎ 248   @Base/compiler/abstractinterpretation.jl:419; abstract_call_method(::Method, ::Any, ::Core.SimpleVector, ::Bool, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎  247   @Base/compiler/typeinfer.jl:484; typeinf_edge(::Method, ::Any, ::Core.SimpleVector, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎   234   @Base/compiler/typeinfer.jl:12; typeinf(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    234   @Base/compiler/abstractinterpretation.jl:1326; typeinf_nocycle(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎     205   @Base/compiler/abstractinterpretation.jl:1270; typeinf_local(::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎ 205   @Base/compiler/abstractinterpretation.jl:1005; abstract_eval(::Any, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎  205   @Base/compiler/abstractinterpretation.jl:911; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎   205   @Base/compiler/abstractinterpretation.jl:926; abstract_call(::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+    ╎    ╎    ╎    ╎    ╎    ╎    ╎    204   @Base/compiler/abstractinterpretation.jl:904; abstract_call_known(::Any, ::Array{Any,1}, ::Array{Any,1}, ::Array{Any,1}, ::Core.Compiler.InferenceState, ::Int64)
+Total snapshots: 20320

@@ -10,26 +10,27 @@ function build_structure_tree(fn)
     end
     B = build_block_init(patts) ;
     B  = find_block(B) ;
-    B  = loop_correct_1_1_until_stable(B) ;
-    #B  = find_block(B) ;
     #B  = loop_correct_1_1_until_stable(B) ;
     return lines, lines1, B, code
 end
 
+RT = "/home/dabajabaza/jianguoyun/Workspace/SmartParser"
 
 fns = [
-    "./test/test4.pw.x.out" ,
-    "./test/test3.pwdry.x.out" ,
-    "./test/test1.pw.x.out" ,
-    "./test/test2.ph.x.out",
-    "./test/lammps.log" ,
+    ("$RT/test/test4.pw.x.out", :QE),
+    ("$RT/test/test3.pwdry.x.out", :QE) ,
+    ("$RT/test/test1.pw.x.out", :QE) ,
+    ("$RT/test/test2.ph.x.out", :QE),
+    ("$RT/test/lammps.log", :LAMMPS) ,
+    ("$RT/test/CALYPSO.log", :CALYPSO) ,
 ]
 
 
 DATA = []
 
 
-for fn in fns
+for fn_md in fns
+    (fn,md) = fn_md
     @info fn
     lines, lines1, B, code = build_structure_tree(fn) ;
     codeinv = revert(code) ;
@@ -40,3 +41,5 @@ for fn in fns
         write(f,join(NL,"\n"))
     end
 end
+
+##

@@ -1,10 +1,8 @@
-
 #: ----------- concat -----------
 concat0(a::UnitRange{Int}) = a
 concat0(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
 
 ##: ----------- helpers -----------
-
 
 @inline function correct_hash!(C::Vector)
     for i=1:length(C)
@@ -13,7 +11,6 @@ concat0(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
     end
     return
 end
-
 
 #@inline is_valid_C_oldver(C::Vector) = all([(c isa Block) for c ∈ C]) && all([last(C[i].x)+1==first(C[i+1].x) for i=1:length(C)-1])
 #@inline is_valid_C(C::Vector) = sum(Int[length(c.x) for c in C])==concat0(C[1].x,C[end].x)
@@ -84,21 +81,6 @@ function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})::Vector
     return merge_conseq_iden_blocks(C1)
 end
 
-
-function loop_until_stable__(M0::Multiline, f::Function)::Multiline
-    M = copy(M0)
-    R = M.R
-    M = f(M)
-    while R != M.R
-        R = M.R
-        M = f(M)
-        M.R = 0x0
-        M.R = hash(M)
-    end
-    return M
-end
-
-
 # correct the .x and .n field of M1 according to M
 function correct_x_n(M,M1)
     @assert first(M1.x) == first(M.x)
@@ -113,79 +95,25 @@ function correct_x_n(M,M1)
 end
 
 
-fold_block(b::Multiline, blocks::Vector{UnitRange{Int}})::Multiline = (length(blocks)>0 ? correct_x_n(b, Multiline(fold_C_by_blks(children(b), blocks))) : b)
+fold_block(b::Multiline, blocks::Vector{UnitRange{Int}})::Multiline = (length(blocks)>0 
+        ? correct_x_n(b, Multiline(fold_C_by_blks(children(b), blocks))) 
+        : b)
+
+fold_block_MFS(x::Singleline) = x
+
+fold_block_MFS(x::Multiline) = fold_block(x, MFS(label.(children(x))))
 
 
 #: ----------- find blocks -----------
-
-
-function patterns_from_children(CD::Vector)::Vector{UnitRange{Int}}
-    if length(CD)==0  return []  end
-    H  = hash.(CD)
-    unique_chn_patts = unique([hash.(children(c)) for c in CD if (c isa Multiline)])
-    if length(unique_chn_patts)==0  return []  end
-    blocks = [nonoverlapping(p,H) for p ∈ unique_chn_patts]
-    ass = sortperm(blocks, by=length)
-    return blocks[last(ass)]
-end
-
-
-restructure_children(b::Singleline) = b
-
-
-restructure_children(b::Multiline) = fold_block(b, patterns_from_children(children(b)))
-
 
 find_block(b::Singleline) = b
 
 
 function find_block(b0::Multiline)::Multiline
-    b = restructure_children(copy(b0))
-
-    for i=1:length(children(b))
-        b.C[i] = loop_find_block_until_stable(b.C[i])
-    end
-
-    b.R = 0x0
-    b.R = hash(b)
-
-    L(x) = fold_block(x, MFS(label.(children(x))))
-    return loop_until_stable__(b, L)
+    b = fold_block_MFS(copy(b0))
+    b.C = find_block.(b.C)
+    return b
 end
-
-
-loop_find_block_until_stable(M::Singleline)::Singleline = M
-
-
-loop_find_block_until_stable(M::Multiline)::Multiline = loop_until_stable__(M, find_block)
-
-
-#: ---------- correct 1_1 ------------
-
-
-correct_1_1(b0::Singleline)::Singleline = b0
-
-
-function correct_1_1(b0::Multiline)::Multiline
-    maxd = max_depth(b0)
-    if b0.n>1  ||  maxd<3  ||  length(children(b0))==0  || all([(c isa Singleline) for c ∈ children(b0)])
-        return b0
-    elseif b0.n==1
-        if maxd >= 3
-            condx(xx) = ((xx isa Multiline) && (xx.n==1) && sum(typeof.(children(xx)).==Multiline)>20)
-            C   = vcat([(condx(c) ? correct_1_1.(children(c)) : [correct_1_1(c),]) for c ∈ children(b0)]...)
-            return correct_x_n(b0, Multiline(C))
-        else
-            return b0
-        end
-    else
-        @warn "b0.n=0 !!!"
-        return b0
-    end
-end
-
-
-loop_correct_1_1_until_stable(M::Multiline)::Multiline = loop_until_stable__(M, correct_1_1)
 
 
 #: ----------- init blocks -----------
@@ -237,6 +165,8 @@ function build_block_init(patts::Vector{Vector{Int}})
     return Multiline(merge_conseq_iden_blocks(A))
 
 end
+
+
 
 
 function typical_blocks(
