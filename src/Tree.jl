@@ -100,9 +100,9 @@ mutable struct Singleline <: Block
     R::UInt64          # pattern hash
     DATA
 end
-Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, patt, hash(patt), nothing)
-Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt), nothing)
-Singleline() = Singleline(0, 0:0, Int[], 0x0, nothing)
+Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, patt, hash(patt), [])
+Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt), [])
+Singleline() = Singleline(0, 0:0, Int[], 0x0, [])
 
 copy(s::Singleline) = Singleline(s.n, s.x, copy(s.p), s.R, copy(s.DATA))
 
