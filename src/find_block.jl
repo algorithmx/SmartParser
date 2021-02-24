@@ -24,7 +24,7 @@ function merge_conseq_iden_blocks(C::Vector)
     @assert is_valid_C(C)
     N   = length(C)
     C1  = []
-    T   = deepcopy(C[1])
+    T   = copy(C[1])
     pos = 2
     while pos<=N
         Cp = C[pos]
@@ -33,7 +33,7 @@ function merge_conseq_iden_blocks(C::Vector)
             T.R = 0x0
             T.R = hash(T)
             push!(C1, T)
-            T = deepcopy(Cp)
+            T = copy(Cp)
             pos += 1
             continue
         else # if h == T.R
@@ -45,15 +45,12 @@ function merge_conseq_iden_blocks(C::Vector)
             continue
         end
     end
-
     T.R = 0x0
     T.R = hash(T)
     push!(C1,T)
-
     correct_hash!(C1)
     @assert is_valid_C(C1)
     return C1
-
 end
 
 
@@ -88,7 +85,7 @@ end
 
 
 function loop_until_stable__(M0::Multiline, f::Function)
-    M = deepcopy(M0)
+    M = copy(M0)
     R = M.R
     M = f(M)
     while R != M.R
@@ -106,7 +103,7 @@ function correct_x_n(M,M1)
     @assert first(M1.x) == first(M.x)
     if M.n>1  @info "M1.x=$(M1.x) , M.x=$(M.x) , M.n=$(M.n)"  end
     @assert length(M1.x)*M.n == length(M.x)
-    M2 = deepcopy(M1)
+    M2 = copy(M1)
     M2.n = M1.n * M.n
     M2.x = M.x
     M2.R = 0x0
@@ -141,7 +138,7 @@ find_block(b::Singleline) = b
 
 
 function find_block(b0::Multiline)
-    b = restructure_children(deepcopy(b0))
+    b = restructure_children(copy(b0))
 
     for i=1:length(children(b))
         b.C[i] = loop_find_block_until_stable(b.C[i])

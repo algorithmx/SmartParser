@@ -72,9 +72,10 @@ end
 function load_file(fn)::Tuple{Vector{String},Vector{String},Vector{TPattern},Dict{String,Int}}
     if isfile(fn)
         S0 = read(fn,String) |> preprocess_raw_input
-        patts, code = tokenize(mask(S0))
+        @time MS0 = mask(S0)
+        patts, code = tokenize(MS0)
         lines = split(S0,"\n")
-        lines_masked = split(mask(S0),"\n")
+        lines_masked = split(MS0,"\n")
         return lines, lines_masked, patts, code
     else
         return String[], String[], TPattern[], Dict{String,Int}()

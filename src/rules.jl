@@ -20,12 +20,20 @@ global const QE_KEYWORDS = [
             for i ∈ ["PW","PWSCF","PH","SCF","CPU","PBC","FHI98PP", "pw\\.x", "fhi2upf\\.x", "ld1\\.x"] ] ...
 ]
 
+
+global const LAMMPS_KEYWORDS = [
+    r"\$\{\w+\}" => " __LAMMPSVAR__ ",
+
+]
+
 ##
 
 global const __NUM_TO_STERLING__ = [
+    r"\d+(\.\d+)\%"                                         => " __PERCENTAGE__ ",
+
     #: this substitution fucks up a lot of lines
     #: still in development
-    r"([+-]?\d+(\.\d*)?|[+-]?\d*\.\d+)((e|E)[+-]?\d+)?"     => "£",
+    r"(?<![\w])([+-]?\d+(\.\d*)?|[+-]?\d*\.\d+)((e|E)[+-]?\d+)?(?=[^\w]|$)"  => "£",
 
     #: aftermath of the number substitution
     "(£"   =>  "( £",
@@ -46,6 +54,8 @@ global const  MASK_RULES = [
 
     QE_KEYWORDS...,
 
+    LAMMPS_KEYWORDS...,
+
     #: note the white space !!!
     r"MD5\s*check sum\s*:\s*[a-f0-9]{32}"                   => " __CHKSUM__ ",
     r"point\s+group\s+[A-Za-z0-9\_]+(\s*\(m-3m\))?"         => " __POINTGROUP__ ",
@@ -58,20 +68,22 @@ global const  MASK_RULES = [
     r"(?<![A-Za-z_\-])Ry"                                   => " __Ry__ ",
     
     r"http\:\/(\/[^\^\/\s]+)+(\/)?"                         => " __URL__ ",       
-    r"((\/[^\^\/\s]+)+(\/)?|([^\^\/\s]+\/)+)"               => " __FULLPATH__ ",
+    r"(?<![0-9A-Za-z])((\/[^\^\/\s]+)+(\/)?|([^\^\/\s]+\/)+)(?=[^0-9A-Za-z]|$)"   => " __FULLPATH__ ",
 
     r"\(a\.u\.\)\^3"                                        => " __UNITVOLa__ ",
     r"a\.u\.\^3"                                            => " __UNITVOLb__ ",
     r"a\.u\."                                               => " __au__ ",
 
-    r"v(\.\d+){2,3}"                                        => " __VERSIONa__ ",
-    r"[^0-9\^\/\s\.\(\)]{1,20}\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z0-9]+"  => " __ABSPATH__ ", 
+    r"v(\.\d+){2,3}"                                        => " __QEVERSIONa__ ",
+    r"((\d+h\s*)?\d+m\s*)?\d+\.\d+s"                        => " __QEDURATION__ ",
+
+    #r"[^0-9\^\/\s\.\(\)][^\^\/\s\.\(\)]{1,20}\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z0-9]+"  => " __ABSPATH__ ", 
+    r"[^\^\/\s\.\(\)]{1,20}\w\.([^\^\/\s\.\(\)]{1,20}\.)*[A-Za-z0-9]+"  => " __ABSPATH__ ", 
 
     r"Ang\^3"                                               => " __UNITVOLc__ ",
     r"kbar"                                                 => " __UNITkbar__ ",
     r"\[cm-1\]"                                             => " __UNITCMINV__ ",
     
-    r"((\d+h\s*)?\d+m\s*)?\d+\.\d+s"                        => " __DURATION__ ",
     r"([01]?\d|2[0-3]):([0-5 ]?\d):([0-5 ]?\d)"             => " __HHMMSS__ ",
     r"[1-3 ]\d[A-Za-z]{2,9}(19|20)\d\d"                     => " __DATEa__ ",
     
@@ -83,14 +95,15 @@ global const  MASK_RULES = [
     __CHEMFORMULA__rstr__ => " __CHEM__ ",
     ##//__CHEMELEM__rstr__ => " __CHEMELEM__ ",
 
-    r"(?<![0-9A-Za-z_\-])[ABTE]\'*\_[1-5]?[ug](?=[^0-9A-Za-z_\-])"                      => " __REPSYMBOL__ " ,
-    r"(?<![0-9A-Za-z_\-])([23468]?[CS][2346]'?|i|E|[2346]s_[hd])(?=[^0-9A-Za-z_\-])"    => " __GRPSYMBOL__ " ,
-    r"(?<![0-9A-Za-z_\-])[1-6][SsPpDdFf](?=[^0-9A-Za-z_\-])"                            => " __ATOMORBIT__ ",
+    r"(?<![0-9A-Za-z_\-])[ABTE]\'*\_[1-5]?[ug](?=[^0-9A-Za-z_\-]|$)"                    => " __REPSYMBOL__ " ,
+    r"(?<![0-9A-Za-z_\-])([23468]?[CS][2346]'?|i|E|[2346]s_[hd])(?=[^0-9A-Za-z_\-]|$)"  => " __GRPSYMBOL__ " ,
+    r"(?<![0-9A-Za-z_\-\/])[1-6][SsPpDdFf](?=[^0-9A-Za-z_\-\/]|$)"                      => " __ATOMORBIT__ ",
 
-    r"[^\_\\\/\%\s]+(\_[^\_\\\/\%\s]+)+"  =>  " __SYMBOL__ ",
+    __NUM_TO_STERLING__...,
 
-    __NUM_TO_STERLING__...
-
+    r"[^\_\\\/\%\s]+(\_[^\_\\\/\%\s]+)+"                    => " __SYMBOLtypeA__ ",
+    r"[A-Za-z]+\d+[A-Za-z]*"                                => " __SYMBOLtypeB__ ",  #: this is rather unfortunate
+    r"[A-Za-z]*\d+[A-Za-z]+"                                => " __SYMBOLtypeC__ ",  #: this is rather unfortunate
 ]
 
 
@@ -104,11 +117,12 @@ global const __preproc__ = [
     r"\#(\s*\d+): " => s"# \1 : ", 
     r" (\d+\s*)\*(\s*\d+) " => s" \1 * \2 ", 
     r"([\<\>\=\+\-\*])(\d+)([\*\+\-])" => s"\1 \2 \3",
+    r"(\d)ns(?=[^0-9A-Za-z])"=> s"\1 ns ",
     #r" hinit(\d+) " => s" hinit \1 ", 
     #r" dynmat(\d+) " => s" dynmat \1 ", 
     #r" d(\d+)ionq " => s" d \1 ionq ", 
     #"h,s,v(r/c)" => "h,s,v( r / c )", 
     #"wfcinit/wfcrot" => "wfcinit / wfcrot", 
-    "atoms/cell" => "atoms / cell", 
-    "proc/nbgrp/npool/nimage" => " proc / nbgrp / npool / nimage ", 
+    #"atoms/cell" => "atoms / cell", 
+    #"proc/nbgrp/npool/nimage" => " proc / nbgrp / npool / nimage ", 
 ]

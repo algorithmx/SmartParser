@@ -8,7 +8,7 @@ end
 
 
 function parse_file(t::Multiline, lines::Vector{String}, lines1::Vector{String}, codeinv)
-    t1 = deepcopy(t)
+    t1 = copy(t)
     t1.C = [parse_file(c, lines, lines1, codeinv) for c ∈ children(t)]
     return t1
 end
@@ -37,7 +37,7 @@ function parse_file(t::Singleline, lines::Vector{String}, lines1::Vector{String}
         push!(data, dt)
     end
 
-    t1 = deepcopy(t)
+    t1 = copy(t)
     t1.DATA = data
     return t1
 end

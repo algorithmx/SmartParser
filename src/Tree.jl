@@ -104,7 +104,7 @@ Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, p
 Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt), nothing)
 Singleline() = Singleline(0, 0:0, Int[], 0x0, nothing)
 
-copy(s::Singleline) = Singleline(s.n, s.x, s.p, s.R, s.DATA)
+copy(s::Singleline) = Singleline(s.n, s.x, copy(s.p), s.R, copy(s.DATA))
 
 isequal(s1::Singleline,s2::Singleline) = (s1.n==s2.n && s1.R==s2.R)
 

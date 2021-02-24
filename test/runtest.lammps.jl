@@ -69,8 +69,16 @@ end
 
 
 fns = [
+    "./test/test4.pw.x.out" ,
+    "./test/test3.pwdry.x.out" ,
+    "./test/test1.pw.x.out" ,
+    "./test/test2.ph.x.out",
     "./test/lammps.log" ,
 ]
+
+
+DATA = []
+
 
 for fn in fns
     @info fn
@@ -83,40 +91,3 @@ for fn in fns
         write(f,join(NL,"\n"))
     end
 end
-
-
-##
-#=
-
-blks = block_by_kw(DATA[3][1], "£") ;
-blks = block_by_kw(DATA[3][1], "__CHEM__") ;
-blks = block_by_kw(DATA[3][1], "__SYMBOL__") ;
-
-##
-
-
-#
-
-Bt = typical_blocks(BDATA, M=1) ;
-
-##
-
-for i=1:length(Bt)
-    block_print(Bt[i], lines1, offset=0) ;
-end
-
-##
-
-
-collect_action_dfs(Bt[5], x->((x isa Singleline) ? x.p : Int[-1]))
-
-collect_action_dfs(Bt[2], hash)
-
-##
-
-
-similarity(Bt[26], Bt[27])
-
-##
-
-=#
