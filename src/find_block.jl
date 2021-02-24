@@ -20,11 +20,11 @@ end
 @inline is_valid_C(C::Vector) = mapreduce(c->length(getfield(c,:x)), +, C)==length(concat0(C[1].x,C[end].x))
 
 # 
-function merge_conseq_iden_blocks(C::Vector)
+function merge_conseq_iden_blocks(C::Vector)::Vector
     if length(C)==0   return []   end
     @assert is_valid_C(C)
     N   = length(C)
-    C1  = []
+    C1  = Block[]
     T   = copy(C[1])
     pos = 2
     while pos<=N
@@ -55,7 +55,7 @@ function merge_conseq_iden_blocks(C::Vector)
 end
 
 
-function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
+function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})::Vector
 
     if length(blocks)==0 || length(C)==0  return C  end
 
@@ -63,7 +63,7 @@ function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
     B  = Set(vcat(collect.(blocks)...))
     @assert length(B)==sum(length.(blocks)) "blocks=$(blocks) overlapping !!!" #!! FIXME 
     NC = length(C)
-    C1 = []
+    C1 = Block[]
 
     i  = 1
     while i<=NC
@@ -85,7 +85,7 @@ function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
 end
 
 
-function loop_until_stable__(M0::Multiline, f::Function)
+function loop_until_stable__(M0::Multiline, f::Function)::Multiline
     M = copy(M0)
     R = M.R
     M = f(M)
@@ -102,7 +102,7 @@ end
 # correct the .x and .n field of M1 according to M
 function correct_x_n(M,M1)
     @assert first(M1.x) == first(M.x)
-    if M.n>1  @info "M1.x=$(M1.x) , M.x=$(M.x) , M.n=$(M.n)"  end
+    ##//if M.n>1  @info "M1.x=$(M1.x) , M.x=$(M.x) , M.n=$(M.n)"  end
     @assert length(M1.x)*M.n == length(M.x)
     M2 = copy(M1)
     M2.n = M1.n * M.n
@@ -113,7 +113,7 @@ function correct_x_n(M,M1)
 end
 
 
-fold_block(b::Multiline, blocks) = (length(blocks)>0 ? correct_x_n(b, Multiline(fold_C_by_blks(children(b), blocks))) : b)
+fold_block(b::Multiline, blocks::Vector{UnitRange{Int}})::Multiline = (length(blocks)>0 ? correct_x_n(b, Multiline(fold_C_by_blks(children(b), blocks))) : b)
 
 
 #: ----------- find blocks -----------
@@ -139,7 +139,7 @@ restructure_children(b::Multiline) = fold_block(b, patterns_from_children(childr
 find_block(b::Singleline) = b
 
 
-function find_block(b0::Multiline)
+function find_block(b0::Multiline)::Multiline
     b = restructure_children(copy(b0))
 
     for i=1:length(children(b))
@@ -154,19 +154,19 @@ function find_block(b0::Multiline)
 end
 
 
-loop_find_block_until_stable(M::Singleline) = M
+loop_find_block_until_stable(M::Singleline)::Singleline = M
 
 
-loop_find_block_until_stable(M::Multiline) = loop_until_stable__(M, find_block)
+loop_find_block_until_stable(M::Multiline)::Multiline = loop_until_stable__(M, find_block)
 
 
 #: ---------- correct 1_1 ------------
 
 
-correct_1_1(b0::Singleline) = b0
+correct_1_1(b0::Singleline)::Singleline = b0
 
 
-function correct_1_1(b0::Multiline)
+function correct_1_1(b0::Multiline)::Multiline
     maxd = max_depth(b0)
     if b0.n>1  ||  maxd<3  ||  length(children(b0))==0  || all([(c isa Singleline) for c ∈ children(b0)])
         return b0
@@ -185,7 +185,7 @@ function correct_1_1(b0::Multiline)
 end
 
 
-loop_correct_1_1_until_stable(M::Multiline) = loop_until_stable__(M, correct_1_1)
+loop_correct_1_1_until_stable(M::Multiline)::Multiline = loop_until_stable__(M, correct_1_1)
 
 
 #: ----------- init blocks -----------
@@ -209,7 +209,7 @@ function build_block_init(patts::Vector{Vector{Int}})
         if p==Int[]  # current line is empty
             if length(S)>0
                 #: destack
-                TMP  = []
+                TMP  = Block[]
                 while length(S)>0 && top(S)[1]==L
                     t = pop!(S)
                     push!(TMP, t[2])

@@ -26,7 +26,7 @@ function nonoverlapping(substr::Vector{UInt64}, fullstr::Vector{UInt64}, posL_st
         Nsub = length(substr)
         return [nonoverlapping(substr, fullstr, q-Nsub); [q:q+Nsub-1,]]
     else
-        return []
+        return UnitRange{Int}[]
     end
 end
 
