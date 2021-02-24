@@ -21,6 +21,7 @@ end
 
 # 
 function merge_conseq_iden_blocks(C::Vector)
+    if length(C)==0   return []   end
     @assert is_valid_C(C)
     N   = length(C)
     C1  = []
@@ -56,7 +57,7 @@ end
 
 function fold_C_by_blks(C::Vector, blocks::Vector{UnitRange{Int}})
 
-    if length(blocks)==0  return C  end
+    if length(blocks)==0 || length(C)==0  return C  end
 
     #:  @assert is_valid_C(C)
     B  = Set(vcat(collect.(blocks)...))
@@ -118,7 +119,8 @@ fold_block(b::Multiline, blocks) = (length(blocks)>0 ? correct_x_n(b, Multiline(
 #: ----------- find blocks -----------
 
 
-function patterns_from_children(CD::Vector)
+function patterns_from_children(CD::Vector)::Vector{UnitRange{Int}}
+    if length(CD)==0  return []  end
     H  = hash.(CD)
     unique_chn_patts = unique([hash.(children(c)) for c in CD if (c isa Multiline)])
     if length(unique_chn_patts)==0  return []  end
