@@ -1,4 +1,4 @@
-function findfirst_spec(l::S, spec0)::UnitRange{Int} where {S<:AbstractString}
+function findfirst_spec(l::S, spec0)::IntRange where {S<:AbstractString}
     spec = string(spec0)
     #: note the white space
     k = ((" "*spec*" " ∈ keys(MASK_RULES_DIC_INV)) ? MASK_RULES_DIC_INV[" "*spec*" "] : (spec=="£" ? MASK_RULES_DIC_INV["£"] : spec))

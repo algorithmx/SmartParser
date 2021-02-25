@@ -17,7 +17,7 @@ global const QE_KEYWORDS = [
 
     # really stupid but they are NOT chemical formulae
     [Regex("(?<![0-9A-Za-z_\\-])$i(?=[^0-9A-Za-z_\\-\\n])")  =>  " __KW$(replace(i,r"(\\\.|\d)"=>""))__ " 
-            for i ∈ ["PW","PWSCF","PH","SCF","CPU","PBC","INF","FHI98PP", "pw\\.x", "fhi2upf\\.x", "ld1\\.x"] ] ...
+            for i ∈ ["PW","PWSCF","PH","SCF","CPU","PBC","INF","FHI98PP", "pw\\.x", "fhi2upf\\.x", "ld1\\.x", "calypso\\.x", "vasp\\.x"] ] ...
 ]
 
 

@@ -1,43 +1,30 @@
-function increaseindex!(h::Dict{K,Int}, key::K) where K
-    index = Base.ht_keyindex2!(h, key)
-    if index > 0
-        h.age += 1
-        #@inbounds v0 = h.vals[index]
-        @inbounds h.keys[index] = key
-        @inbounds h.vals[index] += 1
-    else
-        @inbounds Base._setindex!(h, 1, key, -index)
-    end
-    return 
-end
-
 # findall the elements l in L satisfying c(l)==true and have unique value of u(l), then map f() to them
 @inline processelemif(p,c,L) = for el ∈ L if c(el) p(el); end end
 
-non_empty_non_999999999_1(s) = (s!=[])&&(s!=__patt__all_number_line__)
-non_empty_non_999999999(s) = (length(s)>1 || !(isempty(s) || s==__patt__all_number_line__))
+# see line *1 in tokenize.jl
+#+ TODO it is wrong 
+#non_empty_non_999999999(s) = (length(s)>1 || !(isempty(s) || s==__PATT__all_number_line__))
+non_empty_non_999999999(s) = (s!=__M0_HASH__ && s!=__HASH__all_number_line__)
 
-#+ shorter ! faster !
-function MFS(str::Vector{UInt64}; Lmin=2, Lmax=80)::Vector{UnitRange{Int}}
+function MostFreqSubsq(str::Vector{UInt64}; Lmin=2, Lmax=80)::Vector{IntRange}
     if allunique(str)  return []  end
 
     N = length(str)
     # most apperance >> longest range >> earliest appearance
     sortf(x) = 100000*length(x) + length(x[1]) + (0.8*x[1][1]/N)
-    RES = Vector{UnitRange{Int}}[]
+    RES = Vector{IntRange}[]
     B = nothing
     for l=Lmin:min(Lmax,N÷2)
         minL = min(2,l-1)
         U = Dict{Vector{UInt64},Int}()
         # updU(i) = ((str[i:i+l-1] ∈ keys(U)) ? U[str[i:i+l-1]]+=1 : U[str[i:i+l-1]]=1)  
-        updU(i) = increaseindex!(U, str[i:i+l-1])  #: dict for num of repetitions  #: improved 2x faster
-        #: record the unique substrings by num of reps
-        #: see line *1 in tokenize.jl
-        crit_i(i) = any(non_empty_non_999999999, str[i:i+l-1])
-        #! optimized, 3x faster
-        #processelemif(updU, i->length(unique(str[i:i+l-1]))>minL, 1:N-l+1) ;  #: non-optimal version
+        updU(i) = increaseindex!(U, str[i:i+l-1])  # dict for num of repetitions  #: improved 2x faster
+        # record the unique substrings by num of reps
+        # see line *1 in tokenize.jl
+        #crit_i = i->length(unique(str[i:i+l-1]))>minL  # non-optimal version 
+        crit_i(i) = any(non_empty_non_999999999, str[i:i+l-1]) #: optimized, 3x faster
         processelemif(updU, crit_i, 1:N-l+1) ;  
-        all_blk_l = Vector{UnitRange{Int}}[]
+        all_blk_l = Vector{IntRange}[]
         for (s,m) ∈ U
             if m>1
                 B = nonoverlapping(s,str)
@@ -61,6 +48,6 @@ end
 #comp_each_char(t2, 1, t1, 4)
 #nonoverlapping(t2,t1)
 #nonoverlapping(t1[rep[1]], t1)
-#@time rep = MFS(t1,Lmax=100)
-#@time rep1 = MFSv1(t1)
+#@time rep = MostFreqSubsq(t1,Lmax=100)
+#@time rep1 = MostFreqSubsqv1(t1)
 

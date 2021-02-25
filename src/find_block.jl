@@ -1,14 +1,13 @@
 #: ====================== concat  =====================
 
-concat0(a::UnitRange{Int}) = a
-concat0(a::UnitRange{Int},b::UnitRange{Int}) = first(a):last(b)
+concat0(a::IntRange) = a
+concat0(a::IntRange,b::IntRange) = first(a):last(b)
 
 
 ##: ===================== helpers =====================
 
 @inline function correct_R!(C::Vector{Block{TR}})  where TR
     for i=1:length(C)
-        C[i].R = 0x0
         C[i].R = compute_label(C[i])
     end
     return
@@ -61,7 +60,7 @@ end
 
 function fold_C_by_blks(
     C::Vector{Block{TR}}, 
-    blocks::Vector{UnitRange{Int}}
+    blocks::Vector{IntRange}
     )::Vector{Block{TR}}  where TR
 
     if length(blocks)==0 || length(C)==0  return C  end
@@ -104,21 +103,32 @@ function correct_x_n(M::Block{TR}, M1::Block{TR}) where TR
 end
 
 
-fold_block(b::Block, blocks::Vector{UnitRange{Int}})::Block = (length(blocks)>0 
+fold_block(b::Block, blocks::Vector{IntRange})::Block = (length(blocks)>0 
         ? correct_x_n(b, Block(fold_C_by_blks(children(b), blocks))) 
         : b)
 
+
+function merge_children(b::Block)::Block
+    C = merge_conseq_iden_blocks(children(b))
+    b1 = copy(b)
+    b1.C = C[:]
+    return b1
+end
+
 #: ----------- find blocks -----------
 
-find_block_MFS(x::Block)::Block = (is_single(x) ? x : fold_block(x, MFS(label.(children(x)))))
+find_block(x::Block; block_identifier=MostFreqSubsq)::Block = (is_single(x) ? x : fold_block(x, block_identifier(label.(children(x)))))
 
+find_block_MostFreqSubsq(x::Block) = find_block(x; block_identifier=MostFreqSubsq)
+
+find_block_MostFreqSimilarSubsq(x::Block) = find_block(x; block_identifier=MostFreqSimilarSubsq)
 
 #: ----------- init blocks -----------
 
 
 # assuming that each "logical block" is terminated by an empty line
 function build_block_init(patts::Vector{TPattern})
-    Q = Int[]   #  previous pattern
+    Q = empty_TPattern()   #  previous pattern
     S = Stack{Tuple{Int,Block{__DEFAULT__RTYPE__}}}()
     L = 0   #  level
     for (i,p) ∈ enumerate(patts)

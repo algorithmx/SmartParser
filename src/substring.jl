@@ -1,4 +1,4 @@
-@inline function comp_each_char(s1, i1::Int, s2, i2::Int)
+@inline function comp_each_char(s1::Vector{TR}, i1::Int, s2::Vector{TR}, i2::Int) where TR
     n1 = length(s1)
     j = 0 
     while j < n1
@@ -13,33 +13,37 @@ end
 # starts from posL_str in str
 # if not found return -1
 function find_pos_from_right(
-    substr::Vector{UInt64}, 
-    fullstr::Vector{UInt64}, 
+    substr::Vector{TR}, 
+    fullstr::Vector{TR}, 
     posL_str::Int; 
     compare_func=comp_each_char
-    )::Int
+    )::Int  where  TR
+
     for p ∈ posL_str:-1:1
         if compare_func(substr,1,fullstr,p)  return p   end
     end
     return -1
+
 end
 
 
 function nonoverlapping(
-    substr::Vector{UInt64}, 
-    fullstr::Vector{UInt64}, 
+    substr::Vector{TR}, 
+    fullstr::Vector{TR}, 
     posL_str::Int;
     compare_func=comp_each_char
-    )::Vector{UnitRange{Int}}
+    )::Vector{IntRange}  where  TR
+
     q = find_pos_from_right(substr, fullstr, posL_str, compare_func=compare_func)
     if q > 0
         Nsub = length(substr)
         return [nonoverlapping(substr, fullstr, q-Nsub, compare_func=compare_func)..., q:q+Nsub-1]
     else
-        return UnitRange{Int}[]
+        return IntRange[]
     end
+
 end
 
 
-@inline nonoverlapping(substr::Vector{UInt64}, fullstr::Vector{UInt64}; compare_func=comp_each_char) = 
+@inline nonoverlapping(substr::Vector{TR}, fullstr::Vector{TR}; compare_func=comp_each_char) where TR = 
     nonoverlapping(substr, fullstr, length(fullstr)-length(substr)+1, compare_func=compare_func)

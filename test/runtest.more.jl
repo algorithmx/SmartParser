@@ -8,9 +8,10 @@ function build_structure_tree(fn)
     if length(lines)==0
         return String[], String[], Multiline(), code
     end
-    B = build_block_init(patts) ;
-    B  = find_block_MFS(B) ;
-    #B  = loop_correct_1_1_until_stable(B) ;
+    B = ( build_block_init(patts) 
+            |> find_block_MostFreqSimilarSubsq |> merge_children 
+                |> find_block_MostFreqSimilarSubsq |> merge_children 
+                    |> find_block_MostFreqSimilarSubsq |> merge_children ) ;
     return lines, lines1, B, code
 end
 

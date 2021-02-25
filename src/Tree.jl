@@ -85,18 +85,13 @@ end
 #: specially designed tree 
 ##: ------------------------------------------------
 
-TPattern = Vector{Int}
-# reserved token 999999999 for all number line
-# used by tokenize
-global const __patt__all_number_line__ = [999999999]
-
 import Base.copy
 import Base.isequal
 
 #: ------------  Block  -------------
 mutable struct Block{TR} <: AbstractTree
     n::Int                # number of repetitions
-    x::UnitRange{Int}     # 
+    x::IntRange     # 
     p::TPattern           # pattern
     R::TR                 # identifier, can be pattern hash, or DFS traverse data
     C::Vector{Block{TR}}
@@ -111,26 +106,22 @@ is_multi(s::Block{TR}) where TR = length(s.C)>0
 
 is_single(s::Block{TR}) where TR = length(s.C)==0
 
+@inline patt_dfs(t::Block) = collect_action_dfs(t, x->(is_single(x) ? x.p : __M1_PATT__))
+
+@inline patt_bfs(t::Block) = collect_action_bfs(t, x->(is_single(x) ? x.p : __M1_PATT__))
+
 #: ----------- hash -----------
 
-import Base.hash
-
-hash(b::Block)::UInt64 = (is_single(b) ? (b.R==0x00 ? hash(b.p) : b.R) : (b.R==0x00 ? hash(hash.(b.C)) : b.R))
-khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p) : hash(hash.(b.C)))
-
+khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p) : hash(khash.(b.C)))
 
 #+ ======== compute_label ========
 
-compute_label(b::Block) = khash(b)
+#compute_label(b::Block) = khash(b)
+compute_label(b::Block) = (khash(b), patt_dfs(b))
 
-#+ ============================
+#+ ===============================
 
-global const __DEFAULT__R__ = UInt64(0x0)
-global const __DEFAULT__RTYPE__ = typeof(__DEFAULT__R__)
-global const __DEFAULT_PATT__ = Int[]
-
-
-function Block(patt::TPattern, rg::UnitRange{Int})
+function Block(patt::TPattern, rg::IntRange)
     b = Block{__DEFAULT__RTYPE__}(length(rg), rg, patt, __DEFAULT__R__, Block{__DEFAULT__RTYPE__}[], [])
     b.R = compute_label(b)
     return b
