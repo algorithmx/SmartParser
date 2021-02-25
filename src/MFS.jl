@@ -11,8 +11,6 @@ function increaseindex!(h::Dict{K,Int}, key::K) where K
     return 
 end
 
-#//@inline processelemif(p,c,L) = ([(p(el); nothing) for el ∈ L if c(el)] ; nothing)
-#//@inline len1p(L) = L[length.(L).>1]
 # findall the elements l in L satisfying c(l)==true and have unique value of u(l), then map f() to them
 @inline processelemif(p,c,L) = for el ∈ L if c(el) p(el); end end
 
@@ -59,8 +57,8 @@ end
 
 
 #t1 = UInt64[rand(1:1000,2000); [1, 2,3, 4, 2,3, 2,3, 4]; rand(1:1000,2000)] ;
-#comps(t2, 1, t1, 2)
-#comps(t2, 1, t1, 4)
+#comp_each_char(t2, 1, t1, 2)
+#comp_each_char(t2, 1, t1, 4)
 #nonoverlapping(t2,t1)
 #nonoverlapping(t1[rep[1]], t1)
 #@time rep = MFS(t1,Lmax=100)

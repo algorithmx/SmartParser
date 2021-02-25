@@ -9,7 +9,7 @@ function build_structure_tree(fn)
         return String[], String[], Multiline(), code
     end
     B = build_block_init(patts) ;
-    B  = find_block(B) ;
+    B  = find_block_MFS(B) ;
     #B  = loop_correct_1_1_until_stable(B) ;
     return lines, lines1, B, code
 end

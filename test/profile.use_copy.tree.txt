@@ -301,7 +301,7 @@ Overhead ╎ [+additional indent] Count File:Line; Function
    1╎    ╎    ╎     836   @SmartParser/src/substring.jl:33; nonoverlapping
    2╎    ╎    ╎    ╎ 690   @SmartParser/src/substring.jl:27; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
     ╎    ╎    ╎    ╎  326   @SmartParser/src/substring.jl:24; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
-  60╎    ╎    ╎    ╎   323   @SmartParser/src/substring.jl:17; seek_pos_R(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
+  60╎    ╎    ╎    ╎   323   @SmartParser/src/substring.jl:17; find_pos_from_right(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
    1╎    ╎    ╎    ╎  263   @SmartParser/src/substring.jl:27; nonoverlapping(::Array{UInt64,1}, ::Array{UInt64,1}, ::Int64)
     ╎    ╎   344   @SmartParser/src/find_block.jl:116; fold_block(::Multiline, ::Array{UnitRange{Int64},1})
     ╎    2048  @SmartParser/test/optimize.jl:16; build_structure_tree(::String)

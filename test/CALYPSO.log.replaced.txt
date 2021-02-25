@@ -1,0 +1,5192 @@
+(1, 0x2616e0cd9e5f529b)
+|--(1, 0x5161f8aaf13a437c)
+|--|--  _______  _______  _              _______  _______  _______ 
+|--|-- (  ____ \(  ___  )( \   |\     /|(  ____ )(  ____ \(  ___  )
+|--|-- | (    \/| (   ) || (   ( \   / )| (    )|| (    \/| (   ) |
+|--|-- | |      | (___) || |    \ (_) / | (____)|| (_____ | |   | |
+|--|-- | |      |  ___  || |     \   /  |  _____)(_____  )| |   | |
+|--|-- | |      | (   ) || |      ) (   | (            ) || |   | |
+|--|-- | (____/\| )   ( || (____/\| |   | )      /\____) || (___) |
+|--|-- (_______/|/     \|(_______/\_/   |/       \_______)(_______)
+|--|-- Build £
+|--|--
+|--Program CALYPSO    __VERSIONa__       starts ...
+|--Today is  __DATEa__  at  __HHMMSS__  
+|-- £
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :   £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :   £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :   £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :   £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--  Step :  £
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :    £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :     £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      LPSO
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :  £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 
+|--    Nstru :    £
+|--      Random Structure
+|--(1, 0x820f5fe05222f7a8)
+|--|--      space group :   £
+|--|--           £           £
+|--|--      Volume :    £
+|--      vasp is killed by  __ABSPATH__ 

@@ -11,7 +11,7 @@ function block_print(
     @inline make_str(a, x, l) = join(a[getfield(x,:x)], "\n"*repeat(" ",length(header(l))))
     @inline tup_str(x,a...)   = string(([getfield(x,m) for m in a]...,))
     
-    f(x) = (push!(nl, header(level[end])*((x isa Singleline) 
+    f(x) = (push!(nl, header(level[end])*(is_single(x) 
                                             ? make_str(s,x,level[end]) 
                                             : tup_str(x,:n,:R))); 
             push!(level,level[end]+1);
@@ -27,4 +27,4 @@ function block_print(
 end
 
 
-treep(t) = tree_print(t, propfunc=x->(getfield(x,:n),label(x),((x isa Multiline) ? "M" : "S")), offset=0)
+treep(t) = tree_print(t, propfunc=x->(getfield(x,:n),label(x),(is_multi(x) ? "M" : "S")), offset=0)

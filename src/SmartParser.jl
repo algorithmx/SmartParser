@@ -15,7 +15,8 @@ export hash, copy, isequal
 export DFS
 export children, label, num_nodes, max_depth
 export collect_action_dfs, collect_action_bfs
-export Multiline, Singleline, Block
+export is_multi, is_single
+export Block
 include("Tree.jl")
 
 export nonoverlapping
@@ -25,8 +26,7 @@ export MFS
 include("MFS.jl")
 
 export restructure_children
-export loop_find_block_until_stable, find_block
-export correct_1_1, loop_correct_1_1_until_stable
+export find_block_MFS
 export build_block_init
 export typical_blocks
 include("find_block.jl")

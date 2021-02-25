@@ -23,24 +23,21 @@ end
 
 #: ==========================================================
 
-
-TPattern = Vector{Int}
-
-
 encode_line(l,dic) = Int[dic[w] for w ∈ split(l,r"[^\S\n\r]",keepempty=false)]
 
-# reserved token 999999999 for all number line
-global const __patt__all_number_line__ = [999999999]
 
-function tokenize(lines::Vector{S}, code::Dict{String,Int}) where {S<:AbstractString}
+function tokenize(
+    lines::Vector{S}, 
+    code::Dict{String,Int}
+    )::Vector{TPattern} where {S<:AbstractString}
     enc(l) = encode_line(l,code)
-    patts = Vector{Int}[]
+    patts = TPattern[]
     try 
         #: line *1
-        patts = Vector{Int}[((unique(p)==[0,]) ? __patt__all_number_line__ : p) for p ∈ enc.(lines)]
+        patts = TPattern[((unique(p)==[0,]) ? __patt__all_number_line__ : p) for p ∈ enc.(lines)]
     catch _e_
         @warn "tokenize failed."
-        return Vector{Int}[]
+        return TPattern[]
     end
     return patts
 end

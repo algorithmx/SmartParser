@@ -85,57 +85,68 @@ end
 #: specially designed tree 
 ##: ------------------------------------------------
 
+TPattern = Vector{Int}
+# reserved token 999999999 for all number line
+# used by tokenize
+global const __patt__all_number_line__ = [999999999]
+
 import Base.copy
 import Base.isequal
 
 #: ------------  Block  -------------
-abstract type Block <: AbstractTree end
-
-
-#: ----------- Singleline -----------
-mutable struct Singleline <: Block
-    n::Int             # number of repetitions
-    x::UnitRange{Int}  # 
-    p::Vector{Int}     # pattern
-    R::UInt64          # pattern hash
+mutable struct Block{TR} <: AbstractTree
+    n::Int                # number of repetitions
+    x::UnitRange{Int}     # 
+    p::TPattern           # pattern
+    R::TR                 # identifier, can be pattern hash, or DFS traverse data
+    C::Vector{Block{TR}}
     DATA
 end
-Singleline(patt::Vector{Int}, rg::UnitRange{Int}) = Singleline(length(rg), rg, patt, hash(patt), [])
-Singleline(patt::Vector{Int}, i::Int) = Singleline(1, i:i, patt, hash(patt), [])
-Singleline() = Singleline(0, 0:0, Int[], 0x0, [])
 
-copy(s::Singleline) = Singleline(s.n, s.x, copy(s.p), s.R, copy(s.DATA))
+copy(s::Block{TR}) where TR = Block{TR}(s.n, s.x, copy(s.p), copy(s.R), copy.(s.C), copy(s.DATA))
 
-isequal(s1::Singleline,s2::Singleline) = (s1.n==s2.n && s1.R==s2.R)
+isequal(s1::Block{TR},s2::Block{TR}) where TR = (s1.n==s2.n && s1.R==s2.R)
 
+is_multi(s::Block{TR}) where TR = length(s.C)>0
 
-#: ----------- Multiline -----------
-mutable struct Multiline <: Block
-    n::Int             # number of repetitions
-    x::UnitRange{Int}  # 
-    R::UInt64          # pattern hash
-    C::Vector          # children
-end
-Multiline() = Multiline(0,0:0,0x0,[])
-function Multiline(C::Vector)
-    if length(C)==1  return C[1]  end
-    #rr = [t.x for t ∈ C]
-    #rconcat = concat0(rr[1],rr[end])
-    #@assert sum(length.(rr)) == length(rconcat)
-    rconcat = concat0(C[1].x, C[end].x)
-    T = Multiline(1, rconcat, 0x0, C)
-    T.R = hash(T)
-    return T
-end
-
-copy(s::Multiline) = Multiline(s.n, s.x, s.R, copy.(s.C))
-
-isequal(s1::Singleline,c2::Multiline) = false
-isequal(c1::Multiline,s2::Singleline) = false
-isequal(c1::Multiline,c2::Multiline) = (c1.n==c2.n && c1.R==c2.R)
+is_single(s::Block{TR}) where TR = length(s.C)==0
 
 #: ----------- hash -----------
-import Base.hash
-hash(b::Singleline)::UInt64 = (b.R==0x0 ? hash(b.p) : b.R)
-hash(b::Multiline)::UInt64 = (length(b.C)>0 ? (b.R==0x0 ? hash(hash.(b.C)) : b.R) : 0x0)
 
+import Base.hash
+
+hash(b::Block)::UInt64 = (is_single(b) ? (b.R==0x00 ? hash(b.p) : b.R) : (b.R==0x00 ? hash(hash.(b.C)) : b.R))
+khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p) : hash(hash.(b.C)))
+
+
+#+ ======== compute_label ========
+
+compute_label(b::Block) = khash(b)
+
+#+ ============================
+
+global const __DEFAULT__R__ = UInt64(0x0)
+global const __DEFAULT__RTYPE__ = typeof(__DEFAULT__R__)
+global const __DEFAULT_PATT__ = Int[]
+
+
+function Block(patt::TPattern, rg::UnitRange{Int})
+    b = Block{__DEFAULT__RTYPE__}(length(rg), rg, patt, __DEFAULT__R__, Block{__DEFAULT__RTYPE__}[], [])
+    b.R = compute_label(b)
+    return b
+end
+
+
+Block(patt::TPattern, i::Int) = Block(patt, i:i)
+
+
+Block() = Block(__DEFAULT_PATT__, 0)
+
+
+function Block(C::Vector{Block{RT}}) where RT
+    if length(C)==1  return C[1]  end
+    rconcat = concat0(C[1].x, C[end].x)
+    b = Block{RT}(1, rconcat, __DEFAULT_PATT__, __DEFAULT__R__, C, [])
+    b.R = compute_label(b)
+    return b
+end

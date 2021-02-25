@@ -1,0 +1,963 @@
+(1, 0x171bea4a5ac1cd42)
+|--
+|--(1, 0x7e00ca7bda37f4db)
+|--|--     Program  __KWPWSCF__   __VERSIONa__  starts on  __DATEa__  at  __HHMMSS__  
+|--|--
+|--(1, 0x68f918b830e4034b)
+|--|--     This program is part of the open-source Quantum ESPRESSO suite
+|--|--     for quantum simulation of materials; please cite
+|--|--         " __CHEM__ . Giannozzi et al., J. Phys.:Condens. Matter £ £ ( £ );
+               " __CHEM__ . Giannozzi et al., J. Phys.:Condens. Matter £ £ ( £ );
+|--|--          URL  __URL__  
+|--|--     in publications or presentations arising from this work. More details at
+|--|--      __URL__ 
+|--|--
+|--(1, 0x6fbf7773363bce3a)
+|--|--     Parallel version (MPI), running on    £ processors
+|--|--
+|--(1, 0xfd3b00449fa3f6a0)
+|--|--     MPI processes distributed on     £ nodes
+|--|--     K-points division:     npool     =       £
+|--|--     R & G space division:  proc/nbgrp/npool/nimage =       £
+|--|--     Waiting for input...
+|--|--     Reading input from standard input
+|--|--
+|--(1, 0xb37a7860401be706)
+|--|--     Current dimensions of program  __KWPWSCF__  are:
+|--|--     Max number of different atomic species (ntypx) = £
+|--|--     Max number of k-points (npk) =  £
+|--|--     Max angular momentum in pseudopotentials (lmaxx) =  £
+|--|--     WARNING: atomic wfc #  £ for atom type £ has zero norm
+|--|--
+|--(1, 0xe8c955def708b388)
+|--|--     Subspace diagonalization in iterative solution of the eigenvalue problem:
+|--|--     one sub-group per band group will be used
+|--|--     scalapack distributed-memory algorithm (size of sub-group:  £ *   £ procs)
+|--|--
+|--
+|--(1, 0x284f1fd5b31b5ffc)
+|--|--     Parallelization info
+|--|--     --------------------
+|--|--     sticks:   dense  smooth      __KWPW__      G-vecs:    dense   smooth      PW
+|--|--     Min         £     £     £                 £     £    £
+|--|--     Max         £     £     £                 £     £    £
+|--|--     Sum        £    £    £                £    £    £
+|--|--
+|--
+|--(1, 0x7fced78edbe09b3e)
+|--|--     Title: 
+|--|--      __SYMBOLtypeA__                                                                    
+|--|--
+|--
+|--(1, 0x809e1d56e1b387a4)
+|--|--     bravais-lattice index     =            £
+|--|--     lattice parameter (alat)  =       £   __au__ 
+|--|--     unit-cell volume          =     £  __UNITVOLa__ 
+|--|--     number of atoms/cell      =            £
+|--|--     number of atomic types    =            £
+|--|--     number of electrons       =        £
+|--|--     number of Kohn-Sham states=           £
+|--|--     kinetic-energy cutoff     =     £   __Ry__ 
+|--|--     charge density cutoff     =     £   __Ry__ 
+|--|--     convergence threshold     =      £
+|--|--     mixing beta               =       £
+|--|--     number of iterations used =            £  plain     mixing
+|--|--     Exchange-correlation      = SLA-PW-PBX-PBC ( £  £  £  £ £ £ )
+|--|--
+|--(1, 0x92f012a999c07d0e)
+|--|--     celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+           celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+|--|--
+|--(1, 0x39858b55821fc07f)
+|--|--     crystal axes: (cart. coord. in units of alat)
+|--|--               a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+|--|--
+|--(1, 0x3a4440effb7ccda7)
+|--|--     reciprocal axes: (cart. coord. in units  __UNITTWOPIALAT__ )
+|--|--               b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+|--|--
+|--
+|--(2, 0x511f7eb95bad85d0)
+|--|--     PseudoPot. # £ for  __CHEM__  read from file:
+|--|--      __FULLPATH__ 
+|--|--      __CHKSUM__ 
+|--|--     Pseudo is Norm-conserving, Zval =  £
+|--|--     Generated in analytical, separable form
+|--|--     Using radial grid of £ points,  £ beta functions with: 
+|--|--                l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+|--|--
+|--(1, 0x0af39523d7815f68)
+|--|--     atomic species   valence    mass     pseudopotential
+|--|--         __CHEM__              £   £      __CHEM__ ( £ )
+               __CHEM__               £    £      __CHEM__  ( £ )
+|--|--
+|--(1, 0x7f4a4090416b0686)
+|--|--     £ Sym. Ops., with inversion, found
+|--|--
+|--
+|--(1, 0xc6e48e78cf0832d4)
+|--|--                                    s                        frac. trans.
+|--|--
+|--(1, 0x5693595dc9b7c299)
+|--|--      isym =  £     identity                                     
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £         £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £ £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__      
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x10f3513f6f065d45)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0xef4c7b26ce831053)
+|--|--      isym = £     inversion                                    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £         £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £ £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £          £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £  £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £         £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £ £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £         £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £ £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__ 
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (    £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £ £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £         £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £ £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (    £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           ( £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £         £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  ( £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £          £      )
+                           (    £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--|--                  (  £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--|--                  (     £          £         £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  (  £  £  £ )
+                           (  £ £  £ )
+|--|--|--
+|--|--
+|--(1, 0x534af34d9749a483)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0x6b1db204af6dacb2)
+|--|--(1, 0x46318eaccd4fa38a)
+|--|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--|--                  (     £          £          £      )
+                           (     £          £          £      )
+|--|--|--
+|--|--(1, 0x1b76d709d0da6217)
+|--|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--|--                  ( £  £  £ )
+                           (  £  £  £ )
+|--|--|--
+|--|--
+|--(1, 0x192200993680bbce)
+|--|--      __POINTGROUP__  
+|--|--     there are £ classes
+|--|--     the character table:
+|--|--
+|--(1, 0xb1ecc2ebe04a95c3)
+|--|--        __GRPSYMBOL__       __GRPSYMBOL__     __GRPSYMBOL__     __GRPSYMBOL__     __GRPSYMBOL__    __GRPSYMBOL__       __GRPSYMBOL__     __GRPSYMBOL__    __GRPSYMBOL__     __GRPSYMBOL__  
+|--|-- __REPSYMBOL__    £  £  £  £  £  £  £  £  £  £
+       __REPSYMBOL__    £  £  £ £ £  £  £  £ £ £
+       __REPSYMBOL__     £ £  £  £  £  £ £  £  £  £
+       __REPSYMBOL__    £  £ £  £ £  £  £ £  £ £
+       __REPSYMBOL__    £  £ £ £  £  £  £ £ £  £
+       __REPSYMBOL__    £  £  £  £  £ £ £ £ £ £
+       __REPSYMBOL__    £  £  £ £ £ £ £ £  £  £
+       __REPSYMBOL__     £ £  £  £  £ £  £ £  £  £
+       __REPSYMBOL__    £  £ £  £ £ £  £  £ £  £
+       __REPSYMBOL__    £  £ £ £  £ £  £  £  £ £
+|--|--
+|--(1, 0xe9acc96e3217e667)
+|--|--     the symmetry operations in each class and the name of the first element:
+|--|--
+|--(1, 0x264d8c062e331a32)
+|--|--      __GRPSYMBOL__         £
+|--|--          identity                                               
+|--|--      __GRPSYMBOL__      £   £   £   £   £   £   £   £
+|--|--          £ deg rotation - cart. axis  __MILLER__                
+|--|--      __GRPSYMBOL__       £    £    £
+|--|--          £ deg rotation - cart. axis  __MILLER__                   
+|--|--      __GRPSYMBOL__       £    £   £   £   £   £
+|--|--           £ deg rotation - cart. axis  __MILLER__                  
+|--|--      __GRPSYMBOL__      £    £   £   £   £    £
+|--|--          £ deg rotation - cart. axis  __MILLER__                   
+|--|--      __GRPSYMBOL__        £
+|--|--          inversion                                              
+|--|--      __GRPSYMBOL__      £   £   £   £   £   £   £   £
+|--|--          inv. £ deg rotation - cart. axis  __MILLER__           
+|--|--      __GRPSYMBOL__     £   £   £
+|--|--          inv. £ deg rotation - cart. axis  __MILLER__              
+|--|--      __GRPSYMBOL__      £   £   £   £   £   £
+|--|--          inv.  £ deg rotation - cart. axis  __MILLER__             
+|--|--      __GRPSYMBOL__     £   £   £   £   £   £
+|--|--          inv. £ deg rotation - cart. axis  __MILLER__              
+|--|--
+|--(1, 0x809215cc9e455e4f)
+|--|--   Cartesian axes
+|--|--
+|--(1, 0x58cbfb54e880f21b)
+|--|--     site n.     atom                  positions (alat units)
+|--|--         £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__   tau(   £ ) = (   £   £   £  )
+|--|--
+|--(1, 0x5dc503db753f983c)
+|--|--   Crystallographic axes
+|--|--
+|--(1, 0xcc2b8704c1cea3d0)
+|--|--     site n.     atom                  positions (cryst. coord.)
+|--|--         £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__   tau(   £ ) = (  £  £  £  )
+|--|--
+|--(1, 0x5ce3bdf0d1f162f2)
+|--|--     number of k points=    £  Methfessel-Paxton smearing, width ( __Ry__ )=  £
+|--|--                       cart. coord. in units  __UNITTWOPIALAT__ 
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0xa3be660acddf7fc5)
+|--|--                       cryst. coord.
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0x915ceb59910a99cc)
+|--|--     Dense  grid:    £ G-vectors     FFT dimensions:  __THREETUPLES__ 
+|--|--
+|--(1, 0x44fb4407fb2e761e)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0xadc8506fbeb34d53)
+|--|--      __QEDynRAMfor__  (w. buffer):       £ MB
+|--|--
+|--(12, 0x44fb4407fb2e761e)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0xef6b5d2bf4734286)
+|--|--      __QEDynRAMfor__ init/wfcrot:       £ MB
+|--|--
+|--(1, 0xd71073034d21f738)
+|--|--     Estimated static dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0xe1f8a416eb43deed)
+|--|--     Estimated max dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0xe436c0b609c4718a)
+|--|--     Estimated total dynamical RAM >       £ GB
+|--|--

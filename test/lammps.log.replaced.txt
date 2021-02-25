@@ -1,0 +1,1495 @@
+(1, 0x9522402a4c87d79c)
+|--(1, 0xb3fde2377f1452d0)
+|--|--LAMMPS ( £ Aug £ )
+|--|--#  This is the control script for LAMMPS
+|--|--echo            both
+|--|--units           metal
+|--|-- __SYMBOLtypeA__       atomic
+|--|--boundary        p  p  f
+|--|--
+|--(1, 0x0db90abaf0670569)
+|--|-- __SYMBOLtypeA__         __ABSPATH__ 
+|--|--  orthogonal box = ( £ £ £ ) to ( £ £ £ )
+|--|--  £ by £ by £ MPI processor grid
+|--|--  reading atoms ...
+|--|--  £ atoms
+|--|--replicate       £ £  £
+|--|--  orthogonal box = ( £ £ £ ) to ( £ £ £ )
+|--|--  £ by £ by £ MPI processor grid
+|--|--  £ atoms
+|--|--  Time spent = £ secs
+|--|--
+|--(1, 0xc58e09ea4000fb59)
+|--|--neighbor        £ bin
+|--|-- __SYMBOLtypeA__     delay £ every £ check yes
+|--|--
+|--(1, 0x25d263e453cc8dc8)
+|--|-- __SYMBOLtypeA__       sw
+|--|-- __SYMBOLtypeA__       * *   __ABSPATH__    __CHEM__   __CHEM__  C
+|--|--
+|--(1, 0xddb0ef4c57666ed5)
+|--|-- __SYMBOLtypeA__     custom step temp pe ke etotal lx ly lz pxx pyy  vol
+|--|--thermo          £
+|--|--fix             A all box/relax x £ y £
+|--|-- __SYMBOLtypeA__        cg
+|--|--minimize        £ £ £ £
+|--|--Neighbor list info ...
+|--|--  update every £ steps, delay £ steps, check yes
+|--|--  max neighbors/atom: £ , page size: £
+|--|--  master list distance cutoff = £
+|--|--  ghost atom cutoff = £
+|--|--  binsize = £ , bins = £ £ £
+|--|--  £ neighbor lists, perpetual/occasional/extra = £ £ £
+|--|--  ( £ ) pair sw, perpetual
+|--|--      attributes: full, newton on
+|--|--      pair build: full/bin/atomonly
+|--|--      stencil: full/bin/ __SYMBOLtypeC__ 
+|--|--      bin: standard
+|--|--Per MPI rank memory allocation (min/avg/max) = £ | £ | £ Mbytes
+|--|--Step Temp PotEng KinEng TotEng Lx Ly Lz Pxx Pyy Volume 
+|--|--       £            £   £            £   £    £       £          £    £    £     £ 
+          £            £   £            £   £    £    £          £ £ £     £ 
+|--|--Loop time of £ on £ procs for £ steps with £ atoms
+|--|--
+|--(1, 0x690ef775254a4e3f)
+|--|-- __PERCENTAGE__   __KWCPU__  use with £ MPI tasks x no OpenMP threads
+|--|--
+|--(1, 0x78c7550f7d5be034)
+|--|--Minimization stats:
+|--|--  Stopping criterion = linesearch alpha is zero
+|--|--  Energy initial, next-to-last, final = 
+|--|--        £     £     £
+|--|--  Force two-norm initial, final = £ £
+|--|--  Force max component initial, final = £ £
+|--|--  Final line search alpha, max atom move = £ £
+|--|--  Iterations, force evaluations = £ £
+|--|--
+|--(1, 0x9453d17ce14506e2)
+|--|--(1, 0x1332349cb9513f7b)
+|--|--|--MPI task timing breakdown:
+|--|--|--Section |  min time  |  avg time  |  max time  |%varavg| %total
+|--|--|-----------------------------------------------------------------
+|--|--|--Pair    | £     | £     | £     |   £ | £
+|--|--|--Neigh   | £   | £   | £   |   £ |  £
+|--|--|--Comm    | £    | £    | £       |  £ |  £
+|--|--|--Output  | £          | £          | £          |   £ |  £
+|--|--|--Modify  | £          | £          | £          |   £ |  £
+|--|--|--Other   |            | £      |            |       |  £
+|--|--|--
+|--|--(1, 0x4c8aaf64d99d018d)
+|--|--|--Nlocal:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Nghost:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Neighs:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--FullNghs:  £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--
+|--(1, 0x6e2b7043e4a35f4a)
+|--|--Total # of neighbors = £
+|--|--Ave neighs/atom = £
+|--|--Neighbor list builds = £
+|--|--Dangerous builds = £
+|--|--#
+|--|--variable        T  equal £
+|--|--velocity        all create $T £ mom yes rot yes dist gaussian
+|--|--velocity        all create £ £ mom yes rot yes dist gaussian
+|--|--fix             £ all nvt temp $T $T £ drag £
+|--|--fix             £ all nvt temp £ $T £ drag £
+|--|--fix             £ all nvt temp £ £ £ drag £
+|--|--dump            £ all custom £  __ABSPATH__  id type x y z
+      dump            £ all custom £  __ABSPATH__  id type x y z
+|--|--
+|--(1, 0x5a82109197299421)
+|--|--timestep        £
+|--|--run             £
+|--|--Per MPI rank memory allocation (min/avg/max) = £ | £ | £ Mbytes
+|--|--Step Temp PotEng KinEng TotEng Lx Ly Lz Pxx Pyy Volume 
+|--|--    £          £   £    £   £    £    £          £    £    £     £ 
+          £     £   £    £    £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £    £     £ 
+         £     £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £     £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £    £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £    £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £    £    £   £    £    £          £   £     £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £    £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+         £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £    £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £    £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £      £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £      £   £    £    £          £   £    £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £     £   £     £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £    £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £    £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £    £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £     £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £     £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £     £   £    £    £          £    £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £    £    £   £    £    £          £     £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £    £    £   £    £    £          £    £   £     £ 
+        £    £    £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £    £    £    £    £    £          £   £    £     £ 
+        £    £    £    £   £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £    £    £   £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £   £    £      £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £     £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £      £    £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £    £     £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £     £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £    £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £      £    £    £          £   £   £     £ 
+        £    £    £    £   £    £    £          £   £   £     £ 
+        £     £   £     £   £    £    £          £   £   £     £ 
+        £    £   £     £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £   £     £   £    £    £          £   £    £     £ 
+        £    £    £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £    £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £    £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £     £   £    £    £          £   £   £     £ 
+        £    £    £    £   £    £    £          £   £   £     £ 
+        £    £   £      £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £   £     £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £     £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £     £   £    £   £    £    £          £   £    £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+        £    £   £    £    £    £    £          £   £   £     £ 
+        £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £     £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+|--|--Loop time of £ on £ procs for £ steps with £ atoms
+|--|--
+|--(1, 0xc7e8b508e4bdbfa3)
+|--|--Performance: £ ns/day, £ hours/ns, £ timesteps/s
+|--|-- __PERCENTAGE__   __KWCPU__  use with £ MPI tasks x no OpenMP threads
+|--|--
+|--(1, 0x9453d17ce14506e2)
+|--|--(1, 0x1332349cb9513f7b)
+|--|--|--MPI task timing breakdown:
+|--|--|--Section |  min time  |  avg time  |  max time  |%varavg| %total
+|--|--|-----------------------------------------------------------------
+|--|--|--Pair    | £     | £     | £     |  £ | £
+|--|--|--Neigh   | £    | £    | £    |   £ |  £
+|--|--|--Comm    | £     | £        | £     | £ |  £
+|--|--|--Output  | £    | £    | £    |   £ |  £
+|--|--|--Modify  | £     | £     | £     | £ |  £
+|--|--|--Other   |            | £      |            |       |  £
+|--|--|--
+|--|--(1, 0x4c8aaf64d99d018d)
+|--|--|--Nlocal:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Nghost:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Neighs:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--FullNghs:  £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--
+|--(1, 0x40e48f093c06d865)
+|--|--Total # of neighbors = £
+|--|--Ave neighs/atom = £
+|--|--Neighbor list builds = £
+|--|--Dangerous builds = £
+|--|--unfix           £
+|--|--fix             £ all nve
+|--|--run             £
+|--|--Per MPI rank memory allocation (min/avg/max) = £ | £ | £ Mbytes
+|--|--Step Temp PotEng KinEng TotEng Lx Ly Lz Pxx Pyy Volume 
+|--|-- £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £    £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £     £   £    £    £          £   £    £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £      £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £      £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £      £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £      £   £    £    £          £    £    £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £    £   £     £ 
+       £    £      £     £   £    £    £          £   £   £     £ 
+       £    £   £      £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £      £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £      £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £     £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £     £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £     £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £     £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £      £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £    £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £      £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £      £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £     £      £    £   £    £    £          £   £     £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £     £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £    £    £   £    £    £          £    £   £     £ 
+       £    £    £     £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £     £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £   £    £   £    £    £          £   £    £     £ 
+       £    £      £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £    £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £     £   £    £    £          £     £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+       £    £   £    £   £    £    £          £    £   £     £ 
+       £    £   £    £   £    £    £          £   £   £     £ 
+|--|--Loop time of £ on £ procs for £ steps with £ atoms
+|--|--
+|--(1, 0xc7e8b508e4bdbfa3)
+|--|--Performance: £ ns/day, £ hours/ns, £ timesteps/s
+|--|-- __PERCENTAGE__   __KWCPU__  use with £ MPI tasks x no OpenMP threads
+|--|--
+|--(1, 0x9453d17ce14506e2)
+|--|--(1, 0x1332349cb9513f7b)
+|--|--|--MPI task timing breakdown:
+|--|--|--Section |  min time  |  avg time  |  max time  |%varavg| %total
+|--|--|-----------------------------------------------------------------
+|--|--|--Pair    | £       | £       | £     |  £ | £
+|--|--|--Neigh   | £    | £    | £    |   £ |  £
+|--|--|--Comm    | £     | £     | £      | £ |  £
+|--|--|--Output  | £    | £    | £    |   £ |  £
+|--|--|--Modify  | £     | £     | £     |   £ |  £
+|--|--|--Other   |            | £      |            |       |  £
+|--|--|--
+|--|--(1, 0x4c8aaf64d99d018d)
+|--|--|--Nlocal:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Nghost:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Neighs:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--FullNghs:  £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--
+|--(1, 0xb0a21308aa34e95c)
+|--|--Total # of neighbors = £
+|--|--Ave neighs/atom = £
+|--|--Neighbor list builds = £
+|--|--Dangerous builds = £
+|--|--unfix           £
+|--|--undump          £
+|--|--#
+|--|-- __SYMBOLtypeA__  £
+|--|--
+|--(1, 0xbf77cd522757c805)
+|--|--# Thermal conductivity simulation
+|--|--variable        eheat  equal   £
+|--|--variable        rheat  equal  £
+|--|--variable        Xleft  equal  bound(all,xmin)
+|--|--variable        Xright equal  bound(all,xmax)
+|--|--variable        Fleft  equal  ( __LAMMPSVAR__ - __LAMMPSVAR__ ) / £
+|--|--variable        Fleft  equal  ( £ -  __LAMMPSVAR__ ) / £
+|--|--variable        Fleft  equal  ( £ - £ ) / £
+|--|--variable        Fright equal  ( __LAMMPSVAR__ - __LAMMPSVAR__ ) * £ / £
+|--|--variable        Fright equal  ( £ -  __LAMMPSVAR__ ) * £ / £
+|--|--variable        Fright equal  ( £ - £ ) * £ / £
+|--|--variable        Lhot   equal   __LAMMPSVAR__ £
+|--|--variable        Lhot   equal  £ - £
+|--|--variable        Rhot   equal   __LAMMPSVAR__ £
+|--|--variable        Rhot   equal  £ + £
+|--|--variable        Lcold equal   __LAMMPSVAR__ £
+|--|--variable        Lcold equal  £ - £
+|--|--variable        Rcold equal   __LAMMPSVAR__ £
+|--|--variable        Rcold equal  £ + £
+|--|--#region         Fleft  block  __KWINF__    __LAMMPSVAR__   __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--#region         Fright block  __LAMMPSVAR__   __KWINF__   __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          hot    block  __LAMMPSVAR__     __LAMMPSVAR__    __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          hot    block £    __LAMMPSVAR__    __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          hot    block £   £   __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          cold   block  __LAMMPSVAR__    __LAMMPSVAR__   __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          cold   block £   __LAMMPSVAR__   __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--region          cold   block £  £  __KWINF__   __KWINF__   __KWINF__   __KWINF__  units box
+|--|--#group          Fixleft  region Fleft
+|--|--#group          Fixright region Fright
+|--|--group           hot   region  hot
+|--|--£ atoms in group hot
+|--|--group           cold  region  cold
+|--|--£ atoms in group cold
+|--|--
+|--(1, 0x7f053b50626ca1af)
+|--|--# fix the atoms on the boundary
+|--|--#fix             __SYMBOLtypeB__  Fixleft  setforce £ £ £
+|--|--#fix             __SYMBOLtypeB__  Fixright setforce £ £ £
+|--|--#velocity	Fixleft  set £ £ £ units  box
+|--|--#velocity	Fixright set £ £ £ units  box
+|--|--
+|--(1, 0x1dd37bdf618bf678)
+|--|--# Thermal conductivity simulation starts from here
+|--|--fix             £ hot   heat £  __SYMBOLtypeA__  region hot
+|--|--fix             £ cold  heat £  __SYMBOLtypeA__  region cold
+|--|--fix             £ all nve
+|--|--compute         myKE all ke/atom
+|--|--compute         Thot hot temp/region hot
+|--|--compute         Tcold cold temp/region cold
+|--|--variable        atemp atom  __SYMBOLtypeA__ /( £ * £ * £ )
+|--|-- __SYMBOLtypeA__     custom elaplong step temp pe ke etotal lx ly lz pxx pyy vol  __SYMBOLtypeA__   __SYMBOLtypeA__ 
+|--|--thermo          £
+|--|--timestep        £
+|--|--#-----Calculation of thermal conductivity for £ ns -------------
+|--|--compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+      compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+      compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+      compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+      compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+      compute          __SYMBOLtypeB__  all chunk/atom bin/ __SYMBOLtypeC__  x lower £ units box
+|--|--fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+      fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+      fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+      fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+      fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+      fix              __SYMBOLtypeC__  all ave/chunk £ £ £  __SYMBOLtypeB__   __SYMBOLtypeA__  file  __ABSPATH__ 
+|--|--dump            A  all custom £  __ABSPATH__  id type x y z
+|--|--run             £
+|--|--Per MPI rank memory allocation (min/avg/max) = £ | £ | £ Mbytes
+|--|--Elaplong Step Temp PotEng KinEng TotEng Lx Ly Lz Pxx Pyy Volume  __SYMBOLtypeA__   __SYMBOLtypeA__  
+|--|--       £        £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £     £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £     £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £     £     £    £    £ 
+         £    £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £     £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £    £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £    £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £    £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £    £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £    £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £   £     £    £     £ 
+        £   £    £   £      £   £    £    £          £    £    £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £   £     £     £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £    £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £    £     £    £     £ 
+        £   £     £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £      £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £     £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £    £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £     £    £ 
+        £   £    £      £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £    £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £     £ 
+        £   £     £   £    £   £    £    £          £   £   £     £     £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £    £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £     £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £    £    £   £    £    £          £   £   £     £    £     £ 
+        £   £    £   £     £   £    £    £          £   £   £     £    £    £ 
+        £   £     £   £    £   £    £    £          £   £    £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £   £   £     £    £    £ 
+        £   £    £   £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £     £   £    £   £    £    £          £   £   £     £     £     £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £     £    £    £   £    £    £          £   £   £     £    £     £ 
+       £  £     £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £      £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £    £   £     £     £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £     £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £     £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £      £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £      £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £     £    £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £       £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £       £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £     £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £      £     £    £    £ 
+       £  £    £    £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £     £    £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £     £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £       £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £       £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £    £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £    £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £     £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £     £   £    £   £    £    £          £    £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £     £   £    £    £          £      £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £    £    £   £    £    £          £    £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £     £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £     £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £      £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £      £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £     £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £      £    £ 
+       £  £    £    £    £   £    £    £          £   £    £     £     £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £     £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £     £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £    £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £         £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £      £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £      £    £   £    £    £          £   £   £     £    £     £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £      £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £    £    £   £    £    £          £   £    £     £    £     £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £     £    £    £   £    £    £          £    £   £     £    £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £     £ 
+       £  £     £   £    £   £    £    £          £    £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £    £    £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £    £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £     £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £    £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £     £    £ 
+       £  £     £   £    £   £    £    £          £   £   £     £    £    £ 
+       £  £    £   £    £   £    £    £          £   £   £     £    £    £ 
+|--|--Loop time of £ on £ procs for £ steps with £ atoms
+|--|--
+|--(1, 0xc7e8b508e4bdbfa3)
+|--|--Performance: £ ns/day, £ hours/ns, £ timesteps/s
+|--|-- __PERCENTAGE__   __KWCPU__  use with £ MPI tasks x no OpenMP threads
+|--|--
+|--(1, 0x9453d17ce14506e2)
+|--|--(1, 0x1332349cb9513f7b)
+|--|--|--MPI task timing breakdown:
+|--|--|--Section |  min time  |  avg time  |  max time  |%varavg| %total
+|--|--|-----------------------------------------------------------------
+|--|--|--Pair    | £      | £      | £      | £ | £
+|--|--|--Neigh   | £     | £     | £     |   £ |  £
+|--|--|--Comm    | £     | £     | £     | £ |  £
+|--|--|--Output  | £     | £    | £    |   £ |  £
+|--|--|--Modify  | £     | £     | £     |  £ |  £
+|--|--|--Other   |            | £       |            |       |  £
+|--|--|--
+|--|--(1, 0x4c8aaf64d99d018d)
+|--|--|--Nlocal:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Nghost:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--Neighs:    £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--FullNghs:  £ ave £ max £ min
+|--|--|--Histogram: £ £ £ £ £ £ £ £ £ £
+|--|--|--
+|--(1, 0x7d8d957f758e1a62)
+|--|--Total # of neighbors = £
+|--|--Ave neighs/atom = £
+|--|--Neighbor list builds = £
+|--|--Dangerous builds = £
+|--|--Total wall time:  __HHMMSS__ 
+|--|--

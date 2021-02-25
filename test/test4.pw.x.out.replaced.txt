@@ -1,0 +1,3348 @@
+(1, 0xffd90ab95f98e184)
+|--
+|--(1, 0x7e00ca7bda37f4db)
+|--|--     Program  __KWPWSCF__   __VERSIONa__  starts on  __DATEa__  at  __HHMMSS__  
+|--|--
+|--(1, 0x68f918b830e4034b)
+|--|--     This program is part of the open-source Quantum ESPRESSO suite
+|--|--     for quantum simulation of materials; please cite
+|--|--         " __CHEM__ . Giannozzi et al., J. Phys.:Condens. Matter £ £ ( £ );
+               " __CHEM__ . Giannozzi et al., J. Phys.:Condens. Matter £ £ ( £ );
+|--|--          URL  __URL__  
+|--|--     in publications or presentations arising from this work. More details at
+|--|--      __URL__ 
+|--|--
+|--(1, 0x6fbf7773363bce3a)
+|--|--     Parallel version (MPI), running on    £ processors
+|--|--
+|--(1, 0xfd3b00449fa3f6a0)
+|--|--     MPI processes distributed on     £ nodes
+|--|--     K-points division:     npool     =       £
+|--|--     R & G space division:  proc/nbgrp/npool/nimage =       £
+|--|--     Waiting for input...
+|--|--     Reading input from standard input
+|--|--
+|--(1, 0x97bde25ccba238ee)
+|--|--     Current dimensions of program  __KWPWSCF__  are:
+|--|--     Max number of different atomic species (ntypx) = £
+|--|--     Max number of k-points (npk) =  £
+|--|--     Max angular momentum in pseudopotentials (lmaxx) =  £
+|--|--               file  __ABSPATH__ : wavefunction(s)   __ATOMORBIT__   __ATOMORBIT__  renormalized
+|--|--               file  __CHEM__ . __ABSPATH__ : wavefunction(s)   __ATOMORBIT__   __ATOMORBIT__  renormalized
+|--|--
+|--(1, 0xe68d1ce4b53705e5)
+|--|--     Subspace diagonalization in iterative solution of the eigenvalue problem:
+|--|--     one sub-group per band group will be used
+|--|--     scalapack distributed-memory algorithm (size of sub-group:  £ *   £ procs)
+|--|--
+|--
+|--(1, 0x3ac25f54d51268c4)
+|--|--     Parallelization info
+|--|--     --------------------
+|--|--     sticks:   dense  smooth      __KWPW__      G-vecs:    dense   smooth      PW
+|--|--     Min         £     £     £                 £     £     £
+|--|--     Max         £     £     £                 £     £     £
+|--|--     Sum        £    £    £                £    £    £
+|--|--
+|--
+|--(1, 0x8bf938f0d628ef4e)
+|--|--     Title: 
+|--|--      __SYMBOLtypeA__                                                               
+|--|--
+|--
+|--(1, 0xbb93f5491a5d7ed4)
+|--|--     bravais-lattice index     =            £
+|--|--     lattice parameter (alat)  =       £   __au__ 
+|--|--     unit-cell volume          =     £  __UNITVOLa__ 
+|--|--     number of atoms/cell      =            £
+|--|--     number of atomic types    =            £
+|--|--     number of electrons       =        £
+|--|--     number of Kohn-Sham states=           £
+|--|--     kinetic-energy cutoff     =     £   __Ry__ 
+|--|--     charge density cutoff     =     £   __Ry__ 
+|--|--     convergence threshold     =      £
+|--|--     mixing beta               =       £
+|--|--     number of iterations used =            £  plain     mixing
+|--|--     Exchange-correlation      = SLA  __KWPW__  PBX  __KWPBC__  ( £  £  £  £ £ £ )
+|--|--     nstep                     =           £
+|--|--
+|--
+|--(1, 0x11a78591e92d8465)
+|--|--     celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+           celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+|--|--
+|--(1, 0x94312495926c00f7)
+|--|--     crystal axes: (cart. coord. in units of alat)
+|--|--               a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+|--|--
+|--(1, 0x7376b67103ad45e7)
+|--|--     reciprocal axes: (cart. coord. in units  __UNITTWOPIALAT__ )
+|--|--               b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+|--|--
+|--
+|--(1, 0x698476ddb2262901)
+|--|--     PseudoPot. # £ for  __CHEM__  read from file:
+|--|--      __FULLPATH__ 
+|--|--      __CHKSUM__ 
+|--|--     Pseudo is Projector augmented-wave + core cor, Zval = £
+|--|--     Generated using "atomic" code by A. Dal Corso  __VERSIONa__ 
+|--|--     Shape of augmentation charge: PSQ
+|--|--     Using radial grid of £ points,  £ beta functions with: 
+|--|--                l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+|--|--     Q(r) pseudized with £ coefficients 
+|--|--
+|--
+|--(1, 0x698476ddb2262901)
+|--|--     PseudoPot. # £ for  __CHEM__   read from file:
+|--|--      __FULLPATH__ 
+|--|--      __CHKSUM__ 
+|--|--     Pseudo is Projector augmented-wave + core cor, Zval =  £
+|--|--     Generated using "atomic" code by A. Dal Corso  __VERSIONa__ 
+|--|--     Shape of augmentation charge: PSQ
+|--|--     Using radial grid of £ points,  £ beta functions with: 
+|--|--                l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+|--|--     Q(r) pseudized with £ coefficients 
+|--|--
+|--
+|--(1, 0xd02d4803b70f772c)
+|--|--     atomic species   valence    mass     pseudopotential
+|--|--         __CHEM__             £   £      __CHEM__ ( £ )
+               __CHEM__               £    £      __CHEM__  ( £ )
+|--|--
+|--(1, 0x16da55c787d8ba4d)
+|--|--     £ Sym. Ops., with inversion, found
+|--|--
+|--
+|--(1, 0xb798db86901d60ed)
+|--|--                                    s                        frac. trans.
+|--|--
+|--(1, 0x09247b1e4842c51e)
+|--|--      isym =  £     identity                                     
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £         £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £ £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__      
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0xd1bb9dfc1f2c40dc)
+|--|--      isym = £     inversion                                    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__ 
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (    £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £ £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £         £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  ( £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0xa6d3018f064bc7df)
+|--|--   Cartesian axes
+|--|--
+|--(1, 0x2de05abd071d054e)
+|--|--     site n.     atom                  positions (alat units)
+|--|--         £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__   tau(   £ ) = (   £   £   £  )
+|--|--
+|--(1, 0xde9e50e1fc12d244)
+|--|--   Crystallographic axes
+|--|--
+|--(1, 0xf695b0918916abc3)
+|--|--     site n.     atom                  positions (cryst. coord.)
+|--|--         £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__   tau(   £ ) = (  £  £  £  )
+|--|--
+|--(1, 0x35ff01e27a2f9435)
+|--|--     number of k points=    £  Methfessel-Paxton smearing, width ( __Ry__ )=  £
+|--|--                       cart. coord. in units  __UNITTWOPIALAT__ 
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0xd7c97cc3825a73ae)
+|--|--                       cryst. coord.
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0x4e89f2f897180925)
+|--|--     Dense  grid:    £ G-vectors     FFT dimensions:  __THREETUPLES__ 
+|--|--
+|--(1, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0xf5a5b1ecc8a51ec6)
+|--|--      __QEDynRAMfor__  (w. buffer):       £ MB
+|--|--
+|--(13, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0x9e80bf661b0fd064)
+|--|--      __QEDynRAMfor__ init/wfcrot:       £ MB
+|--|--
+|--(3, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0x6d0dc130cd45c606)
+|--|--     Estimated static dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0x755e5395f98ebccb)
+|--|--     Estimated max dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0x8f0c1de35aae1a6f)
+|--|--     Estimated total dynamical RAM >       £ GB
+|--|--
+|--(1, 0x16804af9765b026a)
+|--|--     Check: negative core charge=   £
+|--|--
+|--(1, 0x39d606d8b480d309)
+|--|--     Initial potential from superposition of free atoms
+|--|--
+|--(1, 0xfa8b01b102263256)
+|--|--     starting charge   £ , renormalised to   £
+|--|--     Starting wfcs are   £ randomized atomic wfcs +   £ random wfcs
+|--|--     Checking if some PAW data can be deallocated... 
+|--|--       PAW data deallocated on   £ nodes for type:  £
+             PAW data deallocated on   £ nodes for type:  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0x3ef12af154684818)
+|--|--     Self-consistent Calculation
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <      £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration # £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is        £ secs
+|--|--
+|--(1, 0x83a993a257211aaa)
+|--|--     End of self-consistent calculation
+|--|--
+|--(56, 0x0375a575e30766fd)
+|--|--(1, 0x28e781504bb09976)
+|--|--|--          k = £ £ £ (  £ PWs)   bands (ev):
+|--|--|--
+|--|--(1, 0x6aac9f1792df2980)
+|--|--|--   £ £ £ £ £ £ £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--|--(1, 0x665fefcfa8f153c7)
+|--|--|--     occupation numbers 
+|--|--|--     £   £   £   £   £   £   £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--(1, 0x0186c81695105210)
+|--|--     the Fermi energy is     £ ev
+|--|--
+|--(1, 0x511f127eb9ae0603)
+|--|--!    total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xe614a6dbcab54505)
+|--|--     total all-electron energy =    £  __Ry__ 
+|--|--
+|--(1, 0xc5fa629cd1cfc870)
+|--|--     The total energy is the sum of the following terms:
+|--|--
+|--(1, 0xbff4a4d3c4ec76d8)
+|--|--     one-electron contribution =    £  __Ry__ 
+|--|--     hartree contribution      =      £  __Ry__ 
+|--|--     xc contribution           =     £  __Ry__ 
+|--|--     ewald contribution        =    £  __Ry__ 
+|--|--     one-center paw contrib.   =    £  __Ry__ 
+|--|--      -> PAW hartree energy AE =      £  __Ry__ 
+|--|--      -> PAW hartree energy  __CHEM__  =     £  __Ry__ 
+|--|--      -> PAW xc energy AE      =     £  __Ry__ 
+|--|--      -> PAW xc energy  __CHEM__       =       £  __Ry__ 
+|--|--      -> total  __SYMBOLtypeA__  with PAW    =      £  __Ry__ 
+            -> total  __SYMBOLtypeA__  with PAW   =     £  __Ry__ 
+|--|--     smearing contrib. (-TS)   =      £  __Ry__ 
+|--|--
+|--(1, 0x892f0613ab26105a)
+|--|--     convergence has been achieved in  £ iterations
+|--|--
+|--(1, 0x202a968b5735dd6e)
+|--|--     Forces acting on atoms (cartesian axes,  __UNITFORCEb__ ):
+|--|--
+|--(1, 0x8fa88c8dfcd0366b)
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =    £    £   £
+           atom    £ type  £   force =     £   £   £
+           atom    £ type  £   force =    £   £   £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =    £    £   £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =    £   £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __KWSCF__  correction term to forces
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =    £    £   £
+           atom    £ type  £   force =    £   £   £
+           atom    £ type  £   force =    £   £    £
+|--|--
+|--(1, 0x42d6f16096f469af)
+|--|--     Total force =     £     Total  __KWSCF__  correction =     £
+|--|--
+|--
+|--(1, 0xfab8afab996616f4)
+|--|--     Computing stress (Cartesian axis) and pressure
+|--|--
+|--(1, 0x1151e26f399cc98b)
+|--|--          total   stress  ( __UNITSTRESS__ )                   ( __UNITkbar__ )     __PRESSUREEQS__    £
+|--|--   £   £   £          £      £      £
+         £   £   £          £      £      £
+         £   £   £          £      £      £
+|--|--
+|--(13, 0xf950ea8ba15db956)
+|--|--      __QEstressKW__  ( __UNITkbar__ )  £      £      £
+|--|--                                £  £      £
+                                      £      £  £
+|--|--
+|--
+   
+|--(1, 0x0d73b805f953e142)
+|--|--     BFGS Geometry Optimization
+|--|--
+|--(1, 0x97549b0621bcaf14)
+|--|--     number of scf cycles    =   £
+|--|--     number of bfgs steps    =   £
+|--|--
+|--(1, 0x3f20923b8fc30f42)
+|--|--     enthalpy new            =    £  __Ry__ 
+|--|--
+|--(1, 0x78b807cc10f998bb)
+|--|--     new trust radius        =       £ bohr
+|--|--     new  __SYMBOLtypeA__             =       £  __Ry__ 
+|--|--
+|--(1, 0xb99f3690439d5df1)
+|--|--     new unit-cell volume =    £  __UNITVOLb__  (    £  __UNITVOLc__  )
+|--|--     density =      £  __UNITDENSITY__ 
+|--|--
+|--(1, 0xdf4bafbdb2114f88)
+|--|-- __SYMBOLtypeA__  (bohr)
+|--|--   £   £   £
+         £   £   £
+         £   £   £
+|--|--
+|--(1, 0x90707cca83e72bcc)
+|--|-- __SYMBOLtypeA__  (crystal)
+|--|-- __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__        £   £   £
+|--|--
+|--
+|--(1, 0xd94e911909e31ebb)
+|--|--     NEW-OLD atomic charge density approx. for the potential
+|--|--
+|--(1, 0xa4edb03f51d77c34)
+|--|--     Check: negative core charge=   £
+|--|--     extrapolated charge   £ , renormalised to   £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x3ef12af154684818)
+|--|--     Self-consistent Calculation
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xa3dfaaad1aba3392)
+|--|--     Threshold (ethr) on eigenvalues was too large:
+|--|--     Diagonalizing with lowered threshold
+|--|--
+|--(1, 0x02786843b7e0cab2)
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x83a993a257211aaa)
+|--|--     End of self-consistent calculation
+|--|--
+|--(56, 0x0375a575e30766fd)
+|--|--(1, 0x28e781504bb09976)
+|--|--|--          k = £ £ £ (  £ PWs)   bands (ev):
+|--|--|--
+|--|--(1, 0x6aac9f1792df2980)
+|--|--|--   £ £ £ £ £ £ £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--|--(1, 0x665fefcfa8f153c7)
+|--|--|--     occupation numbers 
+|--|--|--     £   £   £   £   £   £   £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--(1, 0x0186c81695105210)
+|--|--     the Fermi energy is     £ ev
+|--|--
+|--(1, 0x511f127eb9ae0603)
+|--|--!    total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xe614a6dbcab54505)
+|--|--     total all-electron energy =    £  __Ry__ 
+|--|--
+|--(1, 0xc5fa629cd1cfc870)
+|--|--     The total energy is the sum of the following terms:
+|--|--
+|--(1, 0xbff4a4d3c4ec76d8)
+|--|--     one-electron contribution =    £  __Ry__ 
+|--|--     hartree contribution      =      £  __Ry__ 
+|--|--     xc contribution           =     £  __Ry__ 
+|--|--     ewald contribution        =    £  __Ry__ 
+|--|--     one-center paw contrib.   =    £  __Ry__ 
+|--|--      -> PAW hartree energy AE =      £  __Ry__ 
+|--|--      -> PAW hartree energy  __CHEM__  =     £  __Ry__ 
+|--|--      -> PAW xc energy AE      =     £  __Ry__ 
+|--|--      -> PAW xc energy  __CHEM__       =       £  __Ry__ 
+|--|--      -> total  __SYMBOLtypeA__  with PAW    =      £  __Ry__ 
+            -> total  __SYMBOLtypeA__  with PAW   =     £  __Ry__ 
+|--|--     smearing contrib. (-TS)   =      £  __Ry__ 
+|--|--
+|--(1, 0x892f0613ab26105a)
+|--|--     convergence has been achieved in   £ iterations
+|--|--
+|--(1, 0x202a968b5735dd6e)
+|--|--     Forces acting on atoms (cartesian axes,  __UNITFORCEb__ ):
+|--|--
+|--(1, 0x8fa88c8dfcd0366b)
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £   £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =    £   £   £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __KWSCF__  correction term to forces
+|--|--     atom    £ type  £   force =    £    £   £
+           atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =    £    £   £
+|--|--
+|--(1, 0x42d6f16096f469af)
+|--|--     Total force =     £     Total  __KWSCF__  correction =     £
+|--|--
+|--
+|--(1, 0xfab8afab996616f4)
+|--|--     Computing stress (Cartesian axis) and pressure
+|--|--
+|--(1, 0x1151e26f399cc98b)
+|--|--          total   stress  ( __UNITSTRESS__ )                   ( __UNITkbar__ )     __PRESSUREEQS__   £
+|--|--  £   £   £         £      £      £
+         £  £   £          £     £      £
+         £   £  £          £      £     £
+|--|--
+|--(13, 0xf950ea8ba15db956)
+|--|--      __QEstressKW__  ( __UNITkbar__ )  £      £      £
+|--|--                                £  £      £
+                                      £      £  £
+|--|--
+|--
+   
+|--(1, 0x97549b0621bcaf14)
+|--|--     number of scf cycles    =   £
+|--|--     number of bfgs steps    =   £
+|--|--
+|--(1, 0x5a57e47dd63bdf47)
+|--|--     enthalpy old            =    £  __Ry__ 
+|--|--     enthalpy new            =    £  __Ry__ 
+|--|--
+|--(1, 0xd6872afb20e73923)
+|--|--     CASE:  __SYMBOLtypeA__  <  __SYMBOLtypeA__ 
+|--|--
+|--(1, 0x2da1d874c02c22ca)
+|--|--     small  __SYMBOLtypeA__  resetting bfgs history
+|--|--
+|--(1, 0x78b807cc10f998bb)
+|--|--     new trust radius        =       £ bohr
+|--|--     new  __SYMBOLtypeA__             =            £  __Ry__ 
+|--|--
+|--(1, 0xb99f3690439d5df1)
+|--|--     new unit-cell volume =    £  __UNITVOLb__  (    £  __UNITVOLc__  )
+|--|--     density =      £  __UNITDENSITY__ 
+|--|--
+|--(1, 0xdf4bafbdb2114f88)
+|--|-- __SYMBOLtypeA__  (bohr)
+|--|--   £   £   £
+         £   £   £
+         £   £   £
+|--|--
+|--(1, 0x90707cca83e72bcc)
+|--|-- __SYMBOLtypeA__  (crystal)
+|--|-- __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__        £   £   £
+|--|--
+|--
+|--(1, 0xd94e911909e31ebb)
+|--|--     NEW-OLD atomic charge density approx. for the potential
+|--|--
+|--(1, 0xa4edb03f51d77c34)
+|--|--     Check: negative core charge=   £
+|--|--     extrapolated charge   £ , renormalised to   £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x3ef12af154684818)
+|--|--     Self-consistent Calculation
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xa3dfaaad1aba3392)
+|--|--     Threshold (ethr) on eigenvalues was too large:
+|--|--     Diagonalizing with lowered threshold
+|--|--
+|--(1, 0x02786843b7e0cab2)
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x83a993a257211aaa)
+|--|--     End of self-consistent calculation
+|--|--
+|--(56, 0x0375a575e30766fd)
+|--|--(1, 0x28e781504bb09976)
+|--|--|--          k = £ £ £ (  £ PWs)   bands (ev):
+|--|--|--
+|--|--(1, 0x6aac9f1792df2980)
+|--|--|--   £ £ £ £ £ £ £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--|--(1, 0x665fefcfa8f153c7)
+|--|--|--     occupation numbers 
+|--|--|--     £   £   £   £   £   £   £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--(1, 0x0186c81695105210)
+|--|--     the Fermi energy is     £ ev
+|--|--
+|--(1, 0x511f127eb9ae0603)
+|--|--!    total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xe614a6dbcab54505)
+|--|--     total all-electron energy =    £  __Ry__ 
+|--|--
+|--(1, 0xc5fa629cd1cfc870)
+|--|--     The total energy is the sum of the following terms:
+|--|--
+|--(1, 0xbff4a4d3c4ec76d8)
+|--|--     one-electron contribution =    £  __Ry__ 
+|--|--     hartree contribution      =      £  __Ry__ 
+|--|--     xc contribution           =     £  __Ry__ 
+|--|--     ewald contribution        =    £  __Ry__ 
+|--|--     one-center paw contrib.   =    £  __Ry__ 
+|--|--      -> PAW hartree energy AE =      £  __Ry__ 
+|--|--      -> PAW hartree energy  __CHEM__  =     £  __Ry__ 
+|--|--      -> PAW xc energy AE      =     £  __Ry__ 
+|--|--      -> PAW xc energy  __CHEM__       =       £  __Ry__ 
+|--|--      -> total  __SYMBOLtypeA__  with PAW    =      £  __Ry__ 
+            -> total  __SYMBOLtypeA__  with PAW   =     £  __Ry__ 
+|--|--     smearing contrib. (-TS)   =      £  __Ry__ 
+|--|--
+|--(1, 0x892f0613ab26105a)
+|--|--     convergence has been achieved in   £ iterations
+|--|--
+|--(1, 0x202a968b5735dd6e)
+|--|--     Forces acting on atoms (cartesian axes,  __UNITFORCEb__ ):
+|--|--
+|--(1, 0x8fa88c8dfcd0366b)
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £   £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __KWSCF__  correction term to forces
+|--|--     atom    £ type  £   force =     £   £   £
+           atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =    £   £    £
+|--|--
+|--(1, 0x42d6f16096f469af)
+|--|--     Total force =     £     Total  __KWSCF__  correction =     £
+|--|--
+|--
+|--(1, 0xfab8afab996616f4)
+|--|--     Computing stress (Cartesian axis) and pressure
+|--|--
+|--(1, 0x1151e26f399cc98b)
+|--|--          total   stress  ( __UNITSTRESS__ )                   ( __UNITkbar__ )     __PRESSUREEQS__    £
+|--|--   £   £   £          £      £      £
+         £   £   £          £      £      £
+         £   £   £          £      £      £
+|--|--
+|--(13, 0xf950ea8ba15db956)
+|--|--      __QEstressKW__  ( __UNITkbar__ )  £      £      £
+|--|--                                £  £      £
+                                      £      £  £
+|--|--
+|--
+   
+|--(1, 0x97549b0621bcaf14)
+|--|--     number of scf cycles    =   £
+|--|--     number of bfgs steps    =   £
+|--|--
+|--(1, 0x5a57e47dd63bdf47)
+|--|--     enthalpy old            =    £  __Ry__ 
+|--|--     enthalpy new            =    £  __Ry__ 
+|--|--
+|--(1, 0xd6872afb20e73923)
+|--|--     CASE:  __SYMBOLtypeA__  <  __SYMBOLtypeA__ 
+|--|--
+|--(1, 0xe8844f97b353dc52)
+|--|--     Message from routine bfgs:
+|--|--     history already reset at previous step: stopping
+|--|--     small  __SYMBOLtypeA__  resetting bfgs history
+|--|--
+|--(1, 0x78b807cc10f998bb)
+|--|--     new trust radius        =       £ bohr
+|--|--     new  __SYMBOLtypeA__             =            £  __Ry__ 
+|--|--
+|--(1, 0xb99f3690439d5df1)
+|--|--     new unit-cell volume =    £  __UNITVOLb__  (    £  __UNITVOLc__  )
+|--|--     density =      £  __UNITDENSITY__ 
+|--|--
+|--(1, 0xdf4bafbdb2114f88)
+|--|-- __SYMBOLtypeA__  (bohr)
+|--|--   £   £   £
+         £   £   £
+         £   £   £
+|--|--
+|--(1, 0x90707cca83e72bcc)
+|--|-- __SYMBOLtypeA__  (crystal)
+|--|-- __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__        £   £   £
+|--|--
+|--
+|--(1, 0xd94e911909e31ebb)
+|--|--     NEW-OLD atomic charge density approx. for the potential
+|--|--
+|--(1, 0xa4edb03f51d77c34)
+|--|--     Check: negative core charge=   £
+|--|--     extrapolated charge   £ , renormalised to   £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x3ef12af154684818)
+|--|--     Self-consistent Calculation
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xa3dfaaad1aba3392)
+|--|--     Threshold (ethr) on eigenvalues was too large:
+|--|--     Diagonalizing with lowered threshold
+|--|--
+|--(1, 0x02786843b7e0cab2)
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x83a993a257211aaa)
+|--|--     End of self-consistent calculation
+|--|--
+|--(56, 0x0375a575e30766fd)
+|--|--(1, 0x28e781504bb09976)
+|--|--|--          k = £ £ £ (  £ PWs)   bands (ev):
+|--|--|--
+|--|--(1, 0x6aac9f1792df2980)
+|--|--|--   £ £ £ £ £ £ £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--|--(1, 0x665fefcfa8f153c7)
+|--|--|--     occupation numbers 
+|--|--|--     £   £   £   £   £   £   £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--(1, 0x0186c81695105210)
+|--|--     the Fermi energy is     £ ev
+|--|--
+|--(1, 0x511f127eb9ae0603)
+|--|--!    total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xe614a6dbcab54505)
+|--|--     total all-electron energy =    £  __Ry__ 
+|--|--
+|--(1, 0xc5fa629cd1cfc870)
+|--|--     The total energy is the sum of the following terms:
+|--|--
+|--(1, 0xbff4a4d3c4ec76d8)
+|--|--     one-electron contribution =    £  __Ry__ 
+|--|--     hartree contribution      =      £  __Ry__ 
+|--|--     xc contribution           =     £  __Ry__ 
+|--|--     ewald contribution        =    £  __Ry__ 
+|--|--     one-center paw contrib.   =    £  __Ry__ 
+|--|--      -> PAW hartree energy AE =      £  __Ry__ 
+|--|--      -> PAW hartree energy  __CHEM__  =     £  __Ry__ 
+|--|--      -> PAW xc energy AE      =     £  __Ry__ 
+|--|--      -> PAW xc energy  __CHEM__       =       £  __Ry__ 
+|--|--      -> total  __SYMBOLtypeA__  with PAW    =      £  __Ry__ 
+            -> total  __SYMBOLtypeA__  with PAW   =     £  __Ry__ 
+|--|--     smearing contrib. (-TS)   =      £  __Ry__ 
+|--|--
+|--(1, 0x892f0613ab26105a)
+|--|--     convergence has been achieved in   £ iterations
+|--|--
+|--(1, 0x202a968b5735dd6e)
+|--|--     Forces acting on atoms (cartesian axes,  __UNITFORCEb__ ):
+|--|--
+|--(1, 0x8fa88c8dfcd0366b)
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =    £    £   £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __KWSCF__  correction term to forces
+|--|--     atom    £ type  £   force =    £   £    £
+           atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--
+|--(1, 0x42d6f16096f469af)
+|--|--     Total force =     £     Total  __KWSCF__  correction =     £
+|--|--
+|--
+|--(1, 0xfab8afab996616f4)
+|--|--     Computing stress (Cartesian axis) and pressure
+|--|--
+|--(1, 0x1151e26f399cc98b)
+|--|--          total   stress  ( __UNITSTRESS__ )                   ( __UNITkbar__ )     __PRESSUREEQS__   £
+|--|--  £   £   £         £      £      £
+         £  £   £          £     £      £
+         £   £  £          £      £     £
+|--|--
+|--(13, 0xf950ea8ba15db956)
+|--|--      __QEstressKW__  ( __UNITkbar__ )  £      £      £
+|--|--                                £  £      £
+                                      £      £  £
+|--|--
+|--
+|--(1, 0x5d4de5ddd8de1061)
+|--|--     Message from routine bfgs:
+|--|--     history already reset at previous step: stopping
+|--|--
+|--(1, 0x6872bfcb58cfcc70)
+|--|--     bfgs converged in   £ scf cycles and   £ bfgs steps
+|--|--     (criteria: energy <  £  __Ry__ , force <  £ __UNITFORCEa__ , cell <  £ __UNITkbar__ )
+|--|--
+|--(1, 0xf6bc3a39f2b405f3)
+|--|--     End of BFGS Geometry Optimization
+|--|--
+|--(1, 0xeae7be976898140d)
+|--|--     Final enthalpy =    £  __Ry__ 
+|--|--Begin final coordinates
+|--|--     new unit-cell volume =    £  __UNITVOLb__  (    £  __UNITVOLc__  )
+|--|--     density =      £  __UNITDENSITY__ 
+|--|--
+|--(1, 0xdf4bafbdb2114f88)
+|--|-- __SYMBOLtypeA__  (bohr)
+|--|--   £   £   £
+         £   £   £
+         £   £   £
+|--|--
+|--(1, 0x921587e66359a7bc)
+|--|-- __SYMBOLtypeA__  (crystal)
+|--|-- __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__         £   £   £
+       __CHEM__        £   £   £
+|--|--End final coordinates
+|--|--
+|--
+   
+|--(1, 0x92ef2d7d88dcb714)
+|--|--     A final scf calculation at the relaxed structure.
+|--|--     The G-vectors are recalculated for the final unit cell
+|--|--     Results may differ from those at the preceding step.
+|--|--
+|--(1, 0x3ac25f54d51268c4)
+|--|--     Parallelization info
+|--|--     --------------------
+|--|--     sticks:   dense  smooth      __KWPW__      G-vecs:    dense   smooth      PW
+|--|--     Min         £     £     £                 £     £     £
+|--|--     Max         £     £     £                 £     £     £
+|--|--     Sum        £    £    £                £    £    £
+|--|--
+|--
+|--(1, 0x8bf938f0d628ef4e)
+|--|--     Title: 
+|--|--      __SYMBOLtypeA__                                                               
+|--|--
+|--
+|--(1, 0x1fb1538d37276466)
+|--|--     bravais-lattice index     =            £
+|--|--     lattice parameter (alat)  =       £   __au__ 
+|--|--     unit-cell volume          =     £  __UNITVOLa__ 
+|--|--     number of atoms/cell      =            £
+|--|--     number of atomic types    =            £
+|--|--     number of electrons       =        £
+|--|--     number of Kohn-Sham states=           £
+|--|--     kinetic-energy cutoff     =     £   __Ry__ 
+|--|--     charge density cutoff     =     £   __Ry__ 
+|--|--     convergence threshold     =      £
+|--|--     mixing beta               =       £
+|--|--     number of iterations used =            £  plain     mixing
+|--|--     Exchange-correlation      = SLA  __KWPW__  PBX  __KWPBC__  ( £  £  £  £ £ £ )
+|--|--
+|--(1, 0x11a78591e92d8465)
+|--|--     celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+           celldm( £ )=   £  celldm( £ )=   £  celldm( £ )=   £
+|--|--
+|--(1, 0x94312495926c00f7)
+|--|--     crystal axes: (cart. coord. in units of alat)
+|--|--               a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+                     a( £ ) = (   £   £   £ )  
+|--|--
+|--(1, 0x7376b67103ad45e7)
+|--|--     reciprocal axes: (cart. coord. in units  __UNITTWOPIALAT__ )
+|--|--               b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+                     b( £ ) = (  £  £  £ )  
+|--|--
+|--
+|--(1, 0x698476ddb2262901)
+|--|--     PseudoPot. # £ for  __CHEM__  read from file:
+|--|--      __FULLPATH__ 
+|--|--      __CHKSUM__ 
+|--|--     Pseudo is Projector augmented-wave + core cor, Zval = £
+|--|--     Generated using "atomic" code by A. Dal Corso  __VERSIONa__ 
+|--|--     Shape of augmentation charge: PSQ
+|--|--     Using radial grid of £ points,  £ beta functions with: 
+|--|--                l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+|--|--     Q(r) pseudized with £ coefficients 
+|--|--
+|--
+|--(1, 0x698476ddb2262901)
+|--|--     PseudoPot. # £ for  __CHEM__   read from file:
+|--|--      __FULLPATH__ 
+|--|--      __CHKSUM__ 
+|--|--     Pseudo is Projector augmented-wave + core cor, Zval =  £
+|--|--     Generated using "atomic" code by A. Dal Corso  __VERSIONa__ 
+|--|--     Shape of augmentation charge: PSQ
+|--|--     Using radial grid of £ points,  £ beta functions with: 
+|--|--                l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+                      l( £ ) =   £
+|--|--     Q(r) pseudized with £ coefficients 
+|--|--
+|--
+|--(1, 0xd02d4803b70f772c)
+|--|--     atomic species   valence    mass     pseudopotential
+|--|--         __CHEM__             £   £      __CHEM__ ( £ )
+               __CHEM__               £    £      __CHEM__  ( £ )
+|--|--
+|--(1, 0x16da55c787d8ba4d)
+|--|--     £ Sym. Ops., with inversion, found
+|--|--
+|--
+|--(1, 0xb798db86901d60ed)
+|--|--                                    s                        frac. trans.
+|--|--
+|--(1, 0x09247b1e4842c51e)
+|--|--      isym =  £     identity                                     
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym =  £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £         £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £ £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £      £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__      
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__        
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__         
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x33c78a02808a90ea)
+|--|--      isym = £     £ deg rotation - cart. axis  __MILLER__       
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0xd1bb9dfc1f2c40dc)
+|--|--      isym = £     inversion                                    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £         £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £ £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £         £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £ £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £         £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £ £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv.  £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (    £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = ( £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__ 
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (    £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £ £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (     £         £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £ £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (    £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £ £  £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__   
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £         £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        ( £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__    
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £         £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  ( £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £          £      )
+                        (    £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £ £ )
+|--|--                  (  £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £          £          £      )
+|--|--                  (     £          £         £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  (  £  £  £ )
+                        (  £ £  £ )
+|--|--
+|--
+|--(1, 0x3d6aa9386e53599f)
+|--|--      isym = £     inv. £ deg rotation - cart. axis  __MILLER__  
+|--|--
+|--(1, 0xa1464b6a8e772d14)
+|--|-- cryst.   s( £ ) = (     £         £          £      )
+|--|--                  (     £          £          £      )
+                        (     £          £          £      )
+|--|--
+|--(1, 0xd10b5c422ca0c300)
+|--|-- cart.    s( £ ) = (  £  £  £ )
+|--|--                  ( £  £  £ )
+                        (  £  £  £ )
+|--|--
+|--
+|--(1, 0xa6d3018f064bc7df)
+|--|--   Cartesian axes
+|--|--
+|--(1, 0x2de05abd071d054e)
+|--|--     site n.     atom                  positions (alat units)
+|--|--         £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__    tau(   £ ) = (   £   £   £  )
+               £            __CHEM__   tau(   £ ) = (   £   £   £  )
+|--|--
+|--(1, 0xde9e50e1fc12d244)
+|--|--   Crystallographic axes
+|--|--
+|--(1, 0xf695b0918916abc3)
+|--|--     site n.     atom                  positions (cryst. coord.)
+|--|--         £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__    tau(   £ ) = (  £  £  £  )
+               £            __CHEM__   tau(   £ ) = (  £  £  £  )
+|--|--
+|--(1, 0x35ff01e27a2f9435)
+|--|--     number of k points=    £  Methfessel-Paxton smearing, width ( __Ry__ )=  £
+|--|--                       cart. coord. in units  __UNITTWOPIALAT__ 
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0xd7c97cc3825a73ae)
+|--|--                       cryst. coord.
+|--|--        k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(    £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+              k(   £ ) = (   £   £   £ ), wk =   £
+|--|--
+|--(1, 0x4e89f2f897180925)
+|--|--     Dense  grid:    £ G-vectors     FFT dimensions:  __THREETUPLES__ 
+|--|--
+|--(1, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0xf5a5b1ecc8a51ec6)
+|--|--      __QEDynRAMfor__  (w. buffer):       £ MB
+|--|--
+|--(13, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0x9e80bf661b0fd064)
+|--|--      __QEDynRAMfor__ init/wfcrot:       £ MB
+|--|--
+|--(3, 0x0cbf35d66484dec2)
+|--|--      __QEDynRAMfor__ :       £ MB
+|--|--
+|--(1, 0x6d0dc130cd45c606)
+|--|--     Estimated static dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0x755e5395f98ebccb)
+|--|--     Estimated max dynamical RAM per process >      £ MB
+|--|--
+|--(1, 0x8f0c1de35aae1a6f)
+|--|--     Estimated total dynamical RAM >       £ GB
+|--|--
+|--(1, 0x16804af9765b026a)
+|--|--     Check: negative core charge=   £
+|--|--
+|--(1, 0x39d606d8b480d309)
+|--|--     Initial potential from superposition of free atoms
+|--|--
+|--(1, 0xfa8b01b102263256)
+|--|--     starting charge   £ , renormalised to   £
+|--|--     Starting wfcs are   £ randomized atomic wfcs +   £ random wfcs
+|--|--     Checking if some PAW data can be deallocated... 
+|--|--       PAW data deallocated on   £ nodes for type:  £
+             PAW data deallocated on   £ nodes for type:  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x3ef12af154684818)
+|--|--     Self-consistent Calculation
+|--|--
+|--(1, 0x631265bd77f2961c)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--      __QEelROUTINES__   £ eigenvalues not converged
+|--|--     ethr =  £ ,  avg # of iterations = £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <      £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration #  £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <       £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration # £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration # £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0xd6fc5fd3c8a0f6d1)
+|--|--     total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xd002ca4d17a20a31)
+|--|--     iteration # £     ecut=   £  __Ry__      beta= £
+|--|--     Davidson diagonalization with overlap
+|--|--     ethr =  £ ,  avg # of iterations =  £
+|--|--
+|--(1, 0xd07cd86d479b6ab5)
+|--|--     total cpu time spent up to now is       £ secs
+|--|--
+|--(1, 0x83a993a257211aaa)
+|--|--     End of self-consistent calculation
+|--|--
+|--(56, 0x0375a575e30766fd)
+|--|--(1, 0x28e781504bb09976)
+|--|--|--          k = £ £ £ (  £ PWs)   bands (ev):
+|--|--|--
+|--|--(1, 0x6aac9f1792df2980)
+|--|--|--   £ £ £ £ £ £ £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--|--(1, 0x665fefcfa8f153c7)
+|--|--|--     occupation numbers 
+|--|--|--     £   £   £   £   £   £   £   £
+              £   £   £   £   £   £   £   £
+              £   £   £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £  £  £  £  £  £  £
+             £  £
+|--|--|--
+|--(1, 0x0186c81695105210)
+|--|--     the Fermi energy is     £ ev
+|--|--
+|--(1, 0x511f127eb9ae0603)
+|--|--!    total energy              =    £  __Ry__ 
+|--|--     Harris-Foulkes estimate   =    £  __Ry__ 
+|--|--     estimated scf accuracy    <          £  __Ry__ 
+|--|--
+|--(1, 0xe614a6dbcab54505)
+|--|--     total all-electron energy =    £  __Ry__ 
+|--|--
+|--(1, 0xc5fa629cd1cfc870)
+|--|--     The total energy is the sum of the following terms:
+|--|--
+|--(1, 0xbff4a4d3c4ec76d8)
+|--|--     one-electron contribution =    £  __Ry__ 
+|--|--     hartree contribution      =      £  __Ry__ 
+|--|--     xc contribution           =     £  __Ry__ 
+|--|--     ewald contribution        =    £  __Ry__ 
+|--|--     one-center paw contrib.   =    £  __Ry__ 
+|--|--      -> PAW hartree energy AE =      £  __Ry__ 
+|--|--      -> PAW hartree energy  __CHEM__  =     £  __Ry__ 
+|--|--      -> PAW xc energy AE      =     £  __Ry__ 
+|--|--      -> PAW xc energy  __CHEM__       =       £  __Ry__ 
+|--|--      -> total  __SYMBOLtypeA__  with PAW    =      £  __Ry__ 
+            -> total  __SYMBOLtypeA__  with PAW   =     £  __Ry__ 
+|--|--     smearing contrib. (-TS)   =      £  __Ry__ 
+|--|--
+|--(1, 0x892f0613ab26105a)
+|--|--     convergence has been achieved in  £ iterations
+|--|--
+|--(1, 0x202a968b5735dd6e)
+|--|--     Forces acting on atoms (cartesian axes,  __UNITFORCEb__ ):
+|--|--
+|--(1, 0x8fa88c8dfcd0366b)
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =     £   £    £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £   £
+           atom    £ type  £   force =    £   £    £
+|--|--     The  __QEforceKW__ 
+|--|--     atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+           atom    £ type  £   force =     £    £    £
+|--|--     The  __KWSCF__  correction term to forces
+|--|--     atom    £ type  £   force =    £    £   £
+           atom    £ type  £   force =    £   £   £
+           atom    £ type  £   force =    £    £    £
+           atom    £ type  £   force =    £    £    £
+|--|--
+|--(1, 0x42d6f16096f469af)
+|--|--     Total force =     £     Total  __KWSCF__  correction =     £
+|--|--
+|--
+|--(1, 0xfab8afab996616f4)
+|--|--     Computing stress (Cartesian axis) and pressure
+|--|--
+|--(1, 0x1151e26f399cc98b)
+|--|--          total   stress  ( __UNITSTRESS__ )                   ( __UNITkbar__ )     __PRESSUREEQS__   £
+|--|--  £   £   £         £      £      £
+         £  £   £          £     £      £
+         £   £  £          £      £     £
+|--|--
+|--(13, 0xf950ea8ba15db956)
+|--|--      __QEstressKW__  ( __UNITkbar__ )  £      £      £
+|--|--                                £  £      £
+                                      £      £  £
+|--|--
+|--
+   
+|--(1, 0xe7a8f5f974a3a00c)
+|--|--      __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__       __DURATION__   __KWCPU__       __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+|--|--
+|--(6, 0xaac1e8004ff3715c)
+|--|--     Called by  __QEelROUTINES__ 
+|--|--      __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (      £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (      £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (       £ calls)
+|--|--
+|--(1, 0xedd52f65e7ed6e0c)
+|--|--     General routines
+|--|--      __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (    £ calls)
+            __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (     £ calls)
+            __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (      £ calls)
+            __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (  £ calls)
+|--|--
+|--(1, 0x0379648457b92d59)
+|--|--     Parallel routines
+|--|--      __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (  £ calls)
+            __QEgenROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (  £ calls)
+|--|--
+|--(1, 0xee17b4d40bedbf85)
+|--|--     PAW routines
+|--|--      __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (      £ calls)
+            __QEelROUTINES__        __DURATION__   __KWCPU__        __DURATION__  WALL (     £ calls)
+|--|--
+|--(1, 0x9ddf5130594f4993)
+|--|--      __QEelROUTINES__       __DURATION__   __KWCPU__       __DURATION__  WALL
+|--|--
+|--
+|--(1, 0x43d5a5cf71dee0ee)
+|--|--   This run was terminated on:   __HHMMSS__    __DATEa__             
+|--|--
+|--(1, 0xbca71de9a9e2df59)
+|--|--=------------------------------------------------------------------------------=
+|--|--   JOB DONE.
+|--|--=------------------------------------------------------------------------------=
+|--|--
