@@ -17,6 +17,7 @@ end
 #@inline is_valid_C(C::Vector) = sum(Int[length(c.x) for c in C])==concat0(C[1].x,C[end].x)
 @inline is_valid_C(C::Vector{Block{TR}}) where TR = mapreduce(c->length(getfield(c,:x)), +, C)==length(concat0(C[1].x,C[end].x))
 
+is_valid_x(M) = (is_single(M) ? length(M.x)==M.n : length(M.x)==M.n*sum([length(z.x) for z ∈ children(M)]))
 
 ##: ============== elementary operation ================
 
@@ -94,6 +95,8 @@ end
 # correct the .x and .n field of M1 according to M
 function correct_x_n(M::Block{TR}, M1::Block{TR}) where TR
     @assert first(M1.x) == first(M.x)
+    @assert is_valid_x(M)
+    @assert all(is_valid_x.(children(M1)))
     @assert length(M1.x)*M.n == length(M.x)
     M2 = copy(M1)
     M2.n = M1.n * M.n
@@ -168,6 +171,17 @@ function build_block_init(patts::Vector{TPattern})
 end
 
 
+function verify_block(b)
+    function h(x)
+        if ! is_valid_x(x[2])
+            @show x[2]
+            return false
+        else
+            return all(x[1])
+        end
+    end
+    DFS(b, x->nothing, x->nothing, h)
+end
 
 
 function typical_blocks(

@@ -112,7 +112,7 @@ is_single(s::Block{TR}) where TR = length(s.C)==0
 
 #: ----------- hash -----------
 
-khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p) : hash(khash.(b.C)))
+khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p,UInt(b.n)) : hash(khash.(b.C),UInt(b.n)))
 
 #+ ======== compute_label ========
 

@@ -39,6 +39,7 @@ export restructure_children
 export find_block_MostFreqSubsq, find_block_MostFreqSimilarSubsq
 export build_block_init, typical_blocks
 export merge_children
+export verify_block
 include("find_block.jl")
 
 export block_print, treep
