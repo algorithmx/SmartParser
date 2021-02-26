@@ -14,9 +14,9 @@ label(t::AbstractTree) = t.R
 
 
 #: my favourite
-function DFS(t::T, f::Function, g::Function, h::Function) where {T <: AbstractTree}
+function DFS(t::T, f::Function, g::Function, h::Function)::Any where {T <: AbstractTree}
     f(t)
-    V = [DFS(c, f, g, h) for c ∈ children(t)]
+    V = Any[DFS(c, f, g, h) for c ∈ children(t)]
     g(t)
     return h((V,t))
 end
@@ -41,11 +41,11 @@ function max_depth(t::T) where {T <: AbstractTree}
 end
 
 function collect_action_dfs(t::T, action::Function) where {T <: AbstractTree}
-    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? [action(x[2]),] : vcat(x[1]...,[action(x[2]),])))
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? Any[action(x[2]),] : vcat(x[1]...,Any[action(x[2]),])))
 end
 
 function collect_action_bfs(t::T, action::Function) where {T <: AbstractTree}
-    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? [action(x[2]),] : vcat([action(x[2]),], x[1]...)))
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? Any[action(x[2]),] : vcat([action(x[2]),], x[1]...)))
 end
 
 function tree_print(

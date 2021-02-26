@@ -39,6 +39,7 @@ export block_print, treep
 include("block_print.jl")
 
 export parse_file!
+export search_kw_in_tree_data
 include("parse_file.jl")
 
 

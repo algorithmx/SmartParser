@@ -1,7 +1,7 @@
 
 function search_kw_in_tree_data(t::Multiline, kw)
-    f(x) = (is_multi(x) ? [[]] : ([[v for (k,v) in data if k==kw] for data in x.DATA]))
-    return [(i,x) for (i,x) in enumerate(collect_action_dfs(t,f)) if unique(x)!=[[]]]
+    extract_data(x) = (is_multi(x) ? [[]] : ([[tx=>v for (k,v) in data if k==kw] for tx_data_pairs in x.DATA for (tx,data) in tx_data_pairs]))
+    return [(i,x) for (i,x) in enumerate(collect_action_dfs(t,extract_data)) if unique(x)!=[[]]]
 end
 
 
