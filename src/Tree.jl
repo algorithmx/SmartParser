@@ -137,7 +137,6 @@ is_valid_block(b::Block{TR}) where TR = is_valid_C(children(b)) && verify_block(
 
 #+ ========= compute_label ==========
 
-#compute_label(b::Block) = khash(b)
 compute_label(b::Block) = (khash(b), patt_dfs(b))
 
 #+ ==================================

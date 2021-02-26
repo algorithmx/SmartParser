@@ -3,15 +3,16 @@
 #global const __SIMILARITY_LEVEL__ = 0.9
 #: ========================================================================
 
+# not used
 avg(l) = sum(l)/length(l)
 
+# not used
 function patt_similarity(p1::TPattern, p2::TPattern, f=identity)::Float64
     len1 = length(p1)
     len2 = length(p2)
     lmin = min(len1,len2)
     return (len1==len2==0 ? 1.0 : f(avg(p1[1:lmin].==p2[1:lmin])))
 end
-
 
 # not used
 similarity(a,b)::Float64 = (a[1]==b[1] ? 1.0 : (length(a[2])!=length(b[2]) ? 0.0 : avg([patt_similarity(x,y) for (x,y) ∈ zip(a[2],b[2])])))
@@ -36,7 +37,6 @@ function patt_similarity2(p1::TPattern, p2::TPattern)::Float64
     return (len1==len2==0 ? 1.0 : (mapreduce(i->p1[i]==p2[i], +, 1:lmin)/lmin)^2)
 end
 
-
 #TODO optimize
 function similarity2(a,b)::Float64
     if a[1]==b[1]
@@ -51,17 +51,17 @@ function similarity2(a,b)::Float64
     end
 end
 
-
 function nonoverlapping(
     substr::Vector{TR}, 
     fullstr::Vector{TR}
     )::Vector{IntRange}  where  TR
 
-    Nsub = length(substr)
-    posL = length(fullstr)-length(substr)+1 
-    R    = IntRange[]
+    Nsub    = length(substr)
+    posL    = length(fullstr)-length(substr)+1 
+    R       = IntRange[]
     sim_min = Nsub * __SIMILARITY_LEVEL__
-    sim  = -1.0
+    sim     = -1.0
+
     while posL >= Nsub
         q = -1
         for p ∈ posL:-1:1   # test similarity from the right
@@ -79,15 +79,6 @@ function nonoverlapping(
                 posL = q-Nsub
                 break
             end
-            #=
-            sim = sum(Float64[similarity2(substr[1+j], fullstr[p+j])^4 for j=0:Nsub-1])
-            if ( sim > Nsub * __SIMILARITY_LEVEL__ ) # overall similarity larger than fixed level
-                q = p
-                push!(R, q:q+Nsub-1)
-                posL = q-Nsub
-                break
-            end
-            =#
         end
         if q < 0
             break
@@ -98,7 +89,6 @@ end
 
 
 good_label_crit(s)::Bool = (s[1]!=__M0_HASH__ && s[1]!=__HASH__all_number_line__)
-
 
 function MostFreqSimilarSubsq(
     str::Vector{TR}; 

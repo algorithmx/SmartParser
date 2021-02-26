@@ -117,7 +117,8 @@ end
 
 find_block(x::Block; block_identifier=MostFreqSubsq)::Block = (is_single(x) ? x : fold_block(x, block_identifier(label.(children(x)))))
 
-find_block_MostFreqSubsq(x::Block) = find_block(x; block_identifier=MostFreqSubsq)
+# not used
+#find_block_MostFreqSubsq(x::Block) = find_block(x; block_identifier=MostFreqSubsq)
 
 find_block_MostFreqSimilarSubsq(x::Block) = find_block(x; block_identifier=MostFreqSimilarSubsq)
 
