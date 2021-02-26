@@ -10,6 +10,8 @@ function build_structure_tree(fn)
     B = build_block_init(patts) ;
     B  = find_block_MostFreqSimilarSubsq(B) ;
     B  = find_block_MostFreqSimilarSubsq(B) ;
+    B  = find_block_MostFreqSimilarSubsq(B) ;
+    B  = find_block_MostFreqSimilarSubsq(B) ;
     return lines, lines1, B, code
 end
 
@@ -29,7 +31,7 @@ for RT ∈ ["/data/ReO3_phonon_configs","/data/ScF3_phonon_configs",]
             @assert is_valid_block(B)
             push!(DATA, (B, code, codeinv, lines, lines1))
             NL = block_print(B, lines1, offset=0, mute=true) ;
-            open("$(fn).replaced.2.txt","w") do f
+            open("$(fn).replaced.4.txt","w") do f
                 write(f,join(NL,"\n"))
             end
         end

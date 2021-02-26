@@ -22,8 +22,10 @@ function similarity2(a,b)::Float64
         N = length(a[2])
         if N!=length(b[2])
             return 0.0
+        #elseif N==0  # never happens
+        #    return 1.0
         else
-            return mapreduce(i->patt_similarity2(a[2][i],b[2][i]), +, 1:N)/N
+            return sum(patt_similarity2(a[2][i],b[2][i]) for i=1:N)/N
         end
     end
 end
