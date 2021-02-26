@@ -24,8 +24,9 @@ for RT ∈ ["/data/ReO3_phonon_configs","/data/ScF3_phonon_configs",]
             @info fn
             lines, lines1, B, code = build_structure_tree(fn) ;
             codeinv = revert(code) ;
-            BD = parse_file(0, B, lines, lines1, codeinv) ;
-            push!(DATA, (BD, B, code, codeinv, lines, lines1))
+            parse_file!(0, B, lines, lines1, codeinv) ;
+            @assert is_valid_block(B)
+            push!(DATA, (B, code, codeinv, lines, lines1))
             NL = block_print(B, lines1, offset=0, mute=true) ;
             open("$(fn).replaced.txt","w") do f
                 write(f,join(NL,"\n"))
@@ -33,4 +34,3 @@ for RT ∈ ["/data/ReO3_phonon_configs","/data/ScF3_phonon_configs",]
         end
     end
 end
-

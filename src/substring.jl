@@ -1,4 +1,10 @@
-@inline function comp_each_char(s1::Vector{TR}, i1::Int, s2::Vector{TR}, i2::Int) where TR
+function comp_each_char(
+    s1::Vector{TR}, 
+    i1::Int, 
+    s2::Vector{TR}, 
+    i2::Int
+    )::Bool where TR
+
     n1 = length(s1)
     j = 0 
     while j < n1
@@ -12,38 +18,48 @@ end
 # find the position q such that str[ q : q+Nsub-1 ] == substr
 # starts from posL_str in str
 # if not found return -1
-function find_pos_from_right(
+function find_pos_from_right_V0(
     substr::Vector{TR}, 
     fullstr::Vector{TR}, 
-    posL_str::Int; 
-    compare_func=comp_each_char
+    posL_str::Int
     )::Int  where  TR
 
     for p ∈ posL_str:-1:1
-        if compare_func(substr,1,fullstr,p)  return p   end
+        if comp_each_char(substr,1,fullstr,p)  return p   end
     end
     return -1
-
 end
 
 
 function nonoverlapping(
     substr::Vector{TR}, 
     fullstr::Vector{TR}, 
-    posL_str::Int;
-    compare_func=comp_each_char
+    posL_str::Int
     )::Vector{IntRange}  where  TR
 
-    q = find_pos_from_right(substr, fullstr, posL_str, compare_func=compare_func)
-    if q > 0
-        Nsub = length(substr)
-        return [nonoverlapping(substr, fullstr, q-Nsub, compare_func=compare_func)..., q:q+Nsub-1]
-    else
-        return IntRange[]
+    Nsub = length(substr)
+    posL = posL_str
+    R    = IntRange[]
+    while posL >= Nsub
+        #q = find_pos_from_right(substr, fullstr, posL, compare_func=compare_func)
+        q = find_pos_from_right(substr, fullstr, posL)
+        if q > 0
+            push!(R, q:q+Nsub-1)
+            posL = q-Nsub
+        else
+            break
+        end
     end
-
+    return R
 end
 
 
-@inline nonoverlapping(substr::Vector{TR}, fullstr::Vector{TR}; compare_func=comp_each_char) where TR = 
-    nonoverlapping(substr, fullstr, length(fullstr)-length(substr)+1, compare_func=compare_func)
+function nonoverlapping(
+    substr::Vector{TR}, 
+    fullstr::Vector{TR}
+    )::Vector{IntRange} where TR
+
+    return nonoverlapping(  substr, 
+                            fullstr, 
+                            length(fullstr)-length(substr)+1 )
+end

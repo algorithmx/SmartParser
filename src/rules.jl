@@ -120,9 +120,10 @@ global const  MASK_RULES = [
     r"[A-Za-z]*\d+[A-Za-z]+"                                => " __SYMBOLtypeC__ ",  #: this is rather unfortunate
 ]
 
-
+# these are used in parse_file for performance optimization
 global const  MASK_RULES_DIC_INV = Dict(v=>k for (k,v) ∈ MASK_RULES if (k isa Regex))
-
+global const  MASK_RULES_DIC_INV1 = Dict(strip(v)=>k for (k,v) ∈ MASK_RULES if (k isa Regex))
+global const  MASK_RULES_DIC_INV_KEYS_STRIPPED_NO_£ = Set([strip.(x) for x in keys(MASK_RULES_DIC_INV) if x!="£"])
 
 global const __preproc__ = [ 
     r"(\d+)q-points" => s"\1 q-points",

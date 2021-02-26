@@ -22,8 +22,8 @@ export is_multi, is_single
 export Block
 include("Tree.jl")
 
-export nonoverlapping
-include("substring.jl")
+#export nonoverlapping
+#include("substring.jl")
 
 
 include("special_dict_op.jl")
@@ -35,17 +35,16 @@ export similarity
 export MostFreqSimilarSubsq
 include("block_similarity.jl")
 
-export restructure_children
 export find_block_MostFreqSubsq, find_block_MostFreqSimilarSubsq
+export verify_block, is_valid_block, is_valid_x, is_valid_C
 export build_block_init, typical_blocks
 export merge_children
-export verify_block
 include("find_block.jl")
 
 export block_print, treep
 include("block_print.jl")
 
-export findfirst_spec, parse_file
+export parse_file!
 include("parse_file.jl")
 
 

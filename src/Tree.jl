@@ -5,22 +5,12 @@
 abstract type AbstractTree end
 
 
-function children(t::AbstractTree)
-    if hasfield(typeof(t),:C)
-        return t.C
-    else
-        return []
-    end
+function children(t::T)::Vector{T} where {T<:AbstractTree}
+    return t.C
 end
 
 
-function label(t::AbstractTree)
-    if hasfield(typeof(t),:R)
-        return t.R
-    else
-        return nothing
-    end
-end
+label(t::AbstractTree) = t.R
 
 
 #: my favourite
@@ -91,10 +81,22 @@ import Base.isequal
 #: ------------  Block  -------------
 mutable struct Block{TR} <: AbstractTree
     n::Int                # number of repetitions
-    x::IntRange     # 
-    p::TPattern           # pattern
-    R::TR                 # identifier, can be pattern hash, or DFS traverse data
+    # x
+    # full range of the block
+    x::IntRange 
+    # p
+    # pattern for signle-line
+    # undef for multi-line
+    p::TPattern
+    # R 
+    # identifier, can be pattern hash, or DFS traverse data
+    R::TR
+    # C 
+    # children
     C::Vector{Block{TR}}
+    # DATA
+    # for single line, store extracted data, 
+    # for multi line, empty
     DATA
 end
 
@@ -114,27 +116,46 @@ is_single(s::Block{TR}) where TR = length(s.C)==0
 
 khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p,UInt(b.n)) : hash(khash.(b.C),UInt(b.n)))
 
-#+ ======== compute_label ========
+is_valid_C(C::Vector{Block{TR}}) where TR = (length(C)>0 ? mapreduce(c->length(getfield(c,:x)), +, C)==length(concat0(C[1].x,C[end].x)) : true)
+
+is_valid_x(M) = (is_single(M) ? length(M.x)==M.n : length(M.x)==M.n*sum([length(z.x) for z ∈ children(M)]))
+
+function verify_block(b::Block{TR})::Bool where TR
+    function h(x::Tuple{Vector,Block{TR}})
+        if ! is_valid_x(x[2])
+            @show x[2]
+            return false
+        else
+            return all(x[1])
+        end
+    end
+    DFS(b, x->nothing, x->nothing, h)
+end
+
+is_valid_block(b::Block{TR}) where TR = is_valid_C(children(b)) && verify_block(b)
+
+
+#+ ========= compute_label ==========
 
 #compute_label(b::Block) = khash(b)
 compute_label(b::Block) = (khash(b), patt_dfs(b))
 
-#+ ===============================
+#+ ==================================
 
-function Block(patt::TPattern, rg::IntRange)
-    b = Block{__DEFAULT__RTYPE__}(length(rg), rg, patt, __DEFAULT__R__, Block{__DEFAULT__RTYPE__}[], [])
+function Block(patt::TPattern, rg::IntRange)::Block{__RTYPE__}
+    b = Block{__RTYPE__}(length(rg), rg, patt, __DEFAULT__R__, Block{__RTYPE__}[], [])
     b.R = compute_label(b)
     return b
 end
 
 
-Block(patt::TPattern, i::Int) = Block(patt, i:i)
+Block(patt::TPattern, i::Int)::Block{__RTYPE__} = Block(patt, i:i)
 
 
-Block() = Block(__DEFAULT_PATT__, 0)
+Block()::Block{__RTYPE__} = Block(__DEFAULT_PATT__, 0)
 
 
-function Block(C::Vector{Block{RT}}) where RT
+function Block(C::Vector{Block{RT}})::Block{RT} where RT
     if length(C)==1  return C[1]  end
     rconcat = concat0(C[1].x, C[end].x)
     b = Block{RT}(1, rconcat, __DEFAULT_PATT__, __DEFAULT__R__, C, [])
