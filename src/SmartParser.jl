@@ -22,20 +22,13 @@ export is_multi, is_single
 export Block
 include("Tree.jl")
 
-#export nonoverlapping
-#include("substring.jl")
-
-
 include("special_dict_op.jl")
-
-#export MostFreqSubsq
-#include("most_frequent_subsequence.jl")
 
 export similarity
 export MostFreqSimilarSubsq
 include("block_similarity.jl")
 
-#export find_block_MostFreqSubsq
+
 export find_block_MostFreqSimilarSubsq
 export verify_block, is_valid_block, is_valid_x, is_valid_C
 export build_block_init, typical_blocks

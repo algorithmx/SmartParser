@@ -20,7 +20,7 @@ global const __DEFAULT_HASH_CODE__ = UInt64(0x0)
 global const __DEFAULT__R__ = (__DEFAULT_HASH_CODE__, TPattern[])  #+ modify
 global const __RTYPE__ = typeof(__DEFAULT__R__)
 
-global const __SIMILARITY_LEVEL__ = 0.7
+global const __SIMILARITY_LEVEL__ = 0.9
 
 import Base.copy
 

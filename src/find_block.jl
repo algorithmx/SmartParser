@@ -101,21 +101,34 @@ end
 
 function fold_block(b::Block{TR}, blocks::Vector{IntRange})::Block{TR} where TR
     return (length(blocks)>0 
-        ? correct_x_n!(b, Block(fold_C_by_blks(children(b), blocks))) 
-        : b)
+                ? correct_1_1_1(correct_x_n!(b, Block(fold_C_by_blks(children(b), blocks)))) 
+                : b)
+end
+
+
+is_1_1(b) = (b.n==1 && length(children(b))==1)
+
+function correct_1_1_1(b::Block{TR})::Block{TR} where TR
+    for i=1:length(children(b))
+        if is_1_1(b.C[i])
+            b.C[i] = b.C[i].C[1]
+        else
+            b.C[i] = correct_1_1_1(b.C[i])
+        end
+    end
+    return b
 end
 
 
 function merge_children(b::Block)::Block
-    C = merge_conseq_iden_blocks(children(b))
     b1 = copy(b)
-    b1.C = C[:]
+    b1.C = merge_conseq_iden_blocks(children(b))
     return b1
 end
 
 #: ----------- find blocks -----------
 
-find_block(x::Block; block_identifier=MostFreqSubsq)::Block = (is_single(x) ? x : fold_block(x, block_identifier(label.(children(x)))))
+find_block(x::Block; block_identifier=MostFreqSimilarSubsq)::Block = (is_single(x) ? x : fold_block(x, block_identifier(label.(children(x)))))
 
 # not used
 #find_block_MostFreqSubsq(x::Block) = find_block(x; block_identifier=MostFreqSubsq)
