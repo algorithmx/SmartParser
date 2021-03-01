@@ -9,6 +9,7 @@
 
 @inline first_word_iden_weighted(f,X) = (f(1) ? exp_weighted(f,X) : 0.0)
 
+
 #TODO optimize
 function patt_similarity2(p1::TPattern, p2::TPattern)::Float64
     len1 = length(p1)
@@ -33,11 +34,10 @@ function similarity2(a,b)::Float64
     end
 end
 
-##
 
+##
 #p1 = (:x,TPattern[[13, 0, 0, 0, 0, 0, 0], [14, 15, 0], [16, 17, 18, 19], [20, 21, 0], [-1]])
 #p2 = (:y,TPattern[[22, 0, 0, 23], [14, 15, 0], [16, 17, 18, 19], [20, 21, 0], [-1]])
-
 #similarity2(p1,p2)
 #patt_similarity2([13, 0, 0, 0, 0, 0, 0],[22, 0, 0, 23])
 #patt_similarity2([10, 11, 0, 12],[10, 11, 0, 0, 18, 19, 20, 17, 21, 22])^2
