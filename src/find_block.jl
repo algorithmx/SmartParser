@@ -15,7 +15,6 @@ end
 
 ##: ============== elementary operation ================
 
-
 function merge_conseq_iden_blocks(
     C::Vector{Block{TR}}
     )::Vector{Block{TR}}  where TR
@@ -49,6 +48,7 @@ function merge_conseq_iden_blocks(
 
     correct_R!(C1)
     @assert is_valid_C(C1)
+
     return C1
 end
 
@@ -83,6 +83,7 @@ function fold_C_by_blks(
 
     correct_R!(C1)
     return merge_conseq_iden_blocks(C1)
+    return C1
 end
 
 
@@ -137,9 +138,13 @@ find_block_MostFreqSimilarSubsq(x::Block) = find_block(x; block_identifier=MostF
 
 #: ----------- init blocks -----------
 
+function build_block_init(patts::Vector{TPattern})::Block{__RTYPE__}
+    return Block(merge_conseq_iden_blocks([Block(p,i) for (i,p) ∈ enumerate(patts)]))
+end
+
 
 # assuming that each "logical block" is terminated by an empty line
-function build_block_init(patts::Vector{TPattern})::Block{__RTYPE__}
+function build_block_init_by_linebreak(patts::Vector{TPattern})::Block{__RTYPE__}
     Q = empty_TPattern()   #  previous pattern
     S = Stack{Tuple{Int,Block{__RTYPE__}}}()
     L = 0   #  level

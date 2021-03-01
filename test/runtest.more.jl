@@ -9,23 +9,26 @@ function build_structure_tree(fn)
         return String[], String[], Multiline(), code
     end
     B = ( build_block_init(patts) 
-            |> find_block_MostFreqSimilarSubsq |> merge_children 
-                |> find_block_MostFreqSimilarSubsq |> merge_children 
-                    |> find_block_MostFreqSimilarSubsq |> merge_children ) ;
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+            |> find_block_MostFreqSimilarSubsq # |> merge_children 
+    ) ;
     return lines, lines1, B, code
 end
 
 RT = "/home/dabajabaza/jianguoyun/Workspace/SmartParser"
 
 fns = [
-    ("$RT/test/test4.pw.x.out", :QE),
-    ("$RT/test/test3.pwdry.x.out", :QE) ,
-    ("$RT/test/test1.pw.x.out", :QE) ,
-    ("$RT/test/test2.ph.x.out", :QE),
-    ("$RT/test/lammps.log", :LAMMPS) ,
     ("$RT/test/CALYPSO.log", :CALYPSO) ,
+    ("$RT/test/test.bandstructure.out", :QE),
+    ("$RT/test/test.iteration.out", :QE),
+    ("$RT/test/test.kpoint.out", :QE),
+    ("$RT/test/test.isym_block.out", :QE),
+    ("$RT/test/test.irreps.out", :QE),
 ]
-
 
 DATA = []
 
@@ -36,10 +39,10 @@ for fn_md in fns
     lines, lines1, B, code = build_structure_tree(fn) ;
     verify_block(B) ;
     codeinv = revert(code) ;
-    BD = parse_file(0, B, lines, lines1, codeinv) ;
+    BD = parse_file!(0, B, lines, lines1, codeinv) ;
     push!(DATA, (BD, B, code, codeinv, lines, lines1))
     NL = block_print(B, lines1, offset=0, mute=true) ;
-    open("$(fn).replaced.txt","w") do f
+    open("$(fn).replaced3.txt","w") do f
         write(f,join(NL,"\n"))
     end
 end

@@ -16,7 +16,8 @@ include("tokenize.jl")
 export Block, Singleline, MultiDict, tree_print
 export khash, copy, isequal
 export DFS
-export children, label, num_nodes, max_depth
+export children, label, num_nodes
+export max_depth, min_depth
 export collect_action_dfs, collect_action_bfs
 export is_multi, is_single
 export Block
@@ -31,6 +32,7 @@ include("block_similarity.jl")
 
 export find_block_MostFreqSimilarSubsq
 export verify_block, is_valid_block, is_valid_x, is_valid_C
+export build_block_init_by_linebreak
 export build_block_init, typical_blocks
 export merge_children
 include("find_block.jl")
@@ -39,8 +41,12 @@ export block_print, treep
 include("block_print.jl")
 
 export parse_file!
-export search_kw_in_tree_data
 include("parse_file.jl")
 
+export search_kw_in_tree_data
+export search_x_in_tree
+export next_block_by_id
+export block_contains_kw_data
+include("search.jl")
 
 end # module

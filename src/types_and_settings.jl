@@ -6,12 +6,10 @@ TCode = Int
 TPattern = Vector{TCode}
 global const __DEFAULT_PATT__ = TCode[]
 empty_TPattern() = TCode[]
+global const __M0_PATT__  = TCode[]
 one_elem_TPattern(x) = TCode[x,]
-global const __M0_HASH__  = hash(empty_TPattern())
 global const __M1_PATT__  = one_elem_TPattern(-1)
-global const __M1_HASH__  = hash(__M1_PATT__)
 global const __PATT__all_number_line__ = one_elem_TPattern(999999999)
-global const __HASH__all_number_line__ = hash(__PATT__all_number_line__)
 
 # reserved token 999999999 for all number line
 # used by tokenize

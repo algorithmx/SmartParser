@@ -40,13 +40,25 @@ function max_depth(t::T) where {T <: AbstractTree}
     return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? 0 : maximum(x[1])+1))
 end
 
-function collect_action_dfs(t::T, action::Function) where {T <: AbstractTree}
-    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? Any[action(x[2]),] : vcat(x[1]...,Any[action(x[2]),])))
+
+function min_depth(t::T) where {T <: AbstractTree}
+    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? 0 : minimum(x[1])+1))
 end
 
-function collect_action_bfs(t::T, action::Function) where {T <: AbstractTree}
-    return DFS(t, x->nothing, x->nothing, x->(length(x[1])==0 ? Any[action(x[2]),] : vcat([action(x[2]),], x[1]...)))
+
+function collect_action_dfs(t::T, action::Function) where {T <: AbstractTree}
+    return DFS( t,  x->nothing, 
+                    x->nothing, 
+                    x->vcat(x[1]...,Any[action(x[2]),]) )
 end
+
+
+function collect_action_bfs(t::T, action::Function) where {T <: AbstractTree}
+    return DFS( t,  x->nothing, 
+                    x->nothing, 
+                    x->vcat(Any[action(x[2]),], x[1]...) )
+end
+
 
 function tree_print(
     t::T; 
@@ -80,7 +92,8 @@ import Base.isequal
 
 #: ------------  Block  -------------
 mutable struct Block{TR} <: AbstractTree
-    n::Int                # number of repetitions
+    # number of repetitions
+    n::Int
     # x
     # full range of the block
     x::IntRange 
@@ -97,6 +110,9 @@ mutable struct Block{TR} <: AbstractTree
     # DATA
     # for single line, store extracted data, 
     # for multi line, empty
+    # DATA is organized by parsee_File!() as follows
+    # range => Vector{Pair{String,Any}}[...]
+    # each v in [...] is a line of data from parsing single line
     DATA
 end
 

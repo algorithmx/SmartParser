@@ -7,13 +7,11 @@ function block_print(
     ) where {T <: Block, S <: AbstractString}
     nl = []
     level = [offset,]
-    
-    @inline make_str(a, x, l) = join(a[getfield(x,:x)], "\n"*repeat(" ",length(header(l))))
+
+    @inline make_str(a, x, l) = "\n"*repeat(" ",length(header(l)))*join(a[getfield(x,:x)], "\n"*repeat(" ",length(header(l))))
     @inline tup_str(x,a...)   = string(([getfield(x,m) for m in a]...,))
     
-    f(x) = (push!(nl, header(level[end])*(is_single(x) 
-                                            ? make_str(s,x,level[end]) 
-                                            : tup_str(x,:n,:R))); 
+    f(x) = (push!(nl, header(level[end]) * tup_str(x,:n,:R) * (is_single(x) ? make_str(s,x,level[end]) : "")); 
             push!(level,level[end]+1);
             0 )
     

@@ -24,13 +24,12 @@ function parse_file!(
         end
     else
         TX = (first(t.x)+shift):(last(t.x)+shift)
-        tokens = [codeinv[patt] for patt in t.p]
         words1 = to_words.(lines1[TX])
         # extract data 
         data = Vector{Pair{String,Any}}[]
         for (line,word) ∈ zip(lines[TX],words1)
             ii = 0
-            keywords = Pair{String,Any}[w=>((cmp(w,"£")==0 || startswith(w,"__")) 
+            keywords = Pair{String,Any}[w=>((cmp(w,"£")==0 || w ∈ MASK_RULES_DIC_INV_KEYS_STRIPPED_NO_£) 
                                             ? MASK_RULES_DIC_INV1[w]
                                             : nothing) 
                                         for w ∈ word]
@@ -54,18 +53,3 @@ function parse_file!(
     return t
 end
 
-
-#+ =========== search ============
-
-function search_kw_in_tree_data(t::Block, kw)
-    # DATA is organized as follows
-    # range => Vector{Pair{String,Any}}[...]
-    # each v in [...] is a line of data from parsing single line
-    key_in_data(dt) = any(  tx_data_pair->any(  kv_list->any(kv->first(kv)==kw,kv_list), 
-                                                last(tx_data_pair) ), 
-                            dt   )
-    extract_data(x::Block) = (is_single(x) && key_in_data(x.DATA)) ? x.DATA : Any[]
-    coll = collect_action_dfs(t, extract_data)
-
-    return vcat([ x for x in coll if (vcat(x...)!=[]) && (vcat(vcat(last.(x)...)...)!=[]) ]...)
-end

@@ -44,7 +44,7 @@ end
 
 
 function tokenize(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
-    lines = split(S0,"\n") ;
+    lines = split(S0,"\n",keepempty=false) ; #TODO 
     unique_words = unique(vcat(split.(lines,r"[^\S\n\r]",keepempty=false)...)) ;
     code = Dict{String,TCode}(w=>i for (i,w) ∈ enumerate(unique_words))
     code["£"] = 0  # reserved token 0 for number
@@ -70,7 +70,7 @@ end
 
 function add_newline(lines)
     @inline headspace(l) = ((length(l)>0 && startswith(l," ")) 
-                                ? (findfirst(x->x!=' ',l)!==nothing ? findfirst(x->x!=' ',l)-1 
+                                ? (findfirst(x->x!=' ',l)!==nothing ? (findfirst(x->x!=' ',l)-1) 
                                 : findlast(x->x==' ',l)) : 0)
     hstack = Stack{Int}()
     lines1 = []
@@ -107,8 +107,8 @@ function load_file(
         S0 = read(fn,String) |> preprocess_raw_input
         MS0 = mask(S0)
         patts, code = tokenize(MS0)
-        lines = split(S0,"\n")
-        lines_masked = split(MS0,"\n")
+        lines = split(S0,"\n",keepempty=false) #TODO
+        lines_masked = split(MS0,"\n",keepempty=false) #TODO
         return lines, lines_masked, patts, code
     else
         return String[], String[], TPattern[], Dict{String,Int}()
