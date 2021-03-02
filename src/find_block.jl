@@ -137,16 +137,6 @@ find_block(x::Block; block_identifier=MostFreqSimilarSubsq)::Block = (is_single(
 
 find_block_MostFreqSimilarSubsq(x::Block) = find_block(x; block_identifier=MostFreqSimilarSubsq)
 
-function loop_until_stable(x::Block)
-    R1 = x.R
-    x = find_block_MostFreqSimilarSubsq(x)
-    while x.R[1] != R1
-        R1 = x.R
-        x = find_block_MostFreqSimilarSubsq(x)
-    end
-    return x
-end
-
 
 #: ----------- init blocks -----------
 

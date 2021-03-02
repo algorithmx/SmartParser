@@ -13,6 +13,7 @@ function build_structure_tree(fn)
             |> find_block_MostFreqSimilarSubsq
             |> find_block_MostFreqSimilarSubsq
             |> find_block_MostFreqSimilarSubsq
+            |> find_block_MostFreqSimilarSubsq
     );
     return lines, lines1, B, code
 end
