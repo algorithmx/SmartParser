@@ -50,6 +50,7 @@ export parse_file!
 include("parse_file.jl")
 
 export search_kw_in_tree_data
+export search_val_in_tree_data
 export search_x_in_tree
 export next_block_by_id
 export block_contains_kw_data

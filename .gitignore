@@ -10,4 +10,5 @@ log*.*
 *.a
 *.sh
 *.o
+*.txt
 *.code-workspace

@@ -17,6 +17,22 @@ function search_kw_in_tree_data(t::Block, kw)
     return vcat([ x for x in coll if (vcat(x...)!=[]) && (vcat(vcat(last.(x)...)...)!=[]) ]...)
 end
 
+
+#* ================================
+
+val_in_data(dt,va) = length(dt)==0 ? false : any( 
+    tx_data_pair->any(  kv_list->any(kv->last(kv)==va,kv_list), 
+                        last(tx_data_pair)   ), 
+    dt
+)
+
+extract_data_by_val(x::Block,va) = ((is_single(x) && val_in_data(x.DATA,va)) ? x.DATA : Any[])
+
+function search_val_in_tree_data(t::Block, va)
+    coll = collect_action_dfs(t, x->extract_data_by_val(x,va))
+    return vcat([ x for x in coll if (vcat(x...)!=[]) && (vcat(vcat(last.(x)...)...)!=[]) ]...)
+end
+
 #* ================================
 
 line_in_tx(tx,line_id) = (line_id ∈ tx)
@@ -28,6 +44,16 @@ extract_data_by_range(b::Block,line_ids::Vector{Int}) = Any[p=>data for (p,data)
 
 function search_x_in_tree(t::Block, line_ids::Vector{Int})
     coll = collect_action_dfs(t, b->extract_data_by_range(b,line_ids))
+    return vcat([ x for x in coll if x!=[] ]...) 
+end
+
+#* ================================
+
+#TODO
+blck_by_pattern(x::Block, patt) = (x.R[2]==patt ? x : nothing)
+
+function search_by_pattern(t::Block, pattrn_dfs::TPattern)
+    coll = collect_action_dfs(t, b->blck_by_pattern(b,pattrn_dfs))
     return vcat([ x for x in coll if x!=[] ]...) 
 end
 
@@ -51,7 +77,6 @@ end
 
 #* ================================
 
-
 key_in_children(ch,kw) = length(ch)==0 ? false : any( 
     c->key_in_data(c.DATA,kw), 
     ch
@@ -61,3 +86,5 @@ function block_contains_kw_data(b::Block, kw)
     coll = collect_action_dfs(b, x->(key_in_children(children(x),kw) ? [x,] : []))
     return vcat([ x for x in coll if x!=[] ]...) 
 end
+
+#* ================================
