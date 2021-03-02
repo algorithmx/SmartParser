@@ -1,0 +1,12 @@
+/try
+/old
+/other
+/pdf
+1.*
+*.cif
+*.log
+*.dat
+*.a
+*.sh
+*.o
+*.code-workspace

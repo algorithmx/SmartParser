@@ -23,7 +23,9 @@ end
 
 #: ==========================================================
 
-encode_line(l,dic) = Int[dic[w] for w ∈ split(l,r"[^\S\n\r]",keepempty=false)]
+splt_ln(l) = split(l,r"[^\S\n\r]",keepempty=false)
+
+encode_line(l,dic) = Int[dic[w] for w ∈ splt_ln(l)]
 
 
 function tokenize(
@@ -37,15 +39,16 @@ function tokenize(
         patts = TPattern[((unique(p)==[0,]) ? __PATT__all_number_line__ : p) for p ∈ enc.(lines)]
     catch _e_
         @warn "tokenize failed."
+        @warn _e_
         return TPattern[]
     end
     return patts
 end
 
 
-function tokenize(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
+function tokenize0(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
     lines = split(S0,"\n",keepempty=false) ; #TODO 
-    unique_words = unique(vcat(split.(lines,r"[^\S\n\r]",keepempty=false)...)) ;
+    unique_words = unique(vcat(splt_ln.(lines)...)) ;
     code = Dict{String,TCode}(w=>i for (i,w) ∈ enumerate(unique_words))
     code["£"] = 0  # reserved token 0 for number
     conflict_kw = [k for (k,v) ∈ code if "£"!=k && occursin("£",k)]
@@ -56,6 +59,31 @@ function tokenize(S0::String)::Tuple{Vector{TPattern},Dict{String,Int}}
     return patts, code
 end
 
+
+function tokenize(
+    S0::String;
+    REF_CODE = __REFDIC__
+    )::Tuple{Vector{TPattern},Dict{String,TCode}}
+
+    lines = split(S0,"\n",keepempty=false) ; #TODO 
+    unique_words = unique(vcat(splt_ln.(lines)...)) ;
+    code = copy(REF_CODE)
+    k_REF_CODE = keys(REF_CODE)
+    i = length(k_REF_CODE)+2
+    for w ∈ unique_words
+        if w∉k_REF_CODE &&  w!="£"
+            code[w] = i
+            i += 1
+        end
+    end
+    code["£"] = 0  # reserved token 0 for number
+    conflict_kw = [k for (k,v) ∈ code if "£"!=k && occursin("£",k)]
+    if length(conflict_kw)>0
+        @warn "conflict_kw = $(conflict_kw)"
+    end
+    patts = tokenize(lines, code)
+    return patts, code
+end
 
 #: ==========================================================
 

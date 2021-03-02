@@ -7,10 +7,14 @@ using DataStructures
 
 include("types_and_settings.jl")
 
+
+include("__REFDIC__.jl")
+
 export MASK_RULES, MASK_RULES_DIC_INV
 include("rules.jl")
 
-export mask, tokenize, load_file, encode_line, revert
+export mask, tokenize, tokenize0, load_file, encode_line, revert
+export preprocess_raw_input
 include("tokenize.jl")
 
 export Block, Singleline, MultiDict, tree_print
@@ -23,6 +27,7 @@ export is_multi, is_single
 export Block
 include("Tree.jl")
 
+export increaseindex!
 include("special_dict_op.jl")
 
 export similarity
