@@ -7,7 +7,9 @@
 
 @inline exp_weighted(f,X) = mapreduce(i->exp(-i)*f(i), +, 1:X)/((1-exp(-X))/(ℯ-1))
 
-@inline first_word_iden_weighted(f,X) = (f(1) ? exp_weighted(f,X) : 0.0)
+@inline first_elem_iden_weighted(f,X) = (f(1) ? exp_weighted(f,X) : 0.0)
+
+@inline last_elem_sim_weighted(f,X) = (f(X)>0.8 ? exp_weighted(f,X) : 0.0)
 
 
 #TODO optimize
@@ -16,7 +18,7 @@ function patt_similarity2(p1::TPattern, p2::TPattern)::Float64
     len2 = length(p2)
     if len1==len2==0  return 1.0  end
     lmin = min(len1,len2)
-    return (lmin==0 ? 0.0 : (first_word_iden_weighted(i->(p1[i]==p2[i]), lmin)))
+    return (lmin==0 ? 0.0 : (first_elem_iden_weighted(i->(p1[i]==p2[i]), lmin)))
 end
 
 
@@ -51,34 +53,37 @@ function nonoverlapping(
     substr::Vector{TR}, 
     fullstr::Vector{TR}
     )::Vector{IntRange}  where  TR
-
     Nsub    = length(substr)
     sim_min = Nsub * __SIMILARITY_LEVEL__
     sim     = -1.0
     q       = -1
     posL    = length(fullstr)-Nsub+1
     R       = IntRange[]
+    j       = -1
     while posL >= 1
         q = -1
         # test similarity FROM THE RIGHTEST POSITION
         for p ∈ posL:-1:1
             if good_label_crit(fullstr[p])
-                sim = similarity2(substr[1], fullstr[p])
-                if sim<0.5
+                sim = similarity2(substr[1], fullstr[p]) + similarity2(substr[Nsub], fullstr[p+Nsub-1])
+                if sim<1.5 || similarity2(fullstr[p], fullstr[p+Nsub-1])>0.4
+                    # if first and last pattern doesn't match at high fidelity
+                    # or the first and last in the fullstr to be matched are too similar
                     continue
                 end
-                # going down FROM THE RIGHTEST POSITION
+                # going FROM THE LEFTEST POSITION
+                # j = 2 to Nsub-1
                 j = 2
-                while (j<Nsub) && (sim<sim_min)
-                    sim += similarity2(substr[j], fullstr[p+j-1])^2
-                    if (sim+(Nsub-j)-1+1e-12<sim_min) 
+                while (j<Nsub-1) && (sim<sim_min)
+                    sim += similarity2(substr[j], fullstr[p+j-1])
+                    if (sim+(Nsub-j)-2+1e-12<sim_min)
                         # if, even the remaining part all matches exactly (sim+=1 for each)
                         # the sim value still below minimum
                         break
                     end
-                    j += 1
+                    j += 1 # going FROM THE LEFTEST POSITION
                 end
-                if j==Nsub
+                if j==Nsub-1
                     # the above while loop reaches the end
                     # overall similarity larger than fixed level
                     q = p
@@ -94,6 +99,73 @@ function nonoverlapping(
     end
     return R
 end
+
+
+function MostFreqSimilarSubsq_V0(
+    str::Vector{TR}; 
+    # meaning of Lmin and Lmax :
+    # min and max lengths of the pattern for 
+    # a group of blocks
+    # experiments show that Lmin=3 is efficient for QE files
+    Lmin=3,   
+    Lmax=20
+    )::Vector{IntRange} where TR
+
+    N = length(str)
+    if N<3 || allunique(str) 
+        return IntRange[]
+    end
+
+    #+------------- lift the "degenereacy" --------------
+    # most apperance >> earliest appearance
+    sortf1(x) = 2.0*length(x) - (first(last(x))/N)
+    # most apperance >> longest range
+    sortf2(x) = 10*length(x) + length(first(x))
+    #+---------------------------------------------------
+
+    RES = Vector{IntRange}[]
+    B   = nothing
+    lenLASTBmax = -10
+    for l=Lmin:min(Lmax,N÷2)
+        println("------ l = $l ----------")
+        
+        U = Dict{Vector{TR},Int}()  # record the unique substrings by num of reps
+        updU(i)   = increaseindex!(U, str[i:i+l-1])  # dict for num of repetitions
+        crit_i(i) = good_label_crit(str[i]) && similarity2(str[i],str[i+l-1])<0.5
+        processelemif(updU, crit_i, 1:N-l+1) ;
+
+        all_blk_l = Vector{IntRange}[]
+        max_len_B = -1
+        lB = 0
+        for (s,m) ∈ U
+            if m>1 # && length(s)==l
+                B  = nonoverlapping(s, str)
+                lB = length(B)
+                if lB>1 && lB>=max_len_B
+                    max_len_B = lB
+                    push!(all_blk_l, B)
+                end
+            end
+        end
+        if max_len_B < lenLASTBmax
+            # increasing the sub-pattern length l 
+            # won't get longer nonoverlapping blocks B
+            break
+        end
+        if length(all_blk_l)>0
+            A = sort(all_blk_l, by=sortf1)
+            LASTB = last(A)
+            @assert max_len_B==length(LASTB)
+            #LASTB = last(sort(all_blk_l, by=sortf1))
+            [(println((length(A[k]),last(A[k]), str[last(A[k])])); 0)  for k=max(1,length(A)-10):length(A)]
+            lenLASTBmax = max(lenLASTBmax, length(LASTB))
+            push!(RES, LASTB)  # only record the best for each l
+        end
+    end
+    return length(RES)==0 ? IntRange[] : last(sort(RES, by=sortf2))  # only return the best
+end
+
+
 
 function MostFreqSimilarSubsq(
     str::Vector{TR}; 
@@ -112,25 +184,28 @@ function MostFreqSimilarSubsq(
 
     #+------------- lift the "degenereacy" --------------
     # most apperance >> earliest appearance
-    sortf1(x) = 10.0*length(x) - (first(last(x))/N)
+    sortf1(x) = 2.0*length(x) - (first(last(x))/N)
     # most apperance >> longest range
-    sortf2(x) = 100*length(x) + length(first(x))
+    sortf2(x) = 10*length(x) + length(first(x))
     #+---------------------------------------------------
 
     RES = Vector{IntRange}[]
     B   = nothing
-    lenBmax = -1
+    lenLASTBmax = -10
     for l=Lmin:min(Lmax,N÷2)
+        println("------ l = $l ----------")
+        
         U = Dict{Vector{TR},Int}()  # record the unique substrings by num of reps
-        updU(i) = increaseindex!(U, str[i:i+l-1])  # dict for num of repetitions
-        crit_i(i) = good_label_crit(str[i])
+        updU(i)   = increaseindex!(U, str[i:i+l-1])  # dict for num of repetitions
+        crit_i(i) = good_label_crit(str[i]) && similarity2(str[i],str[i+l-1])<0.5
         processelemif(updU, crit_i, 1:N-l+1) ;
+
         all_blk_l = Vector{IntRange}[]
         max_len_B = -1
         lB = 0
         for (s,m) ∈ U
-            if m>1
-                B = nonoverlapping(s, str)
+            if m>1 # && length(s)==l
+                B  = nonoverlapping(s, str)
                 lB = length(B)
                 if lB>1 && lB>=max_len_B
                     max_len_B = lB
@@ -138,17 +213,18 @@ function MostFreqSimilarSubsq(
                 end
             end
         end
+        if max_len_B < lenLASTBmax
+            # increasing the sub-pattern length l 
+            # won't get longer nonoverlapping blocks B
+            break
+        end
         if length(all_blk_l)>0
-            #A = sort(all_blk_l, by=sortf1)
-            #LASTB = last(A)
-            LASTB = last(sort(all_blk_l, by=sortf1))
-            if length(LASTB) < lenBmax
-                # increasing the sub-pattern length l won't get longer nonoverlapping blocks B
-                break  
-            end
-            #println("------ l = $l ----------")
-            #[(println((length(A[k]),last(A[k]), str[last(A[k])])); 0)  for k=max(1,length(A)-10):length(A)]
-            lenBmax = max(lenBmax, length(LASTB))
+            A = sort(all_blk_l, by=sortf1)
+            LASTB = last(A)
+            @assert max_len_B==length(LASTB)
+            #LASTB = last(sort(all_blk_l, by=sortf1))
+            [(println((length(A[k]),last(A[k]), str[last(A[k])])); 0)  for k=max(1,length(A)-10):length(A)]
+            lenLASTBmax = max(lenLASTBmax, length(LASTB))
             push!(RES, LASTB)  # only record the best for each l
         end
     end

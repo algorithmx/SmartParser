@@ -7,11 +7,13 @@ function build_structure_tree(fn)
     if length(lines)==0
         return String[], String[], Multiline(), code
     end
-    B = build_block_init(patts) ;
-    B  = find_block_MostFreqSimilarSubsq(B) ;
-    B  = find_block_MostFreqSimilarSubsq(B) ;
-    B  = find_block_MostFreqSimilarSubsq(B) ;
-    B  = find_block_MostFreqSimilarSubsq(B) ;
+    B = (build_block_init(patts) 
+            |> find_block_MostFreqSimilarSubsq
+            |> find_block_MostFreqSimilarSubsq
+            |> find_block_MostFreqSimilarSubsq
+            |> find_block_MostFreqSimilarSubsq
+            |> find_block_MostFreqSimilarSubsq
+    );
     return lines, lines1, B, code
 end
 

@@ -31,6 +31,7 @@ include("block_similarity.jl")
 
 
 export find_block_MostFreqSimilarSubsq
+export loop_until_stable
 export verify_block, is_valid_block, is_valid_x, is_valid_C
 export build_block_init_by_linebreak
 export build_block_init, typical_blocks
