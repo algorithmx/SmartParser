@@ -114,7 +114,7 @@ function nonoverlapping(
 end
 
 
-function MostFreqSimilarSubsq(
+function MostFreqSimilarSubsq_test_ver(
     str::Vector{TR}; 
     # meaning of Lmin and Lmax :
     # min and max lengths of the pattern for 
@@ -139,6 +139,11 @@ function MostFreqSimilarSubsq(
     RES = Vector{IntRange}[]
     B   = nothing
     lenLASTBmax = -10
+    all_blk_l = Vector{IntRange}[]
+    max_len_B  = -1
+    curr_len_B = 0
+    lB  = 0
+    sortf1_val = 0.0
     for l=Lmin:min(Lmax,N÷2)
         #println("------ l = $l ----------")
         U = Dict{Vector{TR},Int}()  # record the unique substrings by num of reps
@@ -147,13 +152,15 @@ function MostFreqSimilarSubsq(
         processelemif(updU, crit_i, 1:N-l+1) ;
 
         all_blk_l = Vector{IntRange}[]
-        max_len_B = -1
+        max_len_B = 2
+        curr_len_B = 0
         lB = 0
         for (s,m) ∈ U
-            if m>1 # && length(s)==l
+            if m>1
                 B  = nonoverlapping(s, str)
                 lB = length(B)
-                if lB>1 && lB>=max_len_B
+                #if lB>1 && lB>=max_len_B
+                if lB>=max_len_B
                     max_len_B = lB
                     push!(all_blk_l, B)
                 end
@@ -167,14 +174,94 @@ function MostFreqSimilarSubsq(
         if length(all_blk_l)>0
             #A = sort(all_blk_l, by=sortf1)
             #LASTB = last(A)
-            LASTB = last(sort(all_blk_l, by=sortf1))
-            @assert max_len_B==length(LASTB)
+            #LASTB = last(sort(all_blk_l, by=sortf1))
+            #@assert max_len_B==length(LASTB)
+            (_,LASTB_i) = findmax(sortf1.(all_blk_l))
+            curr_len_B = length(all_blk_l[LASTB_i])
+            @assert max_len_B==curr_len_B
             #[(println((length(A[k]),last(A[k]), str[last(A[k])])); 0)  for k=max(1,length(A)-10):length(A)]
-            lenLASTBmax = max(lenLASTBmax, length(LASTB))
-            push!(RES, LASTB)  # only record the best for each l
+            #lenLASTBmax = max(lenLASTBmax, length(LASTB))
+            lenLASTBmax = max(lenLASTBmax, curr_len_B)
+            #push!(RES, LASTB)  # only record the best for each l
+            push!(RES, all_blk_l[LASTB_i])  # only record the best for each l
         end
     end
-    return length(RES)==0 ? IntRange[] : last(sort(RES, by=sortf2))  # only return the best
+    return length(RES)==0 ? IntRange[] : last(sort(RES,by=sortf2))  # only return the best
+end
+
+
+function MostFreqSimilarSubsq(
+    str::Vector{TR}; 
+    # meaning of Lmin and Lmax :
+    # min and max lengths of the pattern for 
+    # a group of blocks
+    # experiments show that Lmin=3 is efficient for QE files
+    Lmin=3,   
+    Lmax=20
+    )::Vector{IntRange} where TR
+
+    N = length(str)
+    if N<3 || allunique(str) 
+        return IntRange[]
+    end
+
+    #+------------- lift the "degenereacy" --------------
+    # most apperance >> earliest appearance
+    sortf1(x) = length(x) - (first(last(x))/N)
+    # most apperance >> longest range
+    sortf2(x) = 10*length(x) + length(first(x))
+    function crit_i_l(i::Int, l::Int)
+        if length(str[i][2][1])>1   return true   end
+        @inbounds cnd = (str[i][2][1]==__M0_PATT__::TPattern || str[i][2][1]==__PATT__all_number_line__::TPattern)
+        if cnd
+            return false
+        else
+            return (@inbounds similarity2(str[i],str[i+l-1])<0.5)
+        end
+    end
+    #+---------------------------------------------------
+
+    RES         = Vector{IntRange}[]
+    B           = nothing
+    lenLASTBmax = -10
+
+    all_blk_l   = Vector{IntRange}[]
+    max_len_B   = -1
+    curr_len_B  = 0
+    lB          = 0
+    for l=Lmin:min(Lmax,N÷2)
+        U = Dict{Vector{TR},Int}()  # record the unique substrings by num of reps
+        updU(i::Int) = (@inbounds increaseindex!(U, str[i:i+l-1]))  # dict for num of repetitions
+        crit_i(i::Int) = crit_i_l(i, l)
+        @inbounds processelemif(updU, crit_i, 1:N-l+1) ;
+
+        all_blk_l  = Vector{IntRange}[]
+        max_len_B  = 2
+        curr_len_B = 0
+        lB         = 0
+        for (s,m) ∈ U
+            if m>1
+                B  = nonoverlapping(s, str)
+                lB = length(B)
+                if lB>=max_len_B
+                    max_len_B = lB
+                    push!(all_blk_l, B)
+                end
+            end
+        end
+        if max_len_B < lenLASTBmax  # increasing the sub-pattern length l 
+            break  # won't get longer nonoverlapping blocks B
+        end
+        if length(all_blk_l)>0
+            (_,_i) = findmax(sortf1.(all_blk_l))
+            lenLASTBmax = max(lenLASTBmax, length(all_blk_l[_i]))
+            push!(RES, all_blk_l[_i])  # only record the best for each l
+        end
+    end
+    if length(RES)==0  return IntRange[]  end
+    # only return the best
+    (_,_i) = findmax(sortf2.(RES))
+    return RES[_i]
 end
 
 
@@ -202,12 +289,13 @@ function MostFreqSimilarSubsq_V1(
 
     B        = nothing
     l_B_max  = -10
+    lB       = 0
     blk_H    = BinaryHeap(Base.By(sortf3), Vector{IntRange}[])
     for l=Lmin:min(Lmax,N÷2)
         l_B_max_at_l = -1
         U = Dict{Vector{TR},Int}()  # record the unique substrings by num of reps
         updU(i::Int)   = (@inbounds increaseindex!(U, str[i:i+l-1]))  # dict for num of repetitions
-        crit_i(i) = (@inbounds  good_label_crit(str[i]) && similarity2(str[i],str[i+l-1])<0.5)
+        crit_i(i::Int) = (@inbounds  (good_label_crit(str[i]) && similarity2(str[i],str[i+l-1])<0.5))
         processelemif(updU, crit_i, 1:N-l+1) ;
 
         lB = 0

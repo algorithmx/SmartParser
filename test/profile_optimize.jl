@@ -36,7 +36,7 @@ lines, lines1, patts, code = load_file(fn) ;
 ##
 
 B = build_block_init(patts) ;
-Profile.init(n = 10^9, delay = 0.0002)
+Profile.init(n = 10^9, delay = 0.001)
 Profile.clear()
 @profview B  = find_block_MostFreqSimilarSubsq(B) ;
 
