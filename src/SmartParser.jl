@@ -5,17 +5,23 @@ module SmartParser
 
 using DataStructures
 
+
+export TPattern, SIMILARITY_LEVEL
+export RTYPE, __DEFAULT__R__
 include("types_and_settings.jl")
 
 
 include("__REFDIC__.jl")
 
+
 export MASK_RULES, MASK_RULES_DIC_INV
 include("rules.jl")
+
 
 export mask, tokenize, tokenize0, load_file, encode_line, revert
 export preprocess_raw_input
 include("tokenize.jl")
+
 
 export Block, Singleline, MultiDict, tree_print
 export khash, copy, isequal
@@ -27,8 +33,10 @@ export is_multi, is_single
 export Block
 include("Tree.jl")
 
+
 export increaseindex!
 include("special_dict_op.jl")
+
 
 export similarity
 export MostFreqSimilarSubsq
@@ -43,17 +51,29 @@ export build_block_init, typical_blocks
 export merge_children
 include("find_block.jl")
 
+
 export block_print, treep
 include("block_print.jl")
 
+
 export parse_file!
+export extract_DATA
 include("parse_file.jl")
 
-export search_kw_in_tree_data
-export search_val_in_tree_data
-export search_x_in_tree
-export next_block_by_id
-export block_contains_kw_data
+
+export StructuredOutputFile
+export structurize_file
+include("structurize_file.jl")
+
+
+export lookup_codes,            lookup_code
+export get_DATA_by_codes,       get_DATA_by_code
+export get_n_blocks_by_codes,   get_n_blocks_by_code
+export next_block_by_codes,     next_block_by_code
+export get_blocks_max_by_codes, get_blocks_max_by_code
+export select_block_by_patt
+export get_DATA_by_patt
 include("search.jl")
+
 
 end # module

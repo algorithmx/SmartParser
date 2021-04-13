@@ -140,15 +140,15 @@ find_block_MostFreqSimilarSubsq(x::Block) = find_block(x; block_identifier=MostF
 
 #: ----------- init blocks -----------
 
-function build_block_init(patts::Vector{TPattern})::Block{__RTYPE__}
+function build_block_init(patts::Vector{TPattern})::Block{RTYPE}
     return Block(merge_conseq_iden_blocks([Block(p,i) for (i,p) ∈ enumerate(patts)]))
 end
 
 
 # assuming that each "logical block" is terminated by an empty line
-function build_block_init_by_linebreak(patts::Vector{TPattern})::Block{__RTYPE__}
+function build_block_init_by_linebreak(patts::Vector{TPattern})::Block{RTYPE}
     Q = empty_TPattern()   #  previous pattern
-    S = Stack{Tuple{Int,Block{__RTYPE__}}}()
+    S = Stack{Tuple{Int,Block{RTYPE}}}()
     L = 0   #  level
     for (i,p) ∈ enumerate(patts)
         if Q==Int[]  # previous line is empty
@@ -159,7 +159,7 @@ function build_block_init_by_linebreak(patts::Vector{TPattern})::Block{__RTYPE__
         if p==Int[]  # current line is empty
             if length(S)>0
                 #: destack
-                TMP  = Block{__RTYPE__}[]
+                TMP  = Block{RTYPE}[]
                 while length(S)>0 && top(S)[1]==L
                     t = pop!(S)
                     push!(TMP, t[2])

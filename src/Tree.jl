@@ -113,7 +113,7 @@ mutable struct Block{TR} <: AbstractTree
     # DATA is organized by parsee_File!() as follows
     # range => Vector{Pair{String,Any}}[...]
     # each v in [...] is a line of data from parsing single line
-    DATA
+    DATA::DATATYPE
 end
 
 copy(s::Block{TR}) where TR = Block{TR}(s.n, s.x, copy(s.p), copy(s.R), copy.(s.C), copy(s.DATA))
@@ -130,6 +130,10 @@ is_single(s::Block{TR}) where TR = length(s.C)==0
 
 #: ----------- hash -----------
 
+#NOTE : the second parameter in hash(. , .) is crucial. 
+#> it guarantees that the folded blocks have exactly the same structure.
+#> otherwise, when folding several blocks of similar structures with different repetition b.n
+#> this information is lost after folding
 khash(b::Block)::UInt64 = (is_single(b) ? hash(b.p,UInt(b.n)) : hash(khash.(b.C),UInt(b.n)))
 
 is_valid_C(C::Vector{Block{TR}}) where TR = (length(C)>0 ? mapreduce(c->length(getfield(c,:x)), +, C)==length(concat0(C[1].x,C[end].x)) : true)
@@ -157,17 +161,17 @@ compute_label(b::Block) = (khash(b), patt_dfs(b))
 
 #+ ==================================
 
-function Block(patt::TPattern, rg::IntRange)::Block{__RTYPE__}
-    b = Block{__RTYPE__}(length(rg), rg, patt, __DEFAULT__R__, Block{__RTYPE__}[], [])
+function Block(patt::TPattern, rg::IntRange)::Block{RTYPE}
+    b = Block{RTYPE}(length(rg), rg, patt, __DEFAULT__R__, Block{RTYPE}[], [])
     b.R = compute_label(b)
     return b
 end
 
 
-Block(patt::TPattern, i::Int)::Block{__RTYPE__} = Block(patt, i:i)
+Block(patt::TPattern, i::Int)::Block{RTYPE} = Block(patt, i:i)
 
 
-Block()::Block{__RTYPE__} = Block(__DEFAULT_PATT__, 0)
+Block()::Block{RTYPE} = Block(__DEFAULT_PATT__, 0)
 
 
 function Block(C::Vector{Block{RT}})::Block{RT} where RT

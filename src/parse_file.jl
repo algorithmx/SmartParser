@@ -26,7 +26,7 @@ function parse_file!(
         TX = (first(t.x)+shift):(last(t.x)+shift)
         words1 = to_words.(lines1[TX])
         # extract data 
-        data = Vector{Pair{String,Any}}[]
+        data = TokenValueLine[]
         for (line,word) ∈ zip(lines[TX],words1)
             ii = 0
             keywords = Pair{String,Any}[w=>((cmp(w,"£")==0 || w ∈ MASK_RULES_DIC_INV_KEYS_STRIPPED_NO_£) 
@@ -53,3 +53,15 @@ function parse_file!(
     return t
 end
 
+
+# extract DATA according to its structure
+function extract_DATA(
+    DATA::Vector{Pair{IntRange,Vector{TokenValueLine}}}; 
+    symbol="£", 
+    parser=identity, 
+    transformer=identity, 
+    block_merger=identity
+    )::Vector{Pair{IntRange,Any}}
+    return [bx=>block_merger([transformer([parser(v) for (k,v) ∈ d if k==symbol]) for d ∈ data]) 
+            for (bx,data) ∈ DATA]
+end

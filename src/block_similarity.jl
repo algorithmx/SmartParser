@@ -1,6 +1,6 @@
 #: ========================================================================
 #global const __DEFAULT__R__ = (__DEFAULT_HASH_CODE__, TPattern[])  #+ modify
-#global const __SIMILARITY_LEVEL__ = 0.9
+#global const SIMILARITY_LEVEL = 0.9
 #: ========================================================================
 
 @inline processelemif(p,c,L) = for el ∈ L if c(el) p(el); end end
@@ -69,7 +69,7 @@ function nonoverlapping(
     )::Vector{IntRange}  where  TR
 
     Nsub    = length(substr)
-    sim_min = Nsub * __SIMILARITY_LEVEL__
+    sim_min = Nsub * SIMILARITY_LEVEL
     sim     = -1.0
     q       = -1
     posL    = length(fullstr)-Nsub+1
@@ -82,6 +82,16 @@ function nonoverlapping(
             #if good_label_crit(p,fullstr)
             if fullstr_good_pos[p]
                 @inbounds sim = similarity2(substr[1], fullstr[p]) + similarity2(substr[Nsub], fullstr[p+Nsub-1])
+                #=
+                if Nsub==2 && sim>1.9
+                    println("Nsub==2 && sim>1.9")
+                    @show sim
+                    @show substr
+                    @show fullstr[p:p+Nsub-1]
+                    @show similarity2(fullstr[p], fullstr[p+Nsub-1])
+                    println("")
+                end
+                =#
                 if sim<1.5 || similarity2(fullstr[p], fullstr[p+Nsub-1])>0.4
                     # if first and last pattern doesn't match at high fidelity
                     # or the first and last in the fullstr to be matched are too similar
@@ -90,16 +100,16 @@ function nonoverlapping(
                 # going FROM THE LEFTEST POSITION
                 # j = 2 to Nsub-1
                 j = 2
-                while (j<Nsub-1) && (sim<sim_min)
+                while j<=Nsub-1
                     @inbounds sim += similarity2(substr[j], fullstr[p+j-1])
-                    if (sim+(Nsub-j)-2+1e-12<sim_min)
+                    if (sim+(Nsub-j)+1e-12<sim_min)
                         # if, even the remaining part all matches exactly (sim+=1 for each)
                         # the sim value still below minimum
                         break
                     end
                     j += 1 # going FROM THE LEFTEST POSITION
                 end
-                if j==Nsub-1
+                if j==Nsub
                     # the above while loop reaches the end
                     # overall similarity larger than fixed level
                     q = p
@@ -124,9 +134,12 @@ function MostFreqSimilarSubsq(
     # min and max lengths of the pattern for 
     # a group of blocks
     # experiments show that Lmin=3 is efficient for QE files
-    Lmin=3,   
+    Lmin=2,   
     Lmax=20
     )::Vector{IntRange} where TR
+
+    #: output 
+    # println("MostFreqSimilarSubsq:")
 
     N = length(str)
     if N<3 || allunique(str) 
@@ -135,9 +148,9 @@ function MostFreqSimilarSubsq(
 
     #+------------- lift the "degenereacy" --------------
     # most apperance >> earliest appearance
-    sortf1(x) = length(x) - (first(last(x))/N)
+    sortf1(x) = 100*length(x) - (first(last(x))/N)
     # most apperance >> longest range
-    sortf2(x) = 10*length(x) + length(first(x))
+    sortf2(x) = 1000*length(x) + length(first(x))
     function crit_i_l(i::Int, l::Int)
         if length(str[i][2][1])>1   return true   end
         @inbounds cnd = (str[i][2][1]==__M0_PATT__::TPattern || str[i][2][1]==__PATT__all_number_line__::TPattern)
@@ -186,7 +199,19 @@ function MostFreqSimilarSubsq(
             lenLASTBmax = max(lenLASTBmax, length(all_blk_l[_i]))
             push!(RES, all_blk_l[_i])  # only record the best for each l
         end
+
+        #: output
+        # println("------------ l = $l ------------")
+        # A = sort(all_blk_l,by=sortf1)
+        # [(println((length(A[k]),last(A[k]), str[last(A[k])])); 0)  for k=max(1,length(A)-10):length(A)]
+
     end
+
+    #: output
+    # println("-------------------------------")
+    # println("")
+    # println("")
+
     if length(RES)==0  return IntRange[]  end
     # only return the best
     (_,_i) = findmax(sortf2.(RES))
@@ -347,7 +372,7 @@ function sim_each_char(s1::Vector{TR}, i1::Int, s2::Vector{TR}, i2::Int)::Bool w
     n1 = length(s1)
     j = 0 
     while j < n1
-        if similarity(s1[i1+j], s2[i2+j]) < __SIMILARITY_LEVEL__   return false   end
+        if similarity(s1[i1+j], s2[i2+j]) < SIMILARITY_LEVEL   return false   end
         j += 1
     end
     return j==n1
